@@ -1,0 +1,12 @@
+# This repository publishes only the static website and its deployment files.
+*
+
+!.gitignore
+!README.md
+!.github/
+!.github/workflows/
+!.github/workflows/pages.yml
+!demo/
+!demo/**
+
+**/.DS_Store
