@@ -4,29 +4,47 @@ import { fileURLToPath } from "node:url";
 
 const demoDir = dirname(dirname(fileURLToPath(import.meta.url)));
 
-const fact = (label, value) => `<div><dt>${label}</dt><dd>${value}</dd></div>`;
+const iconPaths = {
+  shield: `<path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"></path><path d="m9 12 2 2 4-4"></path>`,
+  access: `<rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 9.9-1"></path>`,
+  globe: `<circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 0 20"></path><path d="M12 2a15.3 15.3 0 0 0 0 20"></path><path d="M2 12h20"></path>`,
+  document: `<path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><path d="M14 2v6h6"></path><path d="M8 13h8"></path><path d="M8 17h8"></path>`,
+};
+
+function factIcon(label) {
+  const key = label.toLowerCase();
+  if (/(review|original|screen|ethic|approval)/.test(key)) return iconPaths.shield;
+  if (/(access|license|copyright|fee|apc|charge)/.test(key)) return iconPaths.access;
+  if (/(submission|file|proof|author|article|keyword)/.test(key)) return iconPaths.document;
+  return iconPaths.globe;
+}
+
+const fact = (label, value) => `<article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${factIcon(label)}</svg></span><div><strong>${label}</strong><span>${value}</span></div></article>`;
 
 function informationPage({ id, label, title, lead, facts, toc, content, className = "" }) {
-  return `      <div class="content-flow information-page ${className}">
+  return `      <div class="content-flow information-page guided-information-page ${className}">
+        <nav class="information-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#home">Home</a><span>/</span><strong>${label}</strong></nav>
         <section class="information-hero" id="${id}">
           <div class="information-hero-copy">
             <p class="eyebrow">${label}</p>
             <h1>${title}</h1>
             <p>${lead}</p>
           </div>
-          <dl class="hero-fact-list">
+          <figure class="information-hero-visual" aria-hidden="true"><img src="./assets/aim-scope-hero-network.png" alt="" /></figure>
+          <section class="information-fact-band" aria-label="${label} facts">
             ${facts.join("\n            ")}
-          </dl>
+          </section>
         </section>
         <section class="information-layout">
           <nav class="page-toc" aria-label="${label} sections">
             <strong>On this page</strong>
-            ${toc.map(([href, text]) => `<a href="#${href}">${text}</a>`).join("\n            ")}
+            ${toc.map(([href, text], index) => `<a href="#${href}"><span>${String(index + 1).padStart(2, "0")}</span>${text}</a>`).join("\n            ")}
           </nav>
           <div class="information-content">
-            ${content}
+${content.trim()}
           </div>
         </section>
+        <section class="aim-related-routes" aria-labelledby="${id}-related-routes"><h2 id="${id}-related-routes">Related routes</h2><nav aria-label="Related journal information"><a href="./aim-scope.html#aim-scope"><strong>Aim &amp; Scope</strong><small>Check journal fit</small></a><a href="./instructions-for-authors.html#instructions-for-authors"><strong>Author guidelines</strong><small>Prepare the manuscript</small></a><a href="./editorial-process.html#editorial-process"><strong>Editorial process</strong><small>Understand peer review</small></a><a href="./submit-manuscript.html#submit-manuscript"><strong>Submit manuscript</strong><small>Open the official route</small></a></nav></section>
       </div>`;
 }
 
@@ -552,6 +570,7 @@ pages.set(
 );
 
 for (const [file, content] of pages) {
+  if (file === "aim-scope.html" || file === "author-center.html") continue;
   const path = join(demoDir, file);
   const html = await readFile(path, "utf8");
   const start = html.indexOf('      <div class="content-flow');
