@@ -140,6 +140,7 @@ def main():
 
         if path.name == "index.html":
             homepage_requirements = (
+                "Open Access",
                 "No Article Processing Charge",
                 "75.36% International Editorial Board",
                 "Rigorous Peer Review",
@@ -156,12 +157,22 @@ def main():
             for requirement in homepage_requirements:
                 if requirement not in source:
                     errors.append(f"{path.name}: missing homepage item '{requirement}'")
-            if source.count('class="journal-value-item"') != 4:
-                errors.append(f"{path.name}: journal value banner must contain four items")
+            if source.count('class="journal-value-item"') != 5:
+                errors.append(f"{path.name}: journal value banner must contain five items")
             if source.count('class="submission-scope-item"') != 8:
                 errors.append(f"{path.name}: submission scope must contain eight items")
             if source.count('class="submission-scope-more"') != 1:
                 errors.append(f"{path.name}: submission scope must end with one continuation marker")
+            if source.count('class="article-metrics"') != 8:
+                errors.append(f"{path.name}: each of the eight current-issue articles needs usage metrics")
+            if source.count('data-metric="read"') != 8 or source.count('data-metric="download"') != 8:
+                errors.append(f"{path.name}: usage metrics must include read and download counts")
+            if source.count('class="cite-action"') != 8:
+                errors.append(f"{path.name}: each current-issue article needs a Cite action")
+            if source.count("/api/ijics/article/download/") != 8:
+                errors.append(f"{path.name}: each current-issue PDF action must use the official download counter")
+            if 'data-citation-format="ieee"' not in source or 'data-citation-format="apa"' not in source or 'data-citation-format="bibtex"' not in source:
+                errors.append(f"{path.name}: citation chooser must offer IEEE, APA, and BibTeX")
             section_order = (
                 source.find('id="current-issue"'),
                 source.find('id="submission-scope"'),
@@ -187,6 +198,13 @@ def main():
             ):
                 if requirement not in source:
                     errors.append(f"{path.name}: missing hero item '{requirement}'")
+
+        if path.name == "instructions-for-authors.html":
+            for requirement in ("&lt;30%", "&lt;15%", "&lt;20%", "Academic integrity screening"):
+                if requirement not in source:
+                    errors.append(f"{path.name}: missing integrity threshold '{requirement}'")
+            if source.count('class="integrity-thresholds"') != 1:
+                errors.append(f"{path.name}: expected one academic integrity threshold group")
 
         quick_text = " ".join(parser.quick_text)
         for item in ("Author Center", "Manuscript System"):

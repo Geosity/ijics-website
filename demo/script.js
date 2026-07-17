@@ -19,9 +19,59 @@ const selectedIssueTitle = document.querySelector("#all-issues-title");
 const selectedIssueMeta = document.querySelector("#selectedIssueMeta");
 const selectedIssueLink = document.querySelector("#selectedIssueLink");
 const signaturePaperList = document.querySelector("#signaturePaperList");
+const featureCarousel = document.querySelector(".feature-carousel");
+const featureTrack = document.querySelector("#featureTrack");
+const featureSlides = Array.from(document.querySelectorAll(".feature-slide"));
+const featureButtons = Array.from(document.querySelectorAll("[data-feature-slide]"));
+const citationDialog = document.querySelector("#citationDialog");
+const citationDialogArticle = document.querySelector("#citationDialogArticle");
+const citationFormatButtons = Array.from(document.querySelectorAll("[data-citation-format]"));
 const currentPageName = window.location.pathname.split("/").pop() || "index.html";
 let activeArticleType = "all";
 let toastTimer;
+let activeCitation;
+
+if (featureCarousel && featureTrack && featureSlides.length > 1) {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let activeFeature = 0;
+  let featureTimer;
+
+  const showFeature = (nextIndex) => {
+    activeFeature = (nextIndex + featureSlides.length) % featureSlides.length;
+    featureTrack.style.transform = `translateX(-${activeFeature * 100}%)`;
+    featureSlides.forEach((slide, index) => {
+      const hidden = index !== activeFeature;
+      slide.setAttribute("aria-hidden", String(hidden));
+      slide.inert = hidden;
+    });
+    featureButtons.forEach((button, index) => {
+      const active = index === activeFeature;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+  };
+
+  const stopFeatureRotation = () => clearInterval(featureTimer);
+  const startFeatureRotation = () => {
+    stopFeatureRotation();
+    if (reduceMotion.matches) return;
+    featureTimer = setInterval(() => showFeature(activeFeature + 1), 6000);
+  };
+
+  featureButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      showFeature(Number(button.dataset.featureSlide));
+      startFeatureRotation();
+    });
+  });
+  featureCarousel.addEventListener("mouseenter", stopFeatureRotation);
+  featureCarousel.addEventListener("mouseleave", startFeatureRotation);
+  featureCarousel.addEventListener("focusin", stopFeatureRotation);
+  featureCarousel.addEventListener("focusout", startFeatureRotation);
+  reduceMotion.addEventListener("change", startFeatureRotation);
+  showFeature(0);
+  startFeatureRotation();
+}
 
 if (quickAccessFloat && quickAccessClose) {
   quickAccessClose.addEventListener("click", () => {
@@ -45,6 +95,95 @@ function showToast(message) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 1800);
 }
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch (error) {
+    const field = document.createElement("textarea");
+    field.value = text;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.opacity = "0";
+    document.body.appendChild(field);
+    field.select();
+    const copied = document.execCommand("copy");
+    field.remove();
+    return copied;
+  }
+}
+
+function citationDetails(card) {
+  const metricBlock = card.querySelector("[data-article-metrics]");
+  const articleId = metricBlock?.dataset.articleMetrics || "";
+  const title = card.querySelector("h2")?.textContent.trim() || "";
+  const authorText = card.querySelector(".article-authors")?.textContent.trim() || "";
+  const authors = authorText.split(",").map((author) => author.trim()).filter(Boolean);
+  const pages = card.querySelector(".article-meta")?.textContent.match(/Pages\s+(\d+)-(\d+)/i);
+  const pageRange = pages ? `${pages[1]}-${pages[2]}` : "";
+  const doi = articleId ? `10.62678/IJICS202606.10${articleId}` : "";
+  const keyAuthor = (authors[0] || "IJICS").split(/\s+/).at(-1).replace(/[^A-Za-z0-9]/g, "");
+  const keyWord = (title.match(/[A-Za-z0-9]+/) || ["Article"])[0];
+
+  return {
+    title,
+    authors,
+    pageRange,
+    doi,
+    key: `${keyAuthor}2026${keyWord}`,
+  };
+}
+
+function formatCitation(citation, format) {
+  const authorList = citation.authors.join(", ");
+  if (format === "apa") {
+    return `${authorList}. (2026). ${citation.title}. International Journal of Intelligent Control and Systems, 31(2), ${citation.pageRange}. https://doi.org/${citation.doi}`;
+  }
+  if (format === "bibtex") {
+    return `@article{${citation.key},
+  author = {${citation.authors.join(" and ")}},
+  title = {${citation.title}},
+  journal = {International Journal of Intelligent Control and Systems},
+  year = {2026},
+  volume = {31},
+  number = {2},
+  pages = {${citation.pageRange}},
+  doi = {${citation.doi}}
+}`;
+  }
+  return `${authorList}, “${citation.title},” International Journal of Intelligent Control and Systems, vol. 31, no. 2, pp. ${citation.pageRange}, 2026, doi: ${citation.doi}.`;
+}
+
+document.querySelectorAll(".issue-article-card").forEach((card) => {
+  const actions = card.querySelector(".article-actions");
+  const metrics = card.querySelector(".article-metrics");
+  if (actions && metrics) actions.appendChild(metrics);
+});
+
+document.addEventListener("click", (event) => {
+  const citeButton = event.target.closest("[data-cite]");
+  if (!citeButton || !citationDialog) return;
+  const card = citeButton.closest(".issue-article-card");
+  if (!card) return;
+  activeCitation = citationDetails(card);
+  if (citationDialogArticle) citationDialogArticle.textContent = activeCitation.title;
+  citationDialog.showModal();
+});
+
+citationFormatButtons.forEach((button) => {
+  button.addEventListener("click", async () => {
+    if (!activeCitation) return;
+    const format = button.dataset.citationFormat;
+    const copied = await copyText(formatCitation(activeCitation, format));
+    if (copied) {
+      citationDialog.close();
+      showToast(`${button.querySelector("strong").textContent} citation copied`);
+    } else {
+      showToast("Citation copy unavailable");
+    }
+  });
+});
 
 function setHeaderSearchOpen(open) {
   if (!navigationBoard) return;

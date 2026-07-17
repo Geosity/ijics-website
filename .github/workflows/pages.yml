@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
 
 permissions:
   contents: read
@@ -27,6 +29,9 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+
+      - name: Refresh official article usage metrics
+        run: node demo/tools/refresh-article-metrics.mjs
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
