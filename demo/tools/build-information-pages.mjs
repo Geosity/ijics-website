@@ -22,6 +22,10 @@ function factIcon(label) {
 const fact = (label, value) => `<article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${factIcon(label)}</svg></span><div><strong>${label}</strong><span>${value}</span></div></article>`;
 
 function informationPage({ id, label, title, lead, facts, toc, content, className = "" }) {
+  const heroImage = id === "aim-scope" || id === "author-center"
+    ? "aim-scope-hero-network.png"
+    : `${id}-hero.png`;
+
   return `      <div class="content-flow information-page guided-information-page ${className}">
         <nav class="information-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#home">Home</a><span>/</span><strong>${label}</strong></nav>
         <section class="information-hero" id="${id}">
@@ -30,7 +34,7 @@ function informationPage({ id, label, title, lead, facts, toc, content, classNam
             <h1>${title}</h1>
             <p>${lead}</p>
           </div>
-          <figure class="information-hero-visual" aria-hidden="true"><img src="./assets/aim-scope-hero-network.png" alt="" /></figure>
+          <figure class="information-hero-visual" aria-hidden="true"><img src="./assets/${heroImage}" alt="" /></figure>
           <section class="information-fact-band" aria-label="${label} facts">
             ${facts.join("\n            ")}
           </section>

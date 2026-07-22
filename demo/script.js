@@ -55,7 +55,7 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   const startFeatureRotation = () => {
     stopFeatureRotation();
     if (reduceMotion.matches) return;
-    featureTimer = setInterval(() => showFeature(activeFeature + 1), 6000);
+    featureTimer = setInterval(() => showFeature(activeFeature + 1), 12000);
   };
 
   featureButtons.forEach((button) => {
@@ -72,6 +72,34 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   showFeature(0);
   startFeatureRotation();
 }
+
+document.querySelectorAll(".nav-menu").forEach((menu) => {
+  let closeTimer;
+  let animationTimer;
+  const cancelClose = () => {
+    clearTimeout(closeTimer);
+    clearTimeout(animationTimer);
+    menu.classList.remove("is-closing");
+  };
+  const closeMenu = () => {
+    if (!menu.open) return;
+    closeTimer = setTimeout(() => {
+      if (menu.matches(":hover")) return;
+      menu.classList.add("is-closing");
+      animationTimer = setTimeout(() => {
+        menu.open = false;
+        menu.classList.remove("is-closing");
+      }, 180);
+    }, 700);
+  };
+
+  menu.addEventListener("mouseenter", cancelClose);
+  menu.addEventListener("mouseleave", closeMenu);
+  menu.addEventListener("focusin", cancelClose);
+  menu.addEventListener("focusout", (event) => {
+    if (!menu.contains(event.relatedTarget)) closeMenu();
+  });
+});
 
 if (quickAccessFloat && quickAccessClose) {
   quickAccessClose.addEventListener("click", () => {
@@ -382,3 +410,38 @@ if (issueSelect) {
     showToast(`${issueSelect.options[issueSelect.selectedIndex].text} selected`);
   });
 }
+
+function upgradeRelatedRoutes() {
+  const routeSections = document.querySelectorAll(".aim-related-routes:not(.illustrated-related-routes)");
+  if (!routeSections.length) return;
+
+  const routes = [
+    { href: "./aim-scope.html#aim-scope", image: "./assets/aim-scope-hero-network.png", label: "Journal fit", title: "Aim & Scope", description: "Review the research areas, topics, and article profiles welcomed by IJICS." },
+    { href: "./instructions-for-authors.html#instructions-for-authors", image: "./assets/instructions-for-authors-hero.png", label: "Prepare", title: "Author guidelines", description: "Check originality, formatting, structure, files, and submission requirements." },
+    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", label: "Peer review", title: "Editorial process", description: "Understand screening, double-blind review, decisions, and publication steps." },
+    { href: "./submit-manuscript.html#submit-manuscript", image: "./assets/submit-manuscript-hero.png", label: "Submit", title: "Submit manuscript", description: "Open the official manuscript system and begin your IJICS submission." }
+  ];
+
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  routeSections.forEach((section) => {
+    const titleId = section.querySelector("h2")?.id || "related-routes-title";
+    const cards = routes.map((route) => {
+      const routePage = route.href.replace("./", "").split("#")[0];
+      const currentAttribute = routePage === currentPage ? ' aria-current="page"' : "";
+      return `<a href="${route.href}"${currentAttribute}><span class="related-route-visual" aria-hidden="true"><img src="${route.image}" alt="" /></span><span class="related-route-copy"><small>${route.label}</small><strong>${route.title}</strong><span>${route.description}</span></span><span class="related-route-arrow" aria-hidden="true">→</span></a>`;
+    }).join("");
+
+    section.classList.add("illustrated-related-routes");
+    section.setAttribute("aria-labelledby", titleId);
+    section.innerHTML = `<div class="related-routes-heading"><p class="eyebrow">Continue your journey</p><h2 id="${titleId}">Related routes</h2><p>Move from journal fit to manuscript preparation, peer review, and submission.</p></div><nav aria-label="Related journal information">${cards}</nav>`;
+
+    if (!section.closest(".guided-information-page")) {
+      const scopedWrapper = document.createElement("div");
+      scopedWrapper.className = "guided-information-page related-routes-scope";
+      section.before(scopedWrapper);
+      scopedWrapper.append(section);
+    }
+  });
+}
+
+upgradeRelatedRoutes();
