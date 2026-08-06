@@ -141,10 +141,10 @@ def main():
         if path.name == "index.html":
             homepage_requirements = (
                 "Open Access",
-                "No Article Processing Charge",
-                "75.36% International Editorial Board",
-                "Rigorous Peer Review",
-                "Efficient Publication Process",
+                "Current Processing Fee: None",
+                "International Editorial Board",
+                "Single-Blind Peer Review",
+                "Online Submission",
                 "Intelligent Control Theory",
                 "Multi-Agent Systems",
                 "Machine Learning",
@@ -182,22 +182,16 @@ def main():
                 errors.append(f"{path.name}: submission scope must sit between Current Issue and CFP")
 
         if path.name == "author-center.html":
-            if source.count('class="author-hero-advantage"') != 4:
-                errors.append(f"{path.name}: hero must contain four journal advantages")
-            if source.count('class="author-hero-scope-item"') != 8:
-                errors.append(f"{path.name}: hero must contain eight scope items")
-            if source.count('class="author-hero-scope-more"') != 1:
-                errors.append(f"{path.name}: hero scope must end with one continuation marker")
             for requirement in (
-                "No Article Processing Charge",
-                "75.36% International Editorial Board",
-                "Rigorous Peer Review",
-                "Efficient Publication Process",
-                "Intelligent Control Theory",
-                "System Integration &amp; Automation",
+                "Prepare, submit, and track your manuscript",
+                "Single blind",
+                "Currently no charge",
+                "Use an IJICS template",
+                "Submit online",
+                "Transfer of Copyright Agreement",
             ):
                 if requirement not in source:
-                    errors.append(f"{path.name}: missing hero item '{requirement}'")
+                    errors.append(f"{path.name}: missing official author item '{requirement}'")
 
         if path.name == "instructions-for-authors.html":
             for requirement in ("&lt;30%", "&lt;15%", "&lt;20%", "Academic integrity screening"):

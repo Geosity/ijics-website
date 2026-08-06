@@ -59,9 +59,9 @@ pages.set(
   informationPage({
     id: "aim-scope",
     label: "Aim & Scope",
-    title: "Intelligent control and intelligent systems",
+    title: "Aims and Scope",
     lead:
-      "IJICS publishes fundamental contributions and innovative applications across the theory and practice of intelligent technologies.",
+      "IJICS publishes recent fundamental contributions and innovative applications in intelligent control and systems.",
     facts: [
       fact("Journal model", "Peer reviewed"),
       fact("Access", "Open access"),
@@ -76,17 +76,12 @@ pages.set(
     content: `
             <article class="content-section" id="journal-objective">
               <h2>Journal objective</h2>
-              <p>The International Journal of Intelligent Control and Systems (IJICS) is a peer-reviewed, open access international journal. It publishes articles describing recent fundamental contributions and innovative applications in the field of intelligent control and intelligent systems. Its objective is to disseminate important and leading-edge information in this new field in a timely fashion.</p>
+              <p>The International Journal of Intelligent Control and Systems (IJICS) publishes articles describing recent fundamental contributions and innovative applications in the field of intelligent control and systems. Its objective is to disseminate important and leading-edge information in this field in a timely fashion.</p>
             </article>
             <article class="content-section" id="scope-topics">
               <h2>Scope topics</h2>
-              <p>IJICS covers theoretical and practical aspects of intelligent technologies and knowledge-based systems. The scope includes, but is not limited to:</p>
-              <div class="scope-grid">
-                <div class="scope-item"><strong>Robotics and automation</strong><span>Robotics, automation, and intelligent machines.</span></div>
-                <div class="scope-item"><strong>Control methodologies</strong><span>Intelligent control methodologies.</span></div>
-                <div class="scope-item"><strong>Systems</strong><span>System architecture, integration, coordination, modeling, and simulation.</span></div>
-                <div class="scope-item"><strong>Development</strong><span>Hardware and software development for intelligent systems.</span></div>
-              </div>
+              <p>IJICS covers theoretical contributions that advance the understanding of intelligent technologies and knowledge-based systems. Topics include robotics and automation, manufacturing, intelligent machines, design methodologies, specification and analysis, integration and coordination, modeling and simulation, system architectures, learning and reasoning, logic programming, self-organization, multisensor fusion, and intelligent control based on machine learning, behavior programming, fuzzy logic, neural networks, genetic algorithms, pattern recognition, and evolutionary computation.</p>
+              <p>The journal also considers practical contributions on hardware and software development environments for intelligent technologies and knowledge-based systems. Topics include smart chips, intelligent devices and instruments, real-time architectures, rapid prototyping, intelligent human-machine interfaces, computer simulation software packages, and CAD/CAM tools.</p>
             </article>
             <article class="content-section" id="contribution-types">
               <h2>What IJICS publishes</h2>
@@ -103,40 +98,37 @@ pages.set(
   informationPage({
     id: "open-access",
     label: "Open Access Policy",
-    title: "Diamond Open Access",
+    title: "Open Access Publishing Options",
     lead:
-      "Every IJICS article is freely available online, and publishing is free of charge for all authors.",
+      "Consult the current IJICS website and Editorial Office for the journal's applicable access and reuse terms.",
     facts: [
-      fact("Access", "Immediate and permanent"),
-      fact("Author fee", "No charge"),
-      fact("License", "CC BY 4.0"),
-      fact("Copyright", "Retained by authors"),
+      fact("Official resource", "Open Access Publishing Options"),
+      fact("Processing fee", "Currently no charge"),
+      fact("Copyright", "Transfer agreement required"),
+      fact("Contact", "ijics@caa.org.cn"),
     ],
     toc: [
       ["access-model", "Access model"],
-      ["reuse-rights", "Reuse rights"],
-      ["author-copyright", "Copyright"],
-      ["third-party-material", "Third-party material"],
+      ["current-policy", "Current information"],
+      ["copyright-agreement", "Copyright agreement"],
+      ["official-confirmation", "Official confirmation"],
     ],
     content: `
             <article class="content-section" id="access-model">
               <h2>Access model</h2>
-              <p>IJICS is a Diamond Open Access journal. All published articles are immediately and permanently freely available online to all users, and publishing in this journal is entirely free of charge for all authors.</p>
-              <div class="key-callout"><strong>No subscription. No author publishing fee.</strong><span>Readers can access published articles without payment, and authors are not charged to publish.</span></div>
+              <p>The current IJICS website lists an author resource titled <strong>Open Access Publishing Options</strong>. The public page does not currently state a Creative Commons license or detailed reuse terms.</p>
             </article>
-            <article class="content-section" id="reuse-rights">
-              <h2>Reuse rights</h2>
-              <p>IJICS serves authors and academic communities by publishing high-quality, peer-reviewed content under Creative Commons licenses, which promote the maximum dissemination and use of licensed materials. All articles published in IJICS are distributed under the latest version of the CC BY license.</p>
-              <p>Under this license, users are free to read, download, copy, distribute, and adapt the material for any purpose, provided that appropriate credit is given to the original author(s) and the journal.</p>
-              <a class="text-action" href="https://creativecommons.org/licenses/by/4.0/">Read the CC BY 4.0 legal terms</a>
+            <article class="content-section" id="current-policy">
+              <h2>Current information</h2>
+              <p>The current Article Publish Fee page states that IJICS does not charge fees for manuscript processing at present. It also states that a fee may be introduced in the future and that any change will be published on the official website.</p>
             </article>
-            <article class="content-section" id="author-copyright">
-              <h2>Author copyright</h2>
-              <p>Authors retain the full copyright of their work. The CC BY license governs how readers and other users may reuse the published article.</p>
+            <article class="content-section" id="copyright-agreement">
+              <h2>Copyright agreement</h2>
+              <p>The current Information for Authors requires all authors to sign the Transfer of Copyright Agreement before publication. Authors remain responsible for obtaining permission to reproduce material for which copyright already exists.</p>
             </article>
-            <article class="content-section" id="third-party-material">
-              <h2>Third-party material</h2>
-              <p>The CC BY license does not apply to third-party materials, including figures, tables, or text, that are subject to separate copyright notices. Unless such content is also under CC BY or an equally permissive license, authors are responsible for obtaining any necessary permissions from the original copyright holder.</p>
+            <article class="content-section" id="official-confirmation">
+              <h2>Official confirmation</h2>
+              <p>Authors and readers should confirm the terms applicable to a specific article with the IJICS Editorial Office.</p><a class="text-action" href="mailto:ijics@caa.org.cn">Contact the Editorial Office</a>
             </article>`,
   })
 );
@@ -152,15 +144,15 @@ pages.set(
     facts: [
       fact("Submission", "Online"),
       fact("Preferred file", "PDF"),
-      fact("Peer review", "Double blind"),
-      fact("APC", "No charge"),
+      fact("Peer review", "Single blind"),
+      fact("Processing fee", "Currently no charge"),
     ],
     toc: [
       ["prepare", "Prepare"],
       ["templates", "Templates"],
       ["submit", "Submit"],
       ["review-process", "Review process"],
-      ["after-acceptance", "After acceptance"],
+      ["after-acceptance", "Before publication"],
     ],
     content: `
             <article class="content-section" id="prepare">
@@ -182,12 +174,12 @@ pages.set(
             </article>
             <article class="content-section" id="review-process">
               <h2>Understand editorial review</h2>
-              <p>Published articles are reviewed by a minimum of two independent reviewers through a double-blind peer review process. Articles are screened for plagiarism before acceptance.</p>
+              <p>Published articles are reviewed by a minimum of two independent reviewers through a single-blind peer review process. Reviewer identities are not known to authors.</p>
               <a class="text-action" href="./editorial-process.html#editorial-process">View editorial process</a>
             </article>
             <article class="content-section" id="after-acceptance">
-              <h2>Proof correction</h2>
-              <p>Corresponding authors receive a PDF proof for final review. Corrections should be returned within 5 days, and major manuscript changes are not permitted at this stage.</p>
+              <h2>Copyright agreement</h2>
+              <p>All authors must sign the Transfer of Copyright Agreement, available in the online system, before the paper can be published.</p>
             </article>`,
   })
 );
@@ -197,29 +189,29 @@ pages.set(
   informationPage({
     id: "article-processing-charge",
     label: "Article Processing Charge",
-    title: "No author publishing charge",
+    title: "Current manuscript processing fee",
     lead:
-      "IJICS follows a Diamond Open Access model. Publishing in the journal is entirely free of charge for all authors.",
+      "The current IJICS website states that the journal does not charge fees for manuscript processing at present.",
     facts: [
-      fact("APC", "USD 0"),
-      fact("Submission fee", "None"),
-      fact("Publication fee", "None"),
-      fact("Access", "Free to readers"),
+      fact("Current fee", "No processing charge"),
+      fact("Policy status", "Subject to change"),
+      fact("Source", "Official IJICS website"),
+      fact("Contact", "ijics@caa.org.cn"),
     ],
     toc: [
       ["fee-policy", "Fee policy"],
-      ["open-access-model", "Open access"],
+      ["future-updates", "Future updates"],
       ["related-policies", "Related policies"],
     ],
     content: `
             <article class="content-section" id="fee-policy">
               <h2>Fee policy</h2>
-              <p>Publishing in IJICS is entirely free of charge for all authors. The journal does not charge an article processing charge under its current Diamond Open Access policy.</p>
-              <div class="fee-display"><span>Article Processing Charge</span><strong>0</strong><small>No payment is required from authors.</small></div>
+              <p>Currently, IJICS does not charge any fees for manuscript processing.</p>
+              <div class="fee-display"><span>Manuscript processing fee</span><strong>0</strong><small>Current policy published on the IJICS website.</small></div>
             </article>
-            <article class="content-section" id="open-access-model">
-              <h2>Diamond Open Access</h2>
-              <p>All published articles are immediately and permanently freely available online to all users. Access for readers and publication for authors are both free of charge.</p>
+            <article class="content-section" id="future-updates">
+              <h2>Future updates</h2>
+              <p>The official fee page states that an article publication fee may be applied in the future to support peer review, editing, and publication. Any change will be displayed on the IJICS website.</p>
             </article>
             <article class="content-section" id="related-policies">
               <h2>Related policies</h2>
@@ -233,39 +225,37 @@ pages.set(
   informationPage({
     id: "licensing-terms",
     label: "Licensing Terms",
-    title: "Creative Commons Attribution 4.0",
+    title: "Publication and reuse terms",
     lead:
-      "IJICS articles are published under CC BY 4.0, supporting broad reuse with attribution.",
+      "Check the copyright agreement and the terms attached to the published article before reuse.",
     facts: [
-      fact("License", "CC BY 4.0"),
-      fact("Commercial reuse", "Permitted"),
-      fact("Adaptation", "Permitted"),
-      fact("Attribution", "Required"),
+      fact("Copyright agreement", "Required before publication"),
+      fact("Public license", "Confirm per article"),
+      fact("Third-party material", "Permission may be required"),
+      fact("Contact", "ijics@caa.org.cn"),
     ],
     toc: [
       ["license-policy", "License policy"],
-      ["permitted-use", "Permitted use"],
-      ["attribution", "Attribution"],
-      ["exceptions", "Exceptions"],
+      ["published-article", "Published article"],
+      ["permissions", "Permissions"],
+      ["confirmation", "Confirmation"],
     ],
     content: `
             <article class="content-section" id="license-policy">
               <h2>License policy</h2>
-              <p>All articles published in IJICS are distributed under the latest version of the Creative Commons Attribution license.</p>
-              <a class="text-action" href="https://creativecommons.org/licenses/by/4.0/">View CC BY 4.0</a>
+              <p>The current IJICS Information for Authors requires all authors to sign the Transfer of Copyright Agreement before publication.</p>
             </article>
-            <article class="content-section" id="permitted-use">
-              <h2>Permitted use</h2>
-              <p>Users are free to read, download, copy, distribute, and adapt IJICS material for any purpose.</p>
-              <div class="permission-grid"><span>Read</span><span>Download</span><span>Copy</span><span>Distribute</span><span>Adapt</span></div>
+            <article class="content-section" id="published-article">
+              <h2>Published article</h2>
+              <p>The current public policy pages do not specify a journal-wide Creative Commons license. Readers should use the copyright and license notice attached to the relevant article.</p>
             </article>
-            <article class="content-section" id="attribution">
-              <h2>Attribution requirement</h2>
-              <p>Appropriate credit must be given to the original author(s) and the journal when material is reused.</p>
+            <article class="content-section" id="permissions">
+              <h2>Permissions</h2>
+              <p>Authors are responsible for obtaining permission from the copyright holder to reproduce figures or other material for which copyright already exists.</p>
             </article>
-            <article class="content-section" id="exceptions">
-              <h2>Third-party exceptions</h2>
-              <p>Material covered by a separate copyright notice is not automatically included under CC BY. Authors must obtain permission when the relevant third-party material is not available under CC BY or an equally permissive license.</p>
+            <article class="content-section" id="confirmation">
+              <h2>Confirm reuse terms</h2>
+              <p>Contact the IJICS Editorial Office when a published article does not state sufficient reuse information.</p><a class="text-action" href="mailto:ijics@caa.org.cn">Contact the Editorial Office</a>
             </article>`,
   })
 );
@@ -275,24 +265,24 @@ pages.set(
   informationPage({
     id: "copyright-terms",
     label: "Copyright Terms",
-    title: "Authors retain copyright",
+    title: "Transfer of Copyright Agreement",
     lead:
-      "IJICS authors keep the full copyright of their work while allowing reuse through CC BY 4.0.",
+      "All authors must sign the IJICS Transfer of Copyright Agreement before publication.",
     facts: [
-      fact("Copyright owner", "Author(s)"),
-      fact("Publication license", "CC BY 4.0"),
-      fact("Reuse", "With attribution"),
+      fact("Agreement", "Required"),
+      fact("Timing", "Before publication"),
+      fact("Author rights", "Proprietary rights unaffected"),
       fact("Third-party rights", "Permission may be required"),
     ],
     toc: [
+      ["agreement", "Agreement"],
       ["author-rights", "Author rights"],
-      ["reader-reuse", "Reader reuse"],
       ["third-party-rights", "Third-party rights"],
     ],
     content: `
-            <article class="content-section" id="author-rights"><h2>Author rights</h2><p>Authors retain the full copyright of their work.</p></article>
-            <article class="content-section" id="reader-reuse"><h2>Reader reuse</h2><p>Published articles are distributed under CC BY 4.0. Users may read, download, copy, distribute, and adapt the material for any purpose when appropriate credit is given to the original author(s) and IJICS.</p></article>
-            <article class="content-section" id="third-party-rights"><h2>Third-party rights</h2><p>Figures, tables, text, and other material carrying a separate copyright notice may not be covered by the article license. Authors are responsible for obtaining the permissions needed to include and publish that material.</p></article>`,
+            <article class="content-section" id="agreement"><h2>Copyright agreement</h2><p>All authors must sign the Transfer of Copyright Agreement, available in the online submission system, before the paper can be published.</p></article>
+            <article class="content-section" id="author-rights"><h2>Author rights</h2><p>The official Information for Authors states that the agreement enables the publisher to protect copyrighted material for authors without affecting their proprietary rights.</p></article>
+            <article class="content-section" id="third-party-rights"><h2>Third-party rights</h2><p>Authors are responsible for obtaining permission from the copyright holder to reproduce figures or other material for which copyright already exists.</p></article>`,
   })
 );
 
@@ -301,26 +291,26 @@ pages.set(
   informationPage({
     id: "publication-ethics",
     label: "Publication Ethics",
-    title: "Ethical requirements for every submission",
+    title: "Originality and submission integrity",
     lead:
-      "IJICS requires original work, responsible authorship, single-journal submission, and disclosure of generative AI use.",
+      "IJICS requires unpublished work and applies quantitative checks for similarity, self-citation, and reference-source concentration.",
     facts: [
       fact("Originality", "Required"),
       fact("Duplicate submission", "Prohibited"),
-      fact("Author approval", "Required"),
-      fact("AI use", "Must be declared"),
+      fact("Overall similarity", "Below 30%"),
+      fact("Single-source similarity", "Below 15%"),
     ],
     toc: [
       ["plagiarism", "Plagiarism"],
       ["duplicate-submission", "Duplicate submission"],
-      ["authorship", "Authorship"],
-      ["ai-use", "AI use"],
+      ["self-citation", "Self-citation"],
+      ["source-diversity", "Source diversity"],
     ],
     content: `
-            <article class="content-section" id="plagiarism"><h2>Plagiarism</h2><p>Manuscripts must be original. All submissions are screened for plagiarism before peer review. High similarity scores may result in rejection without review.</p></article>
-            <article class="content-section" id="duplicate-submission"><h2>Duplicate submission</h2><p>Manuscripts must not be submitted simultaneously to multiple journals or published elsewhere in English or any other language.</p></article>
-            <article class="content-section" id="authorship"><h2>Authorship</h2><p>All listed authors must have made substantial contributions to the work and have approved the final version. The corresponding author is responsible for ensuring this.</p></article>
-            <article class="content-section" id="ai-use"><h2>AI use statement</h2><p>If generative AI tools were used in manuscript preparation, including text generation, data analysis, or figure creation, this must be declared in the manuscript. AI tools cannot be listed as authors.</p></article>`,
+            <article class="content-section" id="plagiarism"><h2>Similarity screening</h2><p>All submissions are screened for similarity. Overall similarity should remain below 30%, and similarity to any single source should remain below 15%.</p></article>
+            <article class="content-section" id="duplicate-submission"><h2>Prior and simultaneous publication</h2><p>Submitted manuscripts must not have been published and must not be submitted or published elsewhere in English or another language without the publisher's written consent.</p></article>
+            <article class="content-section" id="self-citation"><h2>Author self-citation</h2><p>Self-citations from all authors should account for less than 20% of the references.</p></article>
+            <article class="content-section" id="source-diversity"><h2>Reference-source diversity</h2><p>References from one person, journal, conference, or other single source should account for less than 20% of the references.</p></article>`,
   })
 );
 
@@ -329,11 +319,11 @@ pages.set(
   informationPage({
     id: "editorial-process",
     label: "Editorial Process",
-    title: "Double-blind peer review",
+    title: "Single-blind peer review",
     lead:
-      "IJICS uses independent review, author and reviewer anonymity, plagiarism screening, and a defined proof-correction stage.",
+      "Each published article is reviewed by at least two independent reviewers. Reviewer identities are not known to authors.",
     facts: [
-      fact("Review model", "Double blind"),
+      fact("Review model", "Single blind"),
       fact("Independent reviewers", "Minimum two"),
       fact("Plagiarism screening", "Before acceptance"),
       fact("Proof return", "Within 5 days"),
@@ -346,7 +336,7 @@ pages.set(
     ],
     content: `
             <article class="content-section" id="submission-received"><h2>Electronic submission</h2><p>Manuscripts are submitted through the IJICS online system. The submitting author receives an email acknowledging successful reception and assigning a reference number.</p></article>
-            <article class="content-section" id="peer-review"><h2>Independent double-blind review</h2><p>Each published article is reviewed by a minimum of two independent reviewers. Reviewer identities are not known to the authors, and author identities are not known to the reviewers. Articles are screened for plagiarism before acceptance.</p></article>
+            <article class="content-section" id="peer-review"><h2>Independent single-blind review</h2><p>Each published article is reviewed by a minimum of two independent reviewers. Reviewer identities are not known to authors.</p></article>
             <article class="content-section" id="communication"><h2>Editorial communication</h2><p>Authors can inquire about review status by email. When modification is required, the author is informed by email.</p></article>
             <article class="content-section" id="proof-correction"><h2>Proof correction</h2><p>Corresponding authors receive a PDF proof for final review. Corrections should be submitted within 5 days. Major changes to the manuscript are not permitted at this stage.</p></article>`,
   })
@@ -395,7 +385,7 @@ pages.set(
     lead:
       "Reviewers can verify the invitation, read the IJICS review model, and enter the official review system from one page.",
     facts: [
-      fact("Review model", "Double blind"),
+      fact("Review model", "Single blind"),
       fact("Reviewers per article", "Minimum two"),
       fact("Screening", "Plagiarism check"),
       fact("Portal", "Official IJICS login"),
@@ -407,8 +397,8 @@ pages.set(
       ["review-login", "Reviewer login"],
     ],
     content: `
-            <article class="content-section" id="review-rules"><h2>Review rules</h2><p>IJICS uses a double-blind peer review process. Reviewer identities are not known to the authors, and author identities are not known to the reviewers. Each published article is reviewed by a minimum of two independent reviewers.</p></article>
-            <article class="content-section" id="review-requirements"><h2>Review requirements</h2><ul class="check-list"><li>Assess whether the manuscript fits the journal scope.</li><li>Consider academic novelty, thoughtfulness, and practicability.</li><li>Check whether the main contribution is clear and supported.</li><li>Protect the double-blind review process.</li><li>Raise potential plagiarism or duplicate-publication concerns.</li></ul></article>
+            <article class="content-section" id="review-rules"><h2>Review rules</h2><p>IJICS uses a single-blind peer review process. Reviewer identities are not known to authors. Each published article is reviewed by a minimum of two independent reviewers.</p></article>
+            <article class="content-section" id="review-requirements"><h2>Review requirements</h2><ul class="check-list"><li>Assess whether the manuscript fits the journal scope.</li><li>Consider academic novelty, thoughtfulness, and practicability.</li><li>Check whether the main contribution is clear and supported.</li><li>Protect reviewer anonymity.</li><li>Raise potential plagiarism or duplicate-publication concerns.</li></ul></article>
             <article class="content-section" id="invitation"><h2>Verify the invitation</h2><p>Confirm that the invitation identifies IJICS and provides a manuscript title or reference. Use the official domain and Editorial Office contact when a message or link is unclear.</p><div class="identity-check"><span>Official domain</span><strong>www.ijics.cn</strong><span>Editorial Office</span><strong>ijics@caa.org.cn</strong></div></article>
             <article class="content-section" id="review-login"><h2>Reviewer login</h2><p>The IJICS online system is used for journal workflow access.</p><a class="primary-action" href="https://www.ijics.cn/user/login">View more</a></article>`,
   })
@@ -437,7 +427,7 @@ pages.set(
     content: `
             <article class="content-section" id="official-identity"><h2>Official identity</h2><p>The journal website is <strong>www.ijics.cn</strong>. The public Editorial Office email is <strong>ijics@caa.org.cn</strong>.</p></article>
             <article class="content-section" id="login-check"><h2>Check the login address</h2><p>The journal workflow login is located at <strong>https://www.ijics.cn/user/login</strong>. Check the browser address before entering credentials.</p></article>
-            <article class="content-section" id="payment-check"><h2>Check payment claims</h2><p>IJICS is a Diamond Open Access journal, and publishing is free of charge for all authors. Do not act on a payment request that conflicts with the public Article Processing Charge page.</p></article>
+            <article class="content-section" id="payment-check"><h2>Check payment claims</h2><p>The current IJICS website states that manuscript processing is free of charge at present and that a publication fee may be introduced in the future. Verify every payment request against the current official fee page or with the Editorial Office.</p></article>
             <article class="content-section" id="report-message"><h2>Report a suspicious message</h2><p>Forward the sender address, link, and manuscript reference to the Editorial Office. Do not include account passwords or payment credentials.</p><a class="primary-action" href="mailto:ijics@caa.org.cn">Email Editorial Office</a></article>`,
   })
 );
@@ -466,7 +456,7 @@ pages.set(
     content: `
             <article class="content-section" id="journal-identity"><h2>Journal identity</h2><dl class="metadata-list"><div><dt>Full title</dt><dd>The International Journal of Intelligent Control and Systems</dd></div><div><dt>Abbreviation</dt><dd>IJICS</dd></div><div><dt>ISSN</dt><dd>0218-7965</dd></div><div><dt>Official website</dt><dd><a href="https://www.ijics.cn/">https://www.ijics.cn/</a></dd></div></dl></article>
             <article class="content-section" id="society-listing"><h2>Society listing</h2><p>IJICS is listed among the journals of the Chinese Association of Automation (CAA).</p><a class="text-action" href="https://www.caa.org.cn/Content/320.html">View the CAA journal listing</a></article>
-            <article class="content-section" id="publishing-model"><h2>Publishing model</h2><p>IJICS operates as a Diamond Open Access journal. Articles are immediately and permanently available online, authors are not charged a publication fee, and articles are distributed under CC BY 4.0 while authors retain copyright.</p><div class="inline-links"><a href="./open-access.html#open-access">Open Access Policy</a><a href="./article-processing-charge.html#article-processing-charge">Author Charges</a><a href="./licensing-terms.html#licensing-terms">Licensing Terms</a></div></article>
+            <article class="content-section" id="publishing-model"><h2>Publishing information</h2><p>The current IJICS website states that manuscript processing is free of charge at present. It requires all authors to sign a Transfer of Copyright Agreement before publication. Authors and readers should consult the official policy pages for the terms applicable at the time of submission or publication.</p><div class="inline-links"><a href="./open-access.html#open-access">Open Access Information</a><a href="./article-processing-charge.html#article-processing-charge">Author Charges</a><a href="./copyright-terms.html#copyright-terms">Copyright Terms</a></div></article>
             <article class="content-section" id="editorial-governance"><h2>Editorial governance</h2><p>The public Editorial Board page identifies the Editor-in-Chief, Deputy Editors, Associate Editors, and their institutional affiliations. Editorial Office contact information is provided below.</p><a class="text-action" href="./editorial-board.html#editorial-board">View the Editorial Board</a></article>
             <article class="content-section" id="editorial-office"><h2>Editorial Office</h2><dl class="metadata-list"><div><dt>Email</dt><dd><a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a></dd></div><div><dt>Telephone</dt><dd>010-61943066</dd></div><div><dt>Address</dt><dd>Room 1505, Satellite Building, No. 63 Zhichun Road, Haidian District, Beijing 100190, China</dd></div></dl></article>`,
   })
@@ -552,7 +542,7 @@ pages.set(
       fact("Language", "English"),
       fact("Preferred file", "PDF"),
       fact("Keywords", "4-6"),
-      fact("Review", "Double blind"),
+      fact("Review", "Single blind"),
     ],
     toc: [
       ["submission-checklist", "Checklist"],
@@ -569,12 +559,11 @@ pages.set(
             <details class="content-disclosure" id="manuscript-structure"><summary>Manuscript structure</summary><div class="disclosure-body"><ol class="structured-list"><li><strong>Title page</strong><span>Concise title, all author names, affiliations, email addresses, and the corresponding author.</span></li><li><strong>Abstract</strong><span>Purpose, methods, main results, and conclusions. Avoid references, figures, and tables.</span></li><li><strong>Keywords</strong><span>Provide 4-6 keywords.</span></li><li><strong>Introduction</strong><span>Background, research questions, and significance.</span></li><li><strong>Materials and Methods</strong><span>Methods described in enough detail to support reproducibility.</span></li><li><strong>Results and Discussion</strong><span>Presentation and interpretation of findings.</span></li><li><strong>Conclusions</strong><span>Key findings and implications.</span></li><li><strong>Acknowledgments</strong><span>Funding sources, fund name, and fund number.</span></li><li><strong>References</strong><span>All cited references in ascending numerical order.</span></li><li><strong>Author biography</strong><span>Color photograph, education, current position, and research interests.</span></li></ol></div></details>
             <details class="content-disclosure"><summary>Equations, figures, tables, and references</summary><div class="disclosure-body"><h3>Equations</h3><p>Label equations in order. Refer to them as Eq. (1) or Eqs. (1) and (2). Variables are usually italicized and must be defined at first use.</p><h3>Figures</h3><p>Label and cite figures in order as Fig. 1 or Figs. 1 and 2. Each figure needs a concise caption and should appear after its first citation. Vector graphics or high-resolution files of at least 300 dpi are recommended.</p><h3>Tables</h3><p>Label and cite tables in order as Table 1 or Tables 1 and 2. Each table needs a concise caption and should appear after its first citation.</p><h3>Reference examples</h3><div class="reference-examples"><p><strong>Journal:</strong> D. Payton, R. Estkowski, and M. Howard, Compound behaviors in pheromone robotics, Robot. Auton. Syst., 2003, 44(3), 229-240.</p><p><strong>Book:</strong> B. Ran and D. E. Boyce, Modeling Dynamic Transportation Network. Berlin, Germany: Springer-Verlag, 1996, 69-83.</p><p><strong>Website:</strong> J. M. Tour, Image processing toolbox for use with MATLAB: User's guide [Online], http://www.mathworks.com, 3 November 2006.</p></div></div></details>
             <details class="content-disclosure" id="submission-process"><summary>Submission and reviewer suggestions</summary><div class="disclosure-body"><ol class="numbered-flow"><li><strong>Submit online.</strong><span>Register and sign in at https://www.ijics.cn/user/login.</span></li><li><strong>Upload electronically.</strong><span>DOC and PDF files are accepted; PDF is preferred.</span></li><li><strong>Check authorship.</strong><span>Confirm that the manuscript is uploaded correctly and all co-authors are included.</span></li><li><strong>Keep the reference number.</strong><span>An email acknowledges successful reception.</span></li><li><strong>Follow status by email.</strong><span>Modification requests are communicated by email.</span></li></ol><h3>Reviewer suggestions</h3><p>Authors may suggest 2-3 potential reviewers with names, institutional email addresses, and reasons for suggestion. Suggested reviewers should not have co-authored or collaborated with the authors within the past three years.</p><a class="primary-action" href="https://www.ijics.cn/user/login">View more</a></div></details>
-            <details class="content-disclosure"><summary>Peer review, proof correction, and ethics</summary><div class="disclosure-body"><h3>Peer review</h3><p>Each published article is reviewed by a minimum of two independent reviewers using a double-blind process. Articles are screened for plagiarism before acceptance.</p><h3>Proof correction</h3><p>Corresponding authors receive a PDF proof for final review. Corrections should be submitted within 5 days. Major manuscript changes are not permitted at this stage.</p><div class="inline-links"><a href="./editorial-process.html#editorial-process">Editorial Process</a><a href="./publication-ethics.html#publication-ethics">Publication Ethics</a></div></div></details>`,
+            <details class="content-disclosure"><summary>Peer review and copyright</summary><div class="disclosure-body"><h3>Peer review</h3><p>Each published article is reviewed by a minimum of two independent reviewers using a single-blind process. Reviewer identities are not known to authors.</p><h3>Copyright agreement</h3><p>All authors must sign the Transfer of Copyright Agreement before publication. Authors are responsible for obtaining permission to reproduce material for which copyright already exists.</p><div class="inline-links"><a href="./editorial-process.html#editorial-process">Editorial Process</a><a href="./copyright-terms.html#copyright-terms">Copyright Terms</a></div></div></details>`,
   })
 );
 
 for (const [file, content] of pages) {
-  if (file === "aim-scope.html" || file === "author-center.html") continue;
   const path = join(demoDir, file);
   const html = await readFile(path, "utf8");
   const start = html.indexOf('      <div class="content-flow');

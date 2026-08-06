@@ -161,8 +161,8 @@ const footer = `    <footer class="site-footer" id="contact" aria-label="Journal
           <span>The International Journal of Intelligent Control and Systems</span>
           <span>IJICS</span>
           <span>ISSN: 0218-7965</span>
-          <span>Diamond Open Access</span>
-          <span>License: CC BY 4.0</span>
+          <span>Peer review: Single blind</span>
+          <span>Current manuscript processing fee: None</span>
           <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a>
           <span>Tel: 010-61943066</span>
           <span>Room 1505, Satellite Building, No. 63 Zhichun Road, Haidian District, Beijing 100190, China</span>

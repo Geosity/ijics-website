@@ -418,7 +418,7 @@ function upgradeRelatedRoutes() {
   const routes = [
     { href: "./aim-scope.html#aim-scope", image: "./assets/aim-scope-hero-network.png", label: "Journal fit", title: "Aim & Scope", description: "Review the research areas, topics, and article profiles welcomed by IJICS." },
     { href: "./instructions-for-authors.html#instructions-for-authors", image: "./assets/instructions-for-authors-hero.png", label: "Prepare", title: "Author guidelines", description: "Check originality, formatting, structure, files, and submission requirements." },
-    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", label: "Peer review", title: "Editorial process", description: "Understand screening, double-blind review, decisions, and publication steps." },
+    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", label: "Peer review", title: "Editorial process", description: "Understand the single-blind review process and editorial communication." },
     { href: "./submit-manuscript.html#submit-manuscript", image: "./assets/submit-manuscript-hero.png", label: "Submit", title: "Submit manuscript", description: "Open the official manuscript system and begin your IJICS submission." }
   ];
 
