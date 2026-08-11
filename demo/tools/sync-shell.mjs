@@ -15,10 +15,10 @@ const legacyAliases = new Map([
     <meta name="robots" content="noindex,follow" />
     <meta http-equiv="refresh" content="0; url=./licensing-terms.html#licensing-terms" />
     <link rel="canonical" href="https://www.ijics.cn/licensing-terms/" />
-    <title>Licensing Terms | IJICS</title>
+    <title>Licensing | IJICS</title>
   </head>
   <body>
-    <p>This page has moved to <a href="./licensing-terms.html#licensing-terms">Licensing Terms</a>.</p>
+    <p>This page has moved to <a href="./licensing-terms.html#licensing-terms">Licensing</a>.</p>
   </body>
 </html>
 `,
@@ -28,36 +28,37 @@ const legacyAliases = new Map([
 const header = `    <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html#home" aria-label="IJICS home">
-          <img class="brand-logo" src="./assets/ijics-logo-lockup-transparent.png" width="798" height="128" alt="The International Journal of Intelligent Control and Systems" />
+          <img class="brand-logo" src="./assets/ijics-circle-mark.png" width="640" height="508" alt="IJICS" />
+          <span class="brand-name">The International Journal of<br />Intelligent Control and Systems</span>
         </a>
         <nav class="section-shortcuts" aria-label="Primary navigation">
           <a href="./index.html#home">Home</a>
           <details class="nav-menu">
             <summary>About</summary>
             <div class="nav-menu-panel">
-              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
-              <a href="./open-access.html#open-access">Open Access</a>
+              <a href="./aim-scope.html#aim-scope">Aims and Scope</a>
               <a href="./editorial-board.html#editorial-board">Editorial Board</a>
-              <a href="./publisher-information.html#publisher-information">Publisher Information</a>
-              <a href="./publication-ethics.html#publication-ethics">Publication Ethics</a>
+              <a href="./publisher-information.html#publisher-information">Journal Information</a>
+              <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
+              <a href="./open-access.html#open-access">Open Access</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>Browse</summary>
+            <summary>Articles</summary>
             <div class="nav-menu-panel">
-              <a href="./index.html#current-issue">Current Issue</a>
-              <a href="./forthcoming-issue.html#forthcoming-issue">Forthcoming Issue</a>
-              <a href="./all-issues.html#all-issues">Journal Archive</a>
-              <a href="./index.html#call-for-papers">Call for Papers</a>
+              <a href="./index.html#current-issue">Latest Issue</a>
+              <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
+              <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+              <a href="./index.html#call-for-papers">Calls for Papers</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>Author Center</summary>
+            <summary>For Authors</summary>
             <div class="nav-menu-panel">
-              <a href="./author-center.html#author-center">Author Center Overview</a>
-              <a href="./instructions-for-authors.html#instructions-for-authors">Instructions for Authors</a>
+              <a href="./author-center.html#author-center">For Authors</a>
+              <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
               <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-              <a href="./article-processing-charge.html#article-processing-charge">Author Charges</a>
+              <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
             </div>
           </details>
           <a href="./search-articles.html#search-articles">Search</a>
@@ -72,13 +73,13 @@ const header = `    <header class="site-header">
             <select id="issueSelect" aria-label="Article collection">
               <option value="">All articles</option>
               <optgroup label="Articles">
-                <option value="current">Current Issue</option>
-                <option value="forthcoming">Forthcoming Issue</option>
-                <option value="archive">Journal Archive</option>
+                <option value="current">Latest Issue</option>
+                <option value="forthcoming">Online First</option>
+                <option value="archive">Volumes and Issues</option>
               </optgroup>
               <optgroup label="Journal information">
-                <option value="cfp">Call for Papers</option>
-                <option value="authors">Author Center</option>
+                <option value="cfp">Calls for Papers</option>
+                <option value="authors">For Authors</option>
               </optgroup>
             </select>
             <button type="submit" aria-label="Search articles">Search</button>
@@ -103,7 +104,7 @@ const quickAccess = `      <aside class="quick-access-float" id="site-structure"
                 <path d="M18 20a6 6 0 0 0-12 0"></path>
               </svg>
             </span>
-            <span class="quick-access-name">Author Center</span>
+            <span class="quick-access-name">For Authors</span>
           </a>
           <a class="quick-access-link" href="https://www.ijics.cn/user/login">
             <span class="quick-access-icon" aria-hidden="true">
@@ -115,45 +116,44 @@ const quickAccess = `      <aside class="quick-access-float" id="site-structure"
                 <path d="M8 9h2"></path>
               </svg>
             </span>
-            <span class="quick-access-name">Manuscript System</span>
+            <span class="quick-access-name">Submit Manuscript</span>
           </a>
         </nav>
       </aside>`;
 
-const footer = `    <footer class="site-footer" id="contact" aria-label="Journal directory and compliance information">
+const footer = `    <footer class="site-footer" id="contact" aria-label="Journal information and navigation">
       <div class="footer-compliance">
-        <p class="eyebrow">Journal directory</p>
         <nav class="footer-directory" aria-label="Complete journal navigation">
           <section class="footer-directory-group">
             <h2>About</h2>
-            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
-            <a href="./open-access.html#open-access">Open Access</a>
+            <a href="./aim-scope.html#aim-scope">Aims and Scope</a>
             <a href="./editorial-board.html#editorial-board">Editorial Board</a>
             <a href="./editorial-board.html#editorial-office">Editorial Office</a>
-            <a href="./publisher-information.html#publisher-information">Publisher Information</a>
+            <a href="./publisher-information.html#publisher-information">Journal Information</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Browse</h2>
-            <a href="./index.html#current-issue">Current Issue</a>
-            <a href="./forthcoming-issue.html#forthcoming-issue">Forthcoming Issue</a>
-            <a href="./all-issues.html#all-issues">Journal Archive</a>
-            <a href="./search-articles.html#search-articles">Search</a>
-            <a href="./index.html#call-for-papers">Call for Papers</a>
+            <h2>Articles</h2>
+            <a href="./index.html#current-issue">Latest Issue</a>
+            <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
+            <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+            <a href="./search-articles.html#search-articles">Search Articles</a>
+            <a href="./index.html#call-for-papers">Calls for Papers</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Author Center</h2>
-            <a href="./author-center.html#author-center">Author Center Overview</a>
-            <a href="./instructions-for-authors.html#instructions-for-authors">Instructions for Authors</a>
-            <a href="./submit-manuscript.html#submit-manuscript">Submit Manuscript</a>
+            <h2>For Authors</h2>
+            <a href="./author-center.html#author-center">For Authors</a>
+            <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
+            <a href="./submit-manuscript.html#submit-manuscript">Submit a Manuscript</a>
             <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-            <a href="./article-processing-charge.html#article-processing-charge">Author Charges</a>
-            <a href="./reviewers.html#reviewers">For Reviewers</a>
+            <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
+            <a href="./reviewers.html#reviewers">Guide for Reviewers</a>
           </section>
           <section class="footer-directory-group">
             <h2>Policies</h2>
-            <a href="./publication-ethics.html#publication-ethics">Publication Ethics</a>
-            <a href="./licensing-terms.html#licensing-terms">Licensing Terms</a>
-            <a href="./copyright-terms.html#copyright-terms">Copyright Terms</a>
+            <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
+            <a href="./open-access.html#open-access">Open Access</a>
+            <a href="./licensing-terms.html#licensing-terms">Licensing</a>
+            <a href="./copyright-terms.html#copyright-terms">Copyright</a>
             <a href="./anti-fraud.html#anti-fraud">Anti-Fraud Notice</a>
           </section>
         </nav>
@@ -182,12 +182,12 @@ for (const file of files) {
   }
   let html = await readFile(path, "utf8");
   html = html.replace(/    <header class="site-header">[\s\S]*?<\/header>/, header);
-  html = html.replace(/      <aside class="quick-access-float[^"]*"[\s\S]*?<\/aside>/, quickAccess);
+  html = html.replace(/      <aside class="quick-access-float[^"]*"[\s\S]*?<\/aside>/, "");
   html = html.replace(/    <footer class="site-footer"[\s\S]*?<\/footer>/, footer);
   html = html.replace(/<title>(.*?) \| IJICS Website Preview<\/title>/, "<title>$1 | IJICS</title>");
   html = html.replace("<title>IJICS Website Preview</title>", "<title>IJICS | The International Journal of Intelligent Control and Systems</title>");
-  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=101");
-  html = html.replace(/script\.js\?v=\d+/g, "script.js?v=101");
+  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=144");
+  html = html.replace(/script\.js\?v=\d+/g, "script.js?v=144");
   await writeFile(path, html);
 }
 

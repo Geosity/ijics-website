@@ -26,10 +26,76 @@ const featureButtons = Array.from(document.querySelectorAll("[data-feature-slide
 const citationDialog = document.querySelector("#citationDialog");
 const citationDialogArticle = document.querySelector("#citationDialogArticle");
 const citationFormatButtons = Array.from(document.querySelectorAll("[data-citation-format]"));
+const latestIssueCover = document.querySelector("#latestIssueCover");
+const latestIssueCoverLink = document.querySelector("#latestIssueCoverLink");
+const latestIssueLabel = document.querySelector("#latestIssueLabel");
+const latestIssueCount = document.querySelector("#latestIssueCount");
+const latestIssueDate = document.querySelector("#latestIssueDate");
+const latestIssueLink = document.querySelector("#latestIssueLink");
 const currentPageName = window.location.pathname.split("/").pop() || "index.html";
 let activeArticleType = "all";
 let toastTimer;
 let activeCitation;
+
+function formatIssueDate(value) {
+  if (!value) return "";
+  const date = new Date(`${value}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+async function refreshLatestIssue() {
+  if (!latestIssueCover || !latestIssueCoverLink || !latestIssueLabel || !latestIssueLink) return;
+
+  const officialOrigin = "https://www.ijics.cn";
+  const isOfficialHost = window.location.hostname === "ijics.cn" || window.location.hostname.endsWith(".ijics.cn");
+  if (!isOfficialHost) return;
+  const archiveUrl = "/all-issues";
+
+  try {
+    const archiveResponse = await fetch(archiveUrl, { cache: "no-store" });
+    if (!archiveResponse.ok) throw new Error(`Issue archive returned ${archiveResponse.status}`);
+    const archiveDocument = new DOMParser().parseFromString(await archiveResponse.text(), "text/html");
+    const newestIssue = archiveDocument.querySelector('a[href^="/all-issues/article/"]');
+    const cover = newestIssue?.querySelector("img");
+    const issueText = newestIssue?.querySelector("p")?.textContent || cover?.alt || "";
+    const issueMatch = issueText.match(/(20\d{2}).*?Volume\s*:?\s*(\d+).*?(?:Number|Issue)\s*:?\s*(\d+)/i);
+    if (!newestIssue || !cover || !issueMatch) throw new Error("Latest issue metadata is incomplete");
+
+    const [, year, volume, issue] = issueMatch;
+    const issueUrl = new URL(newestIssue.getAttribute("href"), officialOrigin).href;
+    const coverUrl = new URL(cover.getAttribute("src"), officialOrigin).href;
+    const label = `Volume ${volume}, Issue ${issue} (${year})`;
+
+    latestIssueCover.src = coverUrl;
+    latestIssueCover.alt = `Cover of ${label}`;
+    latestIssueCoverLink.href = issueUrl;
+    latestIssueCoverLink.setAttribute("aria-label", `View ${label}`);
+    latestIssueLabel.textContent = label;
+    latestIssueLink.href = issueUrl;
+
+    try {
+      const issueResponse = await fetch(newestIssue.getAttribute("href"), { cache: "no-store" });
+      if (!issueResponse.ok) return;
+      const issueDocument = new DOMParser().parseFromString(await issueResponse.text(), "text/html");
+      const articleCount = issueDocument.querySelectorAll(".article-list-item").length;
+      const publicationDate = issueDocument.querySelector('meta[name="citation_publication_date"]')?.content;
+      if (articleCount && latestIssueCount) latestIssueCount.textContent = `${articleCount} Articles`;
+      if (publicationDate && latestIssueDate) latestIssueDate.textContent = formatIssueDate(publicationDate);
+    } catch (error) {
+      // The cover and issue metadata remain current even if the detail page is unavailable.
+    }
+  } catch (error) {
+    // Static fallback content keeps the hero complete during local preview or network failure.
+  }
+}
+
+refreshLatestIssue();
 
 if (featureCarousel && featureTrack && featureSlides.length > 1) {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -416,10 +482,10 @@ function upgradeRelatedRoutes() {
   if (!routeSections.length) return;
 
   const routes = [
-    { href: "./aim-scope.html#aim-scope", image: "./assets/aim-scope-hero-network.png", label: "Journal fit", title: "Aim & Scope", description: "Review the research areas, topics, and article profiles welcomed by IJICS." },
-    { href: "./instructions-for-authors.html#instructions-for-authors", image: "./assets/instructions-for-authors-hero.png", label: "Prepare", title: "Author guidelines", description: "Check originality, formatting, structure, files, and submission requirements." },
-    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", label: "Peer review", title: "Editorial process", description: "Understand the single-blind review process and editorial communication." },
-    { href: "./submit-manuscript.html#submit-manuscript", image: "./assets/submit-manuscript-hero.png", label: "Submit", title: "Submit manuscript", description: "Open the official manuscript system and begin your IJICS submission." }
+    { href: "./aim-scope.html#aim-scope", image: "./assets/aim-scope-hero-network.png", title: "Aims and Scope", description: "Review the journal's subject coverage and types of contributions." },
+    { href: "./instructions-for-authors.html#instructions-for-authors", image: "./assets/instructions-for-authors-hero.png", title: "Guide for Authors", description: "Prepare a manuscript in accordance with the journal's requirements." },
+    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", title: "Peer Review Process", description: "Read the journal's editorial and peer review workflow." },
+    { href: "./submit-manuscript.html#submit-manuscript", image: "./assets/submit-manuscript-hero.png", title: "Submit a Manuscript", description: "Go to the official manuscript submission system." }
   ];
 
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
@@ -428,12 +494,12 @@ function upgradeRelatedRoutes() {
     const cards = routes.map((route) => {
       const routePage = route.href.replace("./", "").split("#")[0];
       const currentAttribute = routePage === currentPage ? ' aria-current="page"' : "";
-      return `<a href="${route.href}"${currentAttribute}><span class="related-route-visual" aria-hidden="true"><img src="${route.image}" alt="" /></span><span class="related-route-copy"><small>${route.label}</small><strong>${route.title}</strong><span>${route.description}</span></span><span class="related-route-arrow" aria-hidden="true">→</span></a>`;
+      return `<a href="${route.href}"${currentAttribute}><span class="related-route-visual" aria-hidden="true"><img src="${route.image}" alt="" /></span><span class="related-route-copy"><strong>${route.title}</strong><span>${route.description}</span></span><span class="related-route-arrow" aria-hidden="true">→</span></a>`;
     }).join("");
 
     section.classList.add("illustrated-related-routes");
     section.setAttribute("aria-labelledby", titleId);
-    section.innerHTML = `<div class="related-routes-heading"><p class="eyebrow">Continue your journey</p><h2 id="${titleId}">Related routes</h2><p>Move from journal fit to manuscript preparation, peer review, and submission.</p></div><nav aria-label="Related journal information">${cards}</nav>`;
+    section.innerHTML = `<div class="related-routes-heading"><h2 id="${titleId}">Related Information</h2></div><nav aria-label="Related journal information">${cards}</nav>`;
 
     if (!section.closest(".guided-information-page")) {
       const scopedWrapper = document.createElement("div");

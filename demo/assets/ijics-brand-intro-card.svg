@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06162c"/>
+      <stop offset="0.55" stop-color="#0b2941"/>
+      <stop offset="1" stop-color="#10263a"/>
+    </linearGradient>
+    <radialGradient id="glowGreen">
+      <stop offset="0" stop-color="#28b997" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#28b997" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGold">
+      <stop offset="0" stop-color="#d98a35" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#d98a35" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0V96" fill="none" stroke="#9cc7e4" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#000814" flood-opacity=".36"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#background)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <circle cx="270" cy="185" r="510" fill="url(#glowGreen)"/>
+  <circle cx="1710" cy="885" r="560" fill="url(#glowGold)"/>
+  <path d="M0 780 C390 630 650 850 980 700 S1540 470 1920 600" fill="none" stroke="#7dd3fc" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M0 835 C390 685 650 905 980 755 S1540 525 1920 655" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="340" y="335" width="1240" height="290" rx="14" fill="#ffffff" fill-opacity=".97"/>
+    <rect x="340" y="335" width="11" height="290" rx="5" fill="#c62438"/>
+  </g>
+  <image x="435" y="404" width="1050" height="168" preserveAspectRatio="xMidYMid meet" xlink:href="ijics-logo-lockup-transparent.png"/>
+
+  <text x="960" y="735" text-anchor="middle" fill="#e3f1ff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="4">
+    INTELLIGENCE · AUTONOMY · COORDINATION · RELIABILITY
+  </text>
+  <text x="960" y="796" text-anchor="middle" fill="#9bbbd7" font-family="Arial, Helvetica, sans-serif" font-size="25" letter-spacing="1.5">
+    Advancing intelligent control and engineered systems
+  </text>
+  <circle cx="872" cy="865" r="4" fill="#28b997"/>
+  <rect x="894" y="863" width="132" height="3" rx="2" fill="#d4e8fa" fill-opacity=".55"/>
+  <circle cx="1048" cy="865" r="4" fill="#d98a35"/>
+</svg>

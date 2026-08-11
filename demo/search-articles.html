@@ -6,43 +6,44 @@
     <title>Search Articles | IJICS</title>
     <meta name="description" content="Search IJICS articles by title, author, DOI, keyword, issue, and article type, with direct article and issue links." />
     <link rel="canonical" href="https://www.ijics.cn/search/" />
-    <link rel="stylesheet" href="./styles.css?v=101" />
+    <link rel="stylesheet" href="./styles.css?v=144" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html#home" aria-label="IJICS home">
-          <img class="brand-logo" src="./assets/ijics-logo-lockup-transparent.png" width="798" height="128" alt="The International Journal of Intelligent Control and Systems" />
+          <img class="brand-logo" src="./assets/ijics-circle-mark.png" width="640" height="508" alt="IJICS" />
+          <span class="brand-name">The International Journal of<br />Intelligent Control and Systems</span>
         </a>
         <nav class="section-shortcuts" aria-label="Primary navigation">
           <a href="./index.html#home">Home</a>
           <details class="nav-menu">
             <summary>About</summary>
             <div class="nav-menu-panel">
-              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
-              <a href="./open-access.html#open-access">Open Access</a>
+              <a href="./aim-scope.html#aim-scope">Aims and Scope</a>
               <a href="./editorial-board.html#editorial-board">Editorial Board</a>
-              <a href="./publisher-information.html#publisher-information">Publisher Information</a>
-              <a href="./publication-ethics.html#publication-ethics">Publication Ethics</a>
+              <a href="./publisher-information.html#publisher-information">Journal Information</a>
+              <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
+              <a href="./open-access.html#open-access">Open Access</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>Browse</summary>
+            <summary>Articles</summary>
             <div class="nav-menu-panel">
-              <a href="./index.html#current-issue">Current Issue</a>
-              <a href="./forthcoming-issue.html#forthcoming-issue">Forthcoming Issue</a>
-              <a href="./all-issues.html#all-issues">Journal Archive</a>
-              <a href="./index.html#call-for-papers">Call for Papers</a>
+              <a href="./index.html#current-issue">Latest Issue</a>
+              <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
+              <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+              <a href="./index.html#call-for-papers">Calls for Papers</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>Author Center</summary>
+            <summary>For Authors</summary>
             <div class="nav-menu-panel">
-              <a href="./author-center.html#author-center">Author Center Overview</a>
-              <a href="./instructions-for-authors.html#instructions-for-authors">Instructions for Authors</a>
+              <a href="./author-center.html#author-center">For Authors</a>
+              <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
               <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-              <a href="./article-processing-charge.html#article-processing-charge">Author Charges</a>
+              <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
             </div>
           </details>
           <a href="./search-articles.html#search-articles">Search</a>
@@ -57,13 +58,13 @@
             <select id="issueSelect" aria-label="Article collection">
               <option value="">All articles</option>
               <optgroup label="Articles">
-                <option value="current">Current Issue</option>
-                <option value="forthcoming">Forthcoming Issue</option>
-                <option value="archive">Journal Archive</option>
+                <option value="current">Latest Issue</option>
+                <option value="forthcoming">Online First</option>
+                <option value="archive">Volumes and Issues</option>
               </optgroup>
               <optgroup label="Journal information">
-                <option value="cfp">Call for Papers</option>
-                <option value="authors">Author Center</option>
+                <option value="cfp">Calls for Papers</option>
+                <option value="authors">For Authors</option>
               </optgroup>
             </select>
             <button type="submit" aria-label="Search articles">Search</button>
@@ -72,42 +73,11 @@
       </div>
     </header>
     <main id="main" class="page-shell">
-      <aside class="quick-access-float" id="site-structure" aria-label="Quick Access">
-        <button type="button" class="quick-access-close" aria-label="Close Quick Access" title="Close Quick Access">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
-            <path d="M18 6 6 18"></path>
-            <path d="m6 6 12 12"></path>
-          </svg>
-        </button>
-        <nav class="quick-access-links" aria-label="Author and manuscript access">
-          <a class="quick-access-link" href="./author-center.html#author-center">
-            <span class="quick-access-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                <circle cx="12" cy="12" r="10"></circle>
-                <circle cx="12" cy="10" r="4"></circle>
-                <path d="M18 20a6 6 0 0 0-12 0"></path>
-              </svg>
-            </span>
-            <span class="quick-access-name">Author Center</span>
-          </a>
-          <a class="quick-access-link" href="https://www.ijics.cn/user/login">
-            <span class="quick-access-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                <path d="M14 2v6h6"></path>
-                <path d="M8 13h8"></path>
-                <path d="M8 17h8"></path>
-                <path d="M8 9h2"></path>
-              </svg>
-            </span>
-            <span class="quick-access-name">Manuscript System</span>
-          </a>
-        </nav>
-      </aside>
+
       <div class="content-flow">
-        <section class="subpage-hero" id="search-articles"><div><p class="eyebrow">Search Articles</p><h1>Find IJICS articles</h1><p>Search by title, author, DOI, keyword, issue, or article type.</p></div><nav class="subpage-jump-row" aria-label="Search sections"><a href="#search-results">Results</a><a href="#search-help">Search tips</a></nav></section>
+        <section class="subpage-hero" id="search-articles"><div><h1>Search Articles</h1><p>Search by title, author, DOI, keyword, issue, or article type.</p></div><nav class="subpage-jump-row" aria-label="Search sections"><a href="#search-results">Search Results</a><a href="#search-help">Search Tips</a></nav></section>
         <section class="page-section">
-          <div class="search-panel"><h2>Filter results</h2><div class="article-type-tabs" aria-label="Article type shortcuts"><button type="button" class="article-type-tab is-active" data-article-type="all" aria-pressed="true" onclick="setArticleType('all')">All <span>(5)</span></button><button type="button" class="article-type-tab" data-article-type="editorial" aria-pressed="false" onclick="setArticleType('editorial')">New AI and New Society <span>(1)</span></button><button type="button" class="article-type-tab" data-article-type="articles" aria-pressed="false" onclick="setArticleType('articles')">Research Articles <span>(3)</span></button><button type="button" class="article-type-tab" data-article-type="communication" aria-pressed="false" onclick="setArticleType('communication')">Communications <span>(1)</span></button></div></div>
+          <div class="search-panel"><h2>Refine Results</h2><div class="article-type-tabs" aria-label="Article type shortcuts"><button type="button" class="article-type-tab is-active" data-article-type="all" aria-pressed="true" onclick="setArticleType('all')">All <span>(5)</span></button><button type="button" class="article-type-tab" data-article-type="editorial" aria-pressed="false" onclick="setArticleType('editorial')">New AI and New Society <span>(1)</span></button><button type="button" class="article-type-tab" data-article-type="articles" aria-pressed="false" onclick="setArticleType('articles')">Research Articles <span>(3)</span></button><button type="button" class="article-type-tab" data-article-type="communication" aria-pressed="false" onclick="setArticleType('communication')">Communications <span>(1)</span></button></div></div>
           <div class="search-results-grid" id="search-results" aria-live="polite">
             <article class="article-card issue-article-card search-result-card" data-article-group="editorial" data-search="agricultural intelligence plant science digital frontier DOI 10.62678/IJICS202606.10376 Mengzhen Kang Xiujuan Wang"><figure class="article-figure"><img src="./assets/article-figure-trust-calibration.png" alt="Article thumbnail" /></figure><div class="article-card-body"><p class="type-label">New AI and New Society</p><h2>Agricultural Intelligence Takes Root: Turning Plant Science into a Digital Frontier</h2><p class="article-authors">Mengzhen Kang, Xiujuan Wang, Marc Jaeger, Véronique Letort, Fei-Yue Wang</p><p class="article-meta">DOI: 10.62678/IJICS202606.10376</p></div><div class="article-actions"><a href="./article-detail.html#article-detail">Article</a><a href="https://doi.org/10.62678/IJICS202606.10376">DOI</a></div></article>
             <article class="article-card issue-article-card search-result-card" data-article-group="articles" data-search="3D point clouds cucumber canopies solar greenhouses Huayang Wang"><figure class="article-figure"><img src="./assets/article-figure-graph-privacy.png" alt="Article thumbnail" /></figure><div class="article-card-body"><p class="type-label">Research Article</p><h2>Research on a Fine Segmentation Algorithm for 3D Point Clouds of High-Density Overlapping Cucumber Canopies in Solar Greenhouses</h2><p class="article-authors">Huayang Wang, Jiayuan Li, Maolin Hou, Yuntao Ma</p><p class="article-meta">Current Issue</p></div><div class="article-actions"><a href="https://www.ijics.cn/article/322">Article</a><a href="https://www.ijics.cn/all-issues/article/43">Issue</a></div></article>
@@ -116,44 +86,43 @@
             <article class="article-card issue-article-card search-result-card" data-article-group="communication" data-search="PPI co-evolution framework parallel physical intelligence Xinyuan Zhang"><figure class="article-figure"><img src="./assets/article-preview.svg" alt="Article thumbnail" /></figure><div class="article-card-body"><p class="type-label">Communications and Letters</p><h2>PPI: A Co-Evolution Framework for Parallel Physical Intelligence</h2><p class="article-authors">Xinyuan Zhang, Jiaxi Liu, Siheng Yi, Hui Zhang</p><p class="article-meta">Current Issue</p></div><div class="article-actions"><a href="https://www.ijics.cn/article/372">Article</a><a href="https://www.ijics.cn/all-issues/article/43">Issue</a></div></article>
           </div>
           <p class="empty-state">No article matches the current filters.</p>
-          <article class="notice-panel" id="search-help"><h2>Search tips</h2><p>Use quotation marks for an exact title. Enter a full DOI to open a specific record, or combine an author surname with a topic keyword to narrow the results.</p></article>
+          <article class="notice-panel" id="search-help"><h2>Search Tips</h2><p>Use quotation marks for an exact title. Enter a full DOI to open a specific record, or combine an author surname with a topic keyword to narrow the results.</p></article>
         </section>
       </div>
     </main>
-    <footer class="site-footer" id="contact" aria-label="Journal directory and compliance information">
+    <footer class="site-footer" id="contact" aria-label="Journal information and navigation">
       <div class="footer-compliance">
-        <p class="eyebrow">Journal directory</p>
         <nav class="footer-directory" aria-label="Complete journal navigation">
           <section class="footer-directory-group">
             <h2>About</h2>
-            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
-            <a href="./open-access.html#open-access">Open Access</a>
+            <a href="./aim-scope.html#aim-scope">Aims and Scope</a>
             <a href="./editorial-board.html#editorial-board">Editorial Board</a>
             <a href="./editorial-board.html#editorial-office">Editorial Office</a>
-            <a href="./publisher-information.html#publisher-information">Publisher Information</a>
+            <a href="./publisher-information.html#publisher-information">Journal Information</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Browse</h2>
-            <a href="./index.html#current-issue">Current Issue</a>
-            <a href="./forthcoming-issue.html#forthcoming-issue">Forthcoming Issue</a>
-            <a href="./all-issues.html#all-issues">Journal Archive</a>
-            <a href="./search-articles.html#search-articles">Search</a>
-            <a href="./index.html#call-for-papers">Call for Papers</a>
+            <h2>Articles</h2>
+            <a href="./index.html#current-issue">Latest Issue</a>
+            <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
+            <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+            <a href="./search-articles.html#search-articles">Search Articles</a>
+            <a href="./index.html#call-for-papers">Calls for Papers</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Author Center</h2>
-            <a href="./author-center.html#author-center">Author Center Overview</a>
-            <a href="./instructions-for-authors.html#instructions-for-authors">Instructions for Authors</a>
-            <a href="./submit-manuscript.html#submit-manuscript">Submit Manuscript</a>
+            <h2>For Authors</h2>
+            <a href="./author-center.html#author-center">For Authors</a>
+            <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
+            <a href="./submit-manuscript.html#submit-manuscript">Submit a Manuscript</a>
             <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-            <a href="./article-processing-charge.html#article-processing-charge">Author Charges</a>
-            <a href="./reviewers.html#reviewers">For Reviewers</a>
+            <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
+            <a href="./reviewers.html#reviewers">Guide for Reviewers</a>
           </section>
           <section class="footer-directory-group">
             <h2>Policies</h2>
-            <a href="./publication-ethics.html#publication-ethics">Publication Ethics</a>
-            <a href="./licensing-terms.html#licensing-terms">Licensing Terms</a>
-            <a href="./copyright-terms.html#copyright-terms">Copyright Terms</a>
+            <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
+            <a href="./open-access.html#open-access">Open Access</a>
+            <a href="./licensing-terms.html#licensing-terms">Licensing</a>
+            <a href="./copyright-terms.html#copyright-terms">Copyright</a>
             <a href="./anti-fraud.html#anti-fraud">Anti-Fraud Notice</a>
           </section>
         </nav>
@@ -171,6 +140,6 @@
         </div>
       </div>
     </footer>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="./script.js?v=101"></script>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="./script.js?v=144"></script>
   </body>
 </html>

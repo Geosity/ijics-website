@@ -3,46 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>For Reviewers | IJICS</title>
+    <title>Guide for Reviewers | IJICS</title>
     <meta name="description" content="IJICS reviewer guidance covering review rules, requirements, confidentiality, conflicts of interest, and the reviewer login route." />
     <link rel="canonical" href="https://www.ijics.cn/reviewers/" />
-    <link rel="stylesheet" href="./styles.css?v=101" />
+    <link rel="stylesheet" href="./styles.css?v=144" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html#home" aria-label="IJICS home">
-          <img class="brand-logo" src="./assets/ijics-logo-lockup-transparent.png" width="798" height="128" alt="The International Journal of Intelligent Control and Systems" />
+          <img class="brand-logo" src="./assets/ijics-circle-mark.png" width="640" height="508" alt="IJICS" />
+          <span class="brand-name">The International Journal of<br />Intelligent Control and Systems</span>
         </a>
         <nav class="section-shortcuts" aria-label="Primary navigation">
           <a href="./index.html#home">Home</a>
           <details class="nav-menu">
             <summary>About</summary>
             <div class="nav-menu-panel">
-              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
-              <a href="./open-access.html#open-access">Open Access</a>
+              <a href="./aim-scope.html#aim-scope">Aims and Scope</a>
               <a href="./editorial-board.html#editorial-board">Editorial Board</a>
-              <a href="./publisher-information.html#publisher-information">Publisher Information</a>
-              <a href="./publication-ethics.html#publication-ethics">Publication Ethics</a>
+              <a href="./publisher-information.html#publisher-information">Journal Information</a>
+              <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
+              <a href="./open-access.html#open-access">Open Access</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>Browse</summary>
+            <summary>Articles</summary>
             <div class="nav-menu-panel">
-              <a href="./index.html#current-issue">Current Issue</a>
-              <a href="./forthcoming-issue.html#forthcoming-issue">Forthcoming Issue</a>
-              <a href="./all-issues.html#all-issues">Journal Archive</a>
-              <a href="./index.html#call-for-papers">Call for Papers</a>
+              <a href="./index.html#current-issue">Latest Issue</a>
+              <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
+              <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+              <a href="./index.html#call-for-papers">Calls for Papers</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>Author Center</summary>
+            <summary>For Authors</summary>
             <div class="nav-menu-panel">
-              <a href="./author-center.html#author-center">Author Center Overview</a>
-              <a href="./instructions-for-authors.html#instructions-for-authors">Instructions for Authors</a>
+              <a href="./author-center.html#author-center">For Authors</a>
+              <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
               <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-              <a href="./article-processing-charge.html#article-processing-charge">Author Charges</a>
+              <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
             </div>
           </details>
           <a href="./search-articles.html#search-articles">Search</a>
@@ -57,13 +58,13 @@
             <select id="issueSelect" aria-label="Article collection">
               <option value="">All articles</option>
               <optgroup label="Articles">
-                <option value="current">Current Issue</option>
-                <option value="forthcoming">Forthcoming Issue</option>
-                <option value="archive">Journal Archive</option>
+                <option value="current">Latest Issue</option>
+                <option value="forthcoming">Online First</option>
+                <option value="archive">Volumes and Issues</option>
               </optgroup>
               <optgroup label="Journal information">
-                <option value="cfp">Call for Papers</option>
-                <option value="authors">Author Center</option>
+                <option value="cfp">Calls for Papers</option>
+                <option value="authors">For Authors</option>
               </optgroup>
             </select>
             <button type="submit" aria-label="Search articles">Search</button>
@@ -72,106 +73,67 @@
       </div>
     </header>
     <main id="main" class="page-shell">
-      <aside class="quick-access-float" id="site-structure" aria-label="Quick Access">
-        <button type="button" class="quick-access-close" aria-label="Close Quick Access" title="Close Quick Access">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
-            <path d="M18 6 6 18"></path>
-            <path d="m6 6 12 12"></path>
-          </svg>
-        </button>
-        <nav class="quick-access-links" aria-label="Author and manuscript access">
-          <a class="quick-access-link" href="./author-center.html#author-center">
-            <span class="quick-access-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                <circle cx="12" cy="12" r="10"></circle>
-                <circle cx="12" cy="10" r="4"></circle>
-                <path d="M18 20a6 6 0 0 0-12 0"></path>
-              </svg>
-            </span>
-            <span class="quick-access-name">Author Center</span>
-          </a>
-          <a class="quick-access-link" href="https://www.ijics.cn/user/login">
-            <span class="quick-access-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                <path d="M14 2v6h6"></path>
-                <path d="M8 13h8"></path>
-                <path d="M8 17h8"></path>
-                <path d="M8 9h2"></path>
-              </svg>
-            </span>
-            <span class="quick-access-name">Manuscript System</span>
-          </a>
-        </nav>
-      </aside>
+
       <div class="content-flow information-page guided-information-page ">
-        <nav class="information-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#home">Home</a><span>/</span><strong>For Reviewers</strong></nav>
+        <nav class="information-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#home">Home</a><span>/</span><strong>Guide for Reviewers</strong></nav>
         <section class="information-hero" id="reviewers">
           <div class="information-hero-copy">
-            <p class="eyebrow">For Reviewers</p>
-            <h1>Review rules and requirements</h1>
+            <h1>Guide for Reviewers</h1>
             <p>Reviewers can verify the invitation, read the IJICS review model, and enter the official review system from one page.</p>
           </div>
           <figure class="information-hero-visual" aria-hidden="true"><img src="./assets/reviewers-hero.png" alt="" /></figure>
-          <section class="information-fact-band" aria-label="For Reviewers facts">
-            <article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"></path><path d="m9 12 2 2 4-4"></path></svg></span><div><strong>Review model</strong><span>Single blind</span></div></article>
-            <article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"></path><path d="m9 12 2 2 4-4"></path></svg></span><div><strong>Reviewers per article</strong><span>Minimum two</span></div></article>
-            <article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z"></path><path d="m9 12 2 2 4-4"></path></svg></span><div><strong>Screening</strong><span>Plagiarism check</span></div></article>
-            <article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 0 20"></path><path d="M12 2a15.3 15.3 0 0 0 0 20"></path><path d="M2 12h20"></path></svg></span><div><strong>Portal</strong><span>Official IJICS login</span></div></article>
-          </section>
         </section>
         <section class="information-layout">
-          <nav class="page-toc" aria-label="For Reviewers sections">
+          <nav class="page-toc" aria-label="Guide for Reviewers sections">
             <strong>On this page</strong>
-            <a href="#review-rules"><span>01</span>Review rules</a>
-            <a href="#review-requirements"><span>02</span>Requirements</a>
-            <a href="#invitation"><span>03</span>Invitation check</a>
-            <a href="#review-login"><span>04</span>Reviewer login</a>
+            <a href="#review-rules">Reviewer Responsibilities</a>
+            <a href="#review-requirements">Review Criteria</a>
+            <a href="#invitation">Verifying a Review Invitation</a>
+            <a href="#review-login">Reviewer Login</a>
           </nav>
           <div class="information-content">
-<article class="content-section" id="review-rules"><h2>Review rules</h2><p>IJICS uses a single-blind peer review process. Reviewer identities are not known to authors. Each published article is reviewed by a minimum of two independent reviewers.</p></article>
-            <article class="content-section" id="review-requirements"><h2>Review requirements</h2><ul class="check-list"><li>Assess whether the manuscript fits the journal scope.</li><li>Consider academic novelty, thoughtfulness, and practicability.</li><li>Check whether the main contribution is clear and supported.</li><li>Protect reviewer anonymity.</li><li>Raise potential plagiarism or duplicate-publication concerns.</li></ul></article>
-            <article class="content-section" id="invitation"><h2>Verify the invitation</h2><p>Confirm that the invitation identifies IJICS and provides a manuscript title or reference. Use the official domain and Editorial Office contact when a message or link is unclear.</p><div class="identity-check"><span>Official domain</span><strong>www.ijics.cn</strong><span>Editorial Office</span><strong>ijics@caa.org.cn</strong></div></article>
-            <article class="content-section" id="review-login"><h2>Reviewer login</h2><p>The IJICS online system is used for journal workflow access.</p><a class="primary-action" href="https://www.ijics.cn/user/login">View more</a></article>
+<article class="content-section" id="review-rules"><h2>Reviewer Responsibilities</h2><p>IJICS uses a double-anonymous peer review process. Reviewers must preserve manuscript confidentiality, disclose relevant competing interests, and provide an objective and evidence-based assessment.</p></article>
+            <article class="content-section" id="review-requirements"><h2>Review Criteria</h2><ul class="check-list"><li>Assess whether the manuscript fits the journal scope.</li><li>Consider originality, scholarly significance, and methodological soundness.</li><li>Check whether the main contribution is clear and supported.</li><li>Protect the confidentiality of the peer review process.</li><li>Raise potential plagiarism or duplicate-publication concerns.</li></ul></article>
+            <article class="content-section" id="invitation"><h2>Verifying a Review Invitation</h2><p>Confirm that the invitation identifies IJICS and provides a manuscript title or reference. Use the official website and Editorial Office contact when a message or link is unclear.</p><div class="identity-check"><span>Official website</span><strong>www.ijics.cn</strong><span>Editorial Office</span><strong>ijics@caa.org.cn</strong></div></article>
+            <article class="content-section" id="review-login"><h2>Reviewer Login</h2><p>The IJICS online system is used for journal workflow access.</p><a class="primary-action" href="https://www.ijics.cn/user/login">Log In as a Reviewer</a></article>
           </div>
         </section>
-        <section class="aim-related-routes" aria-labelledby="reviewers-related-routes"><h2 id="reviewers-related-routes">Related routes</h2><nav aria-label="Related journal information"><a href="./aim-scope.html#aim-scope"><strong>Aim &amp; Scope</strong><small>Check journal fit</small></a><a href="./instructions-for-authors.html#instructions-for-authors"><strong>Author guidelines</strong><small>Prepare the manuscript</small></a><a href="./editorial-process.html#editorial-process"><strong>Editorial process</strong><small>Understand peer review</small></a><a href="./submit-manuscript.html#submit-manuscript"><strong>Submit manuscript</strong><small>Open the official route</small></a></nav></section>
+        <section class="aim-related-routes" aria-labelledby="reviewers-related-routes"><h2 id="reviewers-related-routes">Related Information</h2><nav aria-label="Related journal information"><a href="./aim-scope.html#aim-scope"><strong>Aims and Scope</strong><small>Review the journal's subject coverage</small></a><a href="./instructions-for-authors.html#instructions-for-authors"><strong>Guide for Authors</strong><small>Prepare a manuscript for submission</small></a><a href="./editorial-process.html#editorial-process"><strong>Peer Review Process</strong><small>Read the editorial workflow</small></a><a href="./submit-manuscript.html#submit-manuscript"><strong>Submit a Manuscript</strong><small>Go to the submission system</small></a></nav></section>
       </div>
     </main>
-    <footer class="site-footer" id="contact" aria-label="Journal directory and compliance information">
+    <footer class="site-footer" id="contact" aria-label="Journal information and navigation">
       <div class="footer-compliance">
-        <p class="eyebrow">Journal directory</p>
         <nav class="footer-directory" aria-label="Complete journal navigation">
           <section class="footer-directory-group">
             <h2>About</h2>
-            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
-            <a href="./open-access.html#open-access">Open Access</a>
+            <a href="./aim-scope.html#aim-scope">Aims and Scope</a>
             <a href="./editorial-board.html#editorial-board">Editorial Board</a>
             <a href="./editorial-board.html#editorial-office">Editorial Office</a>
-            <a href="./publisher-information.html#publisher-information">Publisher Information</a>
+            <a href="./publisher-information.html#publisher-information">Journal Information</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Browse</h2>
-            <a href="./index.html#current-issue">Current Issue</a>
-            <a href="./forthcoming-issue.html#forthcoming-issue">Forthcoming Issue</a>
-            <a href="./all-issues.html#all-issues">Journal Archive</a>
-            <a href="./search-articles.html#search-articles">Search</a>
-            <a href="./index.html#call-for-papers">Call for Papers</a>
+            <h2>Articles</h2>
+            <a href="./index.html#current-issue">Latest Issue</a>
+            <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
+            <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+            <a href="./search-articles.html#search-articles">Search Articles</a>
+            <a href="./index.html#call-for-papers">Calls for Papers</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Author Center</h2>
-            <a href="./author-center.html#author-center">Author Center Overview</a>
-            <a href="./instructions-for-authors.html#instructions-for-authors">Instructions for Authors</a>
-            <a href="./submit-manuscript.html#submit-manuscript">Submit Manuscript</a>
+            <h2>For Authors</h2>
+            <a href="./author-center.html#author-center">For Authors</a>
+            <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
+            <a href="./submit-manuscript.html#submit-manuscript">Submit a Manuscript</a>
             <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-            <a href="./article-processing-charge.html#article-processing-charge">Author Charges</a>
-            <a href="./reviewers.html#reviewers">For Reviewers</a>
+            <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
+            <a href="./reviewers.html#reviewers">Guide for Reviewers</a>
           </section>
           <section class="footer-directory-group">
             <h2>Policies</h2>
-            <a href="./publication-ethics.html#publication-ethics">Publication Ethics</a>
-            <a href="./licensing-terms.html#licensing-terms">Licensing Terms</a>
-            <a href="./copyright-terms.html#copyright-terms">Copyright Terms</a>
+            <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
+            <a href="./open-access.html#open-access">Open Access</a>
+            <a href="./licensing-terms.html#licensing-terms">Licensing</a>
+            <a href="./copyright-terms.html#copyright-terms">Copyright</a>
             <a href="./anti-fraud.html#anti-fraud">Anti-Fraud Notice</a>
           </section>
         </nav>
@@ -189,6 +151,6 @@
         </div>
       </div>
     </footer>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="./script.js?v=101"></script>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="./script.js?v=144"></script>
   </body>
 </html>

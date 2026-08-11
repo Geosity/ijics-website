@@ -140,11 +140,12 @@ def main():
 
         if path.name == "index.html":
             homepage_requirements = (
-                "Open Access",
-                "Current Processing Fee: None",
-                "International Editorial Board",
-                "Single-Blind Peer Review",
-                "Online Submission",
+                "The Journal at a Glance",
+                "Latest Issue",
+                "latestIssueCover",
+                "latestIssueLabel",
+                "latestIssueCount",
+                "latestIssueLink",
                 "Intelligent Control Theory",
                 "Multi-Agent Systems",
                 "Machine Learning",
@@ -157,12 +158,8 @@ def main():
             for requirement in homepage_requirements:
                 if requirement not in source:
                     errors.append(f"{path.name}: missing homepage item '{requirement}'")
-            if source.count('class="journal-value-item"') != 5:
-                errors.append(f"{path.name}: journal value banner must contain five items")
-            if source.count('class="submission-scope-item"') != 8:
-                errors.append(f"{path.name}: submission scope must contain eight items")
-            if source.count('class="submission-scope-more"') != 1:
-                errors.append(f"{path.name}: submission scope must end with one continuation marker")
+            if source.count('class="journal-value-item"') != 4:
+                errors.append(f"{path.name}: recognition band must contain four supported items")
             if source.count('class="article-metrics"') != 8:
                 errors.append(f"{path.name}: each of the eight current-issue articles needs usage metrics")
             if source.count('data-metric="read"') != 8 or source.count('data-metric="download"') != 8:
@@ -173,60 +170,30 @@ def main():
                 errors.append(f"{path.name}: each current-issue PDF action must use the official download counter")
             if 'data-citation-format="ieee"' not in source or 'data-citation-format="apa"' not in source or 'data-citation-format="bibtex"' not in source:
                 errors.append(f"{path.name}: citation chooser must offer IEEE, APA, and BibTeX")
-            section_order = (
-                source.find('id="current-issue"'),
-                source.find('id="submission-scope"'),
-                source.find('id="call-for-papers"'),
-            )
+            section_order = (source.find('id="current-issue"'), source.find('id="call-for-papers"'))
             if -1 in section_order or section_order != tuple(sorted(section_order)):
-                errors.append(f"{path.name}: submission scope must sit between Current Issue and CFP")
-
-        if path.name == "author-center.html":
-            for requirement in (
-                "Prepare, submit, and track your manuscript",
-                "Single blind",
-                "Currently no charge",
-                "Use an IJICS template",
-                "Submit online",
-                "Transfer of Copyright Agreement",
-            ):
-                if requirement not in source:
-                    errors.append(f"{path.name}: missing official author item '{requirement}'")
+                errors.append(f"{path.name}: Latest Issue must precede Calls for Papers")
 
         if path.name == "instructions-for-authors.html":
-            for requirement in ("&lt;30%", "&lt;15%", "&lt;20%", "Academic integrity screening"):
+            for requirement in ("&lt;30%", "&lt;15%", "&lt;20%", "Originality and Similarity Screening"):
                 if requirement not in source:
                     errors.append(f"{path.name}: missing integrity threshold '{requirement}'")
             if source.count('class="integrity-thresholds"') != 1:
                 errors.append(f"{path.name}: expected one academic integrity threshold group")
 
-        quick_text = " ".join(parser.quick_text)
-        for item in ("Author Center", "Manuscript System"):
-            if item not in quick_text:
-                errors.append(f"{path.name}: Quick Access missing {item}")
-        for obsolete in (
-            "For Authors",
-            "For Reviewers",
-            "Journal Editors",
-            "Manuscript Management",
-            "Call for Papers",
-            "CFP",
-        ):
-            if obsolete in quick_text:
-                errors.append(f"{path.name}: obsolete Quick Access item '{obsolete}'")
-        expected_quick_links = [
-            "./author-center.html#author-center",
-            "https://www.ijics.cn/user/login",
-        ]
-        if parser.quick_links != expected_quick_links:
-            errors.append(f"{path.name}: Quick Access must contain exactly two approved links")
-        if parser.quick_close_count != 1:
-            errors.append(f"{path.name}: Quick Access must contain one labelled close button")
+        if 'id="site-structure"' in source or 'class="quick-access-float' in source:
+            errors.append(f"{path.name}: obsolete Quick Access panel must not be rendered")
 
         footer_text = " ".join(parser.footer_text)
-        for group in ("About", "Browse", "Author Center", "Policies"):
+        for group in ("About", "Articles", "For Authors", "Policies"):
             if group not in footer_text:
                 errors.append(f"{path.name}: footer missing {group}")
+
+        if path.name != "index.html" and any(
+            marker in source
+            for marker in ('class="information-fact-band"', 'class="aim-fact-band"', 'class="author-hero-advantages"')
+        ):
+            errors.append(f"{path.name}: redundant summary fact band must not be rendered")
 
     for path, parser in pages.items():
         for href in parser.hrefs:
@@ -237,6 +204,14 @@ def main():
         errors.append("styles.css: unbalanced braces")
     if re.search(r",\s*@media", css):
         errors.append("styles.css: dangling selector before @media")
+    if "counter(guided-section" in css:
+        errors.append("styles.css: decorative information-page section counters must not be rendered")
+    if not re.search(
+        r"\.section-shortcuts a,\s*\.nav-menu summary\s*\{[^}]*text-transform:\s*none",
+        css,
+        re.S,
+    ):
+        errors.append("styles.css: primary navigation casing must remain consistent across pages")
 
     if errors:
         print("Static audit failed:")
