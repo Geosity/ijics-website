@@ -7883,8 +7883,62 @@ body:has(.home-band) .feature-slide-scope h2 {
 }
 
 body:has(.home-band) .feature-slide-pick-agri::before {
-  background-image: url("./assets/article-figure-trust-calibration.png");
-  opacity: 0.17;
+  display: none;
+}
+
+body:has(.home-band) .feature-slide-pick-agri {
+  grid-template-columns: minmax(0, 56%) minmax(320px, 44%);
+  column-gap: 34px;
+}
+
+body:has(.home-band) .feature-slide-pick-agri > .feature-content,
+body:has(.home-band) .feature-slide-pick-agri > a {
+  grid-column: 1;
+  max-width: none;
+}
+
+.feature-paper-figure {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+  min-height: 430px;
+  margin: 0;
+  overflow: hidden;
+  border-left: 5px solid #e11f27;
+  background-color: #062748;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature-paper-figure-agri {
+  background-image: url("./assets/official-article-graphics/376-agricultural-intelligence.webp");
+  background-size: auto 125%;
+}
+
+.feature-paper-figure figcaption {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  padding: 7px 10px;
+  color: #fff;
+  background: rgba(6, 39, 72, 0.88);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  body:has(.home-band) .feature-slide-pick-agri {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-paper-figure {
+    grid-column: 1;
+    grid-row: auto;
+    min-height: 360px;
+  }
 }
 
 body:has(.home-band) .feature-slide-pick-robotics::before {
@@ -9157,12 +9211,11 @@ body:has(.home-band) .credential-recognition-list {
 body:has(.home-band) .credential-recognition-list .journal-value-item {
   min-width: 0;
   min-height: 108px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
   align-items: center;
   gap: 13px;
-  padding: 13px 14px;
+  padding: 13px 28px;
   border: 0;
   border-right: 1px solid rgba(6, 39, 72, 0.15);
   border-bottom: 1px solid rgba(6, 39, 72, 0.15);
@@ -9181,7 +9234,6 @@ body:has(.home-band) .credential-recognition-list .journal-value-item:nth-last-c
 body:has(.home-band) .credential-recognition-list .journal-value-icon {
   width: 38px;
   height: 38px;
-  flex: 0 0 38px;
   margin: 0;
   padding: 0;
   border: 0;
