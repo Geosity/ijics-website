@@ -7886,13 +7886,13 @@ body:has(.home-band) .feature-slide-pick-agri::before {
   display: none;
 }
 
-body:has(.home-band) .feature-slide-pick-agri {
+body:has(.home-band) .feature-slide-paper {
   grid-template-columns: minmax(0, 56%) minmax(320px, 44%);
   column-gap: 34px;
 }
 
-body:has(.home-band) .feature-slide-pick-agri > .feature-content,
-body:has(.home-band) .feature-slide-pick-agri > a {
+body:has(.home-band) .feature-slide-paper > .feature-content,
+body:has(.home-band) .feature-slide-paper > a {
   grid-column: 1;
   max-width: none;
 }
@@ -7916,6 +7916,11 @@ body:has(.home-band) .feature-slide-pick-agri > a {
   background-size: auto 125%;
 }
 
+.feature-paper-figure-robotics {
+  background-image: url("./assets/official-article-graphics/379-humanoid-robotics.webp");
+  background-size: auto 125%;
+}
+
 .feature-paper-figure figcaption {
   position: absolute;
   right: 14px;
@@ -7930,7 +7935,7 @@ body:has(.home-band) .feature-slide-pick-agri > a {
 }
 
 @media (max-width: 860px) {
-  body:has(.home-band) .feature-slide-pick-agri {
+  body:has(.home-band) .feature-slide-paper {
     grid-template-columns: 1fr;
   }
 
@@ -7942,8 +7947,7 @@ body:has(.home-band) .feature-slide-pick-agri > a {
 }
 
 body:has(.home-band) .feature-slide-pick-robotics::before {
-  background-image: url("./assets/article-figure-edge-robotics.png");
-  opacity: 0.18;
+  display: none;
 }
 
 body:has(.home-band) .journal-recognition-banner .journal-value-list {
