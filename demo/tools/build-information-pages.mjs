@@ -61,7 +61,7 @@ pages.set(
     facts: [
       fact("ISSN", "0218-7965"),
       fact("Publication frequency", "Quarterly"),
-      fact("Established", "1996"),
+      fact("Established", "1993"),
       fact("Publishing model", "Open access"),
     ],
     toc: [
@@ -450,7 +450,7 @@ pages.set(
       fact("Abbreviation", "IJICS"),
       fact("ISSN", "0218-7965"),
       fact("Publication frequency", "Quarterly"),
-      fact("Established", "1996"),
+      fact("Established", "1993"),
     ],
     toc: [
       ["journal-identity", "Publication Details"],
@@ -460,7 +460,7 @@ pages.set(
       ["editorial-office", "Editorial Office"],
     ],
     content: `
-            <article class="content-section" id="journal-identity"><h2>Publication Details</h2><dl class="metadata-list"><div><dt>Full title</dt><dd>The International Journal of Intelligent Control and Systems</dd></div><div><dt>Abbreviation</dt><dd>IJICS</dd></div><div><dt>ISSN</dt><dd>0218-7965</dd></div><div><dt>CN</dt><dd>10-1942/TP</dd></div><div><dt>Publication frequency</dt><dd>Quarterly</dd></div><div><dt>Established</dt><dd>1996</dd></div><div><dt>Official website</dt><dd><a href="https://www.ijics.cn/">https://www.ijics.cn/</a></dd></div></dl></article>
+            <article class="content-section" id="journal-identity"><h2>Publication Details</h2><dl class="metadata-list"><div><dt>Full title</dt><dd>The International Journal of Intelligent Control and Systems</dd></div><div><dt>Abbreviation</dt><dd>IJICS</dd></div><div><dt>ISSN</dt><dd>0218-7965</dd></div><div><dt>CN</dt><dd>10-1942/TP</dd></div><div><dt>Publication frequency</dt><dd>Quarterly</dd></div><div><dt>Established</dt><dd>1993</dd></div><div><dt>Official website</dt><dd><a href="https://www.ijics.cn/">https://www.ijics.cn/</a></dd></div></dl></article>
             <article class="content-section" id="society-listing"><h2>Society Affiliation</h2><p>IJICS is listed among the journals of the Chinese Association of Automation (CAA).</p><a class="text-action" href="https://www.caa.org.cn/Content/320.html">View the CAA Journal Listing</a></article>
             <article class="content-section" id="publishing-model"><h2>Publishing Model</h2><p>IJICS operates as a Diamond Open Access journal. Articles are immediately and permanently available online, authors are not charged a publication fee, and articles are distributed under CC BY 4.0 while authors retain copyright.</p><div class="inline-links"><a href="./open-access.html#open-access">Open Access</a><a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a><a href="./licensing-terms.html#licensing-terms">Licensing</a></div></article>
             <article class="content-section" id="editorial-governance"><h2>Editorial Governance</h2><p>The public Editorial Board page identifies the Editor-in-Chief, Deputy Editors, Associate Editors, and their institutional affiliations. Editorial Office contact information is provided below.</p><a class="text-action" href="./editorial-board.html#editorial-board">View the Editorial Board</a></article>

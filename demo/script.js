@@ -29,9 +29,10 @@ const citationFormatButtons = Array.from(document.querySelectorAll("[data-citati
 const latestIssueCover = document.querySelector("#latestIssueCover");
 const latestIssueCoverLink = document.querySelector("#latestIssueCoverLink");
 const latestIssueLabel = document.querySelector("#latestIssueLabel");
-const latestIssueCount = document.querySelector("#latestIssueCount");
 const latestIssueDate = document.querySelector("#latestIssueDate");
-const latestIssueLink = document.querySelector("#latestIssueLink");
+const coverPaperLink = document.querySelector("#coverPaperLink");
+const coverPaperAuthors = document.querySelector("#coverPaperAuthors");
+const coverPaperPages = document.querySelector("#coverPaperPages");
 const currentPageName = window.location.pathname.split("/").pop() || "index.html";
 let activeArticleType = "all";
 let toastTimer;
@@ -50,7 +51,7 @@ function formatIssueDate(value) {
 }
 
 async function refreshLatestIssue() {
-  if (!latestIssueCover || !latestIssueCoverLink || !latestIssueLabel || !latestIssueLink) return;
+  if (!latestIssueCover || !latestIssueCoverLink || !latestIssueLabel) return;
 
   const officialOrigin = "https://www.ijics.cn";
   const isOfficialHost = window.location.hostname === "ijics.cn" || window.location.hostname.endsWith(".ijics.cn");
@@ -77,16 +78,34 @@ async function refreshLatestIssue() {
     latestIssueCoverLink.href = issueUrl;
     latestIssueCoverLink.setAttribute("aria-label", `View ${label}`);
     latestIssueLabel.textContent = label;
-    latestIssueLink.href = issueUrl;
 
     try {
       const issueResponse = await fetch(newestIssue.getAttribute("href"), { cache: "no-store" });
       if (!issueResponse.ok) return;
       const issueDocument = new DOMParser().parseFromString(await issueResponse.text(), "text/html");
-      const articleCount = issueDocument.querySelectorAll(".article-list-item").length;
       const publicationDate = issueDocument.querySelector('meta[name="citation_publication_date"]')?.content;
-      if (articleCount && latestIssueCount) latestIssueCount.textContent = `${articleCount} Articles`;
       if (publicationDate && latestIssueDate) latestIssueDate.textContent = formatIssueDate(publicationDate);
+
+      const coverSection = Array.from(issueDocument.querySelectorAll(".category-section")).find(
+        (section) => section.querySelector(".category-label")?.textContent.trim().toUpperCase() === "COVER ARTICLE",
+      );
+      const coverArticle = coverSection?.querySelector(".article-list-item");
+      const officialCoverLink = coverArticle?.querySelector("h3 a");
+      const officialCoverAuthors = Array.from(coverArticle?.querySelectorAll(".authors li") || [])
+        .map((item) => item.textContent.trim())
+        .filter(Boolean)
+        .join(", ");
+      const officialCoverPages = Array.from(coverArticle?.querySelectorAll(".publication li") || [])
+        .map((item) => item.textContent.trim())
+        .find((item) => item.startsWith("Page(s):"));
+      if (officialCoverLink && coverPaperLink) {
+        coverPaperLink.textContent = officialCoverLink.textContent.trim();
+        coverPaperLink.href = new URL(officialCoverLink.getAttribute("href"), officialOrigin).href;
+      }
+      if (officialCoverAuthors && coverPaperAuthors) coverPaperAuthors.textContent = officialCoverAuthors;
+      if (officialCoverPages && coverPaperPages) {
+        coverPaperPages.textContent = officialCoverPages.replace("Page(s):", "Pages").replace(/\s+-\s+/g, "–");
+      }
     } catch (error) {
       // The cover and issue metadata remain current even if the detail page is unavailable.
     }
@@ -101,6 +120,7 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let activeFeature = 0;
   let featureTimer;
+  let featurePaused = false;
 
   const showFeature = (nextIndex) => {
     activeFeature = (nextIndex + featureSlides.length) % featureSlides.length;
@@ -117,11 +137,22 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
     });
   };
 
-  const stopFeatureRotation = () => clearInterval(featureTimer);
+  const stopFeatureRotation = () => {
+    clearInterval(featureTimer);
+    featureTimer = undefined;
+  };
   const startFeatureRotation = () => {
     stopFeatureRotation();
-    if (reduceMotion.matches) return;
+    if (reduceMotion.matches || featurePaused) return;
     featureTimer = setInterval(() => showFeature(activeFeature + 1), 12000);
+  };
+  const pauseFeatureRotation = () => {
+    featurePaused = true;
+    stopFeatureRotation();
+  };
+  const resumeFeatureRotation = () => {
+    featurePaused = false;
+    startFeatureRotation();
   };
 
   featureButtons.forEach((button) => {
@@ -130,10 +161,12 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
       startFeatureRotation();
     });
   });
-  featureCarousel.addEventListener("mouseenter", stopFeatureRotation);
-  featureCarousel.addEventListener("mouseleave", startFeatureRotation);
-  featureCarousel.addEventListener("focusin", stopFeatureRotation);
-  featureCarousel.addEventListener("focusout", startFeatureRotation);
+  featureCarousel.addEventListener("pointerenter", pauseFeatureRotation);
+  featureCarousel.addEventListener("pointerleave", resumeFeatureRotation);
+  featureCarousel.addEventListener("focusin", pauseFeatureRotation);
+  featureCarousel.addEventListener("focusout", (event) => {
+    if (!featureCarousel.contains(event.relatedTarget)) resumeFeatureRotation();
+  });
   reduceMotion.addEventListener("change", startFeatureRotation);
   showFeature(0);
   startFeatureRotation();

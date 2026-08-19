@@ -140,12 +140,10 @@ def main():
 
         if path.name == "index.html":
             homepage_requirements = (
-                "The Journal at a Glance",
+                "Journal Overview",
                 "Latest Issue",
                 "latestIssueCover",
                 "latestIssueLabel",
-                "latestIssueCount",
-                "latestIssueLink",
                 "Intelligent Control Theory",
                 "Multi-Agent Systems",
                 "Machine Learning",
