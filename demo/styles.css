@@ -7589,6 +7589,16 @@ body:has(.home-band) .issue-article-card .article-figure img {
   text-decoration: none;
 }
 
+.related-link-list {
+  display: grid;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.related-link-list .caa-related-link {
+  margin-top: 0;
+}
+
 .caa-related-identity {
   display: flex;
   gap: 16px;
@@ -7615,6 +7625,20 @@ body:has(.home-band) .issue-article-card .article-figure img {
   height: 58px;
   object-fit: contain;
   object-position: left center;
+}
+
+.related-link-monogram {
+  width: 92px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid #0b2948;
+  color: #0b2948 !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px !important;
+  font-weight: 800;
+  letter-spacing: 0.06em;
 }
 
 .caa-related-link span {

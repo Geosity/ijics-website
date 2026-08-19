@@ -22,6 +22,18 @@ FORBIDDEN_PUBLIC_TEXT = (
     "to be confirmed",
     "sample article",
     "metadata rule",
+    "guide for authors",
+    "guide for reviewers",
+    "double-anonymous",
+    "diamond open access",
+    "cc by 4.0",
+    "related routes",
+    "online first",
+    "current issue",
+    "journal news",
+    "abstracting and indexing",
+    "selected journal",
+    "listed by cast",
 )
 
 
@@ -138,6 +150,32 @@ def main():
         if parser.h1_count != 1:
             errors.append(f"{path.name}: expected one h1, found {parser.h1_count}")
 
+        for obsolete in ("double-anonymous", "diamond open access", "creativecommons.org/licenses/by/4.0"):
+            if obsolete in lowered:
+                errors.append(f"{path.name}: unsupported or inconsistent term '{obsolete}'")
+
+        for shared_label in (
+            "<summary>About the Journal</summary>",
+            "<summary>Author Center</summary>",
+            ">Submission Guidelines</a>",
+            ">Search Articles</a>",
+            ">Submit a Manuscript</a>",
+        ):
+            if shared_label not in source:
+                errors.append(f"{path.name}: missing shared navigation label '{shared_label}'")
+
+        for obsolete_label in (
+            ">For Authors<",
+            ">Guide for Authors<",
+            ">Guide for Reviewers<",
+            ">Volumes and Issues<",
+            ">Online First<",
+            ">Current Issue<",
+            ">Journal News<",
+        ):
+            if obsolete_label in source:
+                errors.append(f"{path.name}: inconsistent public label '{obsolete_label}'")
+
         if path.name == "index.html":
             homepage_requirements = (
                 "Journal Overview",
@@ -186,7 +224,7 @@ def main():
             errors.append(f"{path.name}: obsolete Quick Access panel must not be rendered")
 
         footer_text = " ".join(parser.footer_text)
-        for group in ("About", "Articles", "For Authors", "Policies"):
+        for group in ("About the Journal", "Articles", "Author Center", "Policies"):
             if group not in footer_text:
                 errors.append(f"{path.name}: footer missing {group}")
 
@@ -195,6 +233,18 @@ def main():
             for marker in ('class="information-fact-band"', 'class="aim-fact-band"', 'class="author-hero-advantages"')
         ):
             errors.append(f"{path.name}: redundant summary fact band must not be rendered")
+
+        self_route = {
+            "aim-scope.html": "./aim-scope.html#aim-scope",
+            "instructions-for-authors.html": "./instructions-for-authors.html#instructions-for-authors",
+            "editorial-process.html": "./editorial-process.html#editorial-process",
+            "submit-manuscript.html": "./submit-manuscript.html#submit-manuscript",
+            "publication-ethics.html": "./publication-ethics.html#publication-ethics",
+            "open-access.html": "./open-access.html#open-access",
+        }.get(path.name)
+        related_section = re.search(r'<section class="aim-related-routes".*?</section>', source, re.S)
+        if self_route and related_section and f'href="{self_route}"' in related_section.group(0):
+            errors.append(f"{path.name}: Related Information must not link to the current page")
 
     for path, parser in pages.items():
         for href in parser.hrefs:
