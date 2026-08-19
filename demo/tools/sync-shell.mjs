@@ -47,15 +47,15 @@ const header = `    <header class="site-header">
             <summary>Articles</summary>
             <div class="nav-menu-panel">
               <a href="./index.html#current-issue">Latest Issue</a>
-              <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
-              <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+              <a href="./forthcoming-issue.html#forthcoming-issue">Early Access</a>
+              <a href="./all-issues.html#all-issues">All Issues</a>
               <a href="./index.html#call-for-papers">Calls for Papers</a>
             </div>
           </details>
           <details class="nav-menu">
-            <summary>For Authors</summary>
+            <summary>Author Center</summary>
             <div class="nav-menu-panel">
-              <a href="./author-center.html#author-center">For Authors</a>
+              <a href="./author-center.html#author-center">Author Center</a>
               <a href="./instructions-for-authors.html#instructions-for-authors">Guide for Authors</a>
               <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
               <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
@@ -74,12 +74,12 @@ const header = `    <header class="site-header">
               <option value="">All articles</option>
               <optgroup label="Articles">
                 <option value="current">Latest Issue</option>
-                <option value="forthcoming">Online First</option>
-                <option value="archive">Volumes and Issues</option>
+                <option value="forthcoming">Early Access</option>
+                <option value="archive">All Issues</option>
               </optgroup>
               <optgroup label="Journal information">
                 <option value="cfp">Calls for Papers</option>
-                <option value="authors">For Authors</option>
+                <option value="authors">Author Center</option>
               </optgroup>
             </select>
             <button type="submit" aria-label="Search articles">Search</button>
@@ -134,8 +134,8 @@ const footer = `    <footer class="site-footer" id="contact" aria-label="Journal
           <section class="footer-directory-group">
             <h2>Articles</h2>
             <a href="./index.html#current-issue">Latest Issue</a>
-            <a href="./forthcoming-issue.html#forthcoming-issue">Online First</a>
-            <a href="./all-issues.html#all-issues">Volumes and Issues</a>
+            <a href="./forthcoming-issue.html#forthcoming-issue">Early Access</a>
+            <a href="./all-issues.html#all-issues">All Issues</a>
             <a href="./search-articles.html#search-articles">Search Articles</a>
             <a href="./index.html#call-for-papers">Calls for Papers</a>
           </section>
@@ -186,8 +186,8 @@ for (const file of files) {
   html = html.replace(/    <footer class="site-footer"[\s\S]*?<\/footer>/, footer);
   html = html.replace(/<title>(.*?) \| IJICS Website Preview<\/title>/, "<title>$1 | IJICS</title>");
   html = html.replace("<title>IJICS Website Preview</title>", "<title>IJICS | The International Journal of Intelligent Control and Systems</title>");
-  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=147");
-  html = html.replace(/script\.js\?v=\d+/g, "script.js?v=147");
+  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=150");
+  html = html.replace(/script\.js\?v=\d+/g, "script.js?v=150");
   await writeFile(path, html);
 }
 

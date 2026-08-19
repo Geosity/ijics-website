@@ -5027,6 +5027,7 @@ body:has(.home-band) .issue-article-card .article-actions .article-metric strong
   color: var(--muted);
   font-size: 14px;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .page-toc a:hover {
@@ -7104,7 +7105,7 @@ body:has(.guided-information-page)::before {
 }
 
 .guided-information-page .information-layout {
-  grid-template-columns: 240px minmax(0, 1fr);
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 42px;
   padding: 54px 0 62px;
 }
@@ -7128,9 +7129,7 @@ body:has(.guided-information-page)::before {
 }
 
 .guided-information-page .page-toc a {
-  display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 7px;
+  display: block;
   padding: 13px 14px;
   border-left: 3px solid transparent;
   color: var(--muted);
@@ -7386,6 +7385,10 @@ body:has(.information-page) .primary-action:hover {
 }
 
 @media (max-width: 680px) {
+  .guided-information-page .page-toc {
+    grid-template-columns: 1fr;
+  }
+
   .site-header .nav-shell {
     grid-template-columns: 1fr;
     gap: 6px;
@@ -8605,8 +8608,8 @@ body:has(.home-band) .feature-page .cover-paper-summary .cover-paper-meta {
 
 .feature-scope-grid li {
   min-height: 76px;
-  gap: 12px;
-  padding: 11px 13px;
+  gap: 8px;
+  padding: 10px;
   border: 0;
   border-right: 1px solid rgba(6, 39, 72, 0.16);
   border-bottom: 1px solid rgba(6, 39, 72, 0.16);
@@ -8614,13 +8617,13 @@ body:has(.home-band) .feature-page .cover-paper-summary .cover-paper-meta {
   background: rgba(255, 255, 255, 0.66);
   box-shadow: none;
   color: #062748;
-  font-size: 14px;
-  line-height: 1.25;
+  font-size: 12px;
+  line-height: 1.18;
 }
 
 .feature-scope-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border: 1px solid rgba(217, 39, 46, 0.3);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.66);
@@ -9156,8 +9159,8 @@ body:has(.home-band) .issue-article-card .article-card-body::after {
 }
 
 .feature-scope-icon {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   padding: 2px;
   border: 0;
   border-radius: 0;
@@ -9172,7 +9175,7 @@ body:has(.home-band) .feature-page-scope h2 {
   width: 100%;
   min-height: 218px;
   display: grid;
-  grid-template-columns: 22% 53% 25%;
+  grid-template-columns: 26% 49% 25%;
   margin-top: 0;
   overflow: hidden;
   border: 1px solid #062748;
@@ -9187,15 +9190,15 @@ body:has(.home-band) .feature-page-scope h2 {
 
 .credential-editor {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 14px;
   align-items: center;
-  padding: 27px 24px;
+  padding: 25px 20px;
 }
 
 .credential-editor-icon {
-  width: 76px;
-  height: 76px;
+  width: 70px;
+  height: 70px;
   display: grid;
   place-items: center;
   padding: 16px;
@@ -9229,7 +9232,7 @@ body:has(.home-band) .feature-page-scope h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 22px;
   line-height: 1.05;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 .credential-editor p {
@@ -9237,6 +9240,7 @@ body:has(.home-band) .feature-page-scope h2 {
   color: rgba(255, 255, 255, 0.78);
   font-size: 11px;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .credential-editor a {

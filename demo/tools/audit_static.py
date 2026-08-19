@@ -178,6 +178,9 @@ def main():
                     errors.append(f"{path.name}: missing integrity threshold '{requirement}'")
             if source.count('class="integrity-thresholds"') != 1:
                 errors.append(f"{path.name}: expected one academic integrity threshold group")
+            integrity_block = re.search(r'<ol class="integrity-thresholds">(.*?)</ol>', source, re.S)
+            if not integrity_block or integrity_block.group(1).count("<li>") != 4:
+                errors.append(f"{path.name}: integrity screening must contain four equal metrics")
 
         if 'id="site-structure"' in source or 'class="quick-access-float' in source:
             errors.append(f"{path.name}: obsolete Quick Access panel must not be rendered")
