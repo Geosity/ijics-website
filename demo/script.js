@@ -118,9 +118,18 @@ refreshLatestIssue();
 
 if (featureCarousel && featureTrack && featureSlides.length > 1) {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const compactFeatureViewport = window.matchMedia("(max-width: 760px)");
   let activeFeature = 0;
   let featureTimer;
   let featurePaused = false;
+
+  const syncFeatureHeight = () => {
+    if (window.matchMedia("(max-width: 760px)").matches) {
+      featureTrack.style.height = `${featureSlides[activeFeature].scrollHeight}px`;
+      return;
+    }
+    featureTrack.style.removeProperty("height");
+  };
 
   const showFeature = (nextIndex) => {
     activeFeature = (nextIndex + featureSlides.length) % featureSlides.length;
@@ -135,6 +144,7 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
     });
+    requestAnimationFrame(syncFeatureHeight);
   };
 
   const stopFeatureRotation = () => {
@@ -143,7 +153,7 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   };
   const startFeatureRotation = () => {
     stopFeatureRotation();
-    if (reduceMotion.matches || featurePaused) return;
+    if (reduceMotion.matches || compactFeatureViewport.matches || featurePaused) return;
     featureTimer = setInterval(() => showFeature(activeFeature + 1), 12000);
   };
   const pauseFeatureRotation = () => {
@@ -158,6 +168,12 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   featureButtons.forEach((button) => {
     button.addEventListener("click", () => {
       showFeature(Number(button.dataset.featureSlide));
+      if (compactFeatureViewport.matches) {
+        window.setTimeout(() => {
+          featureCarousel.scrollTop = 0;
+          featureCarousel.scrollIntoView({ behavior: "auto", block: "start" });
+        }, 320);
+      }
       startFeatureRotation();
     });
   });
@@ -167,6 +183,13 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   featureCarousel.addEventListener("focusout", (event) => {
     if (!featureCarousel.contains(event.relatedTarget)) resumeFeatureRotation();
   });
+
+  new ResizeObserver(syncFeatureHeight).observe(featureSlides[0]);
+  compactFeatureViewport.addEventListener("change", () => {
+    syncFeatureHeight();
+    startFeatureRotation();
+  });
+  syncFeatureHeight();
   reduceMotion.addEventListener("change", startFeatureRotation);
   showFeature(0);
   startFeatureRotation();

@@ -134,7 +134,7 @@ pages.set(
             </article>
             <article class="content-section" id="reuse-rights">
               <h2>Article Processing Charges</h2>
-              <p>The current IJICS fee page states that the journal does not charge fees for manuscript processing at present. The policy may change; authors should consult the current fee page before submission.</p>
+              <p>The current IJICS fee page states that the journal <strong class="fee-emphasis">does not charge fees</strong> for manuscript processing at present. The policy may change; authors should consult the current fee page before submission.</p>
               <a class="text-action" href="./article-processing-charge.html#article-processing-charge">View the current fee policy</a>
             </article>
             <article class="content-section" id="author-copyright">
@@ -322,10 +322,10 @@ pages.set(
       ["source-diversity", "Reference-Source Diversity"],
     ],
     content: `
-            <article class="content-section" id="plagiarism"><h2>Originality and Plagiarism</h2><p>All submissions are screened for similarity. Overall similarity should remain below 30%, and similarity to any single source should remain below 15%.</p></article>
+            <article class="content-section" id="plagiarism"><h2>Originality and Plagiarism</h2><p>All submissions are screened for similarity. Overall similarity should remain below <strong class="ethics-percentage">30%</strong>, and similarity to any single source should remain below <strong class="ethics-percentage">15%</strong>.</p></article>
             <article class="content-section" id="duplicate-submission"><h2>Duplicate and Concurrent Submission</h2><p>Submitted manuscripts must not have been published or be under consideration by another journal in English or another language without the publisher's written consent.</p></article>
-            <article class="content-section" id="self-citation"><h2>Author Self-Citation</h2><p>Self-citations from all authors should account for less than 20% of the references.</p></article>
-            <article class="content-section" id="source-diversity"><h2>Reference-Source Diversity</h2><p>References from one person, journal, conference, or other single source should account for less than 20% of the reference list.</p></article>`,
+            <article class="content-section" id="self-citation"><h2>Author Self-Citation</h2><p>Self-citations from all authors should account for less than <strong class="ethics-percentage">20%</strong> of the references.</p></article>
+            <article class="content-section" id="source-diversity"><h2>Reference-Source Diversity</h2><p>References from one person, journal, conference, or other single source should account for less than <strong class="ethics-percentage">20%</strong> of the reference list.</p></article>`,
   })
 );
 
@@ -454,7 +454,7 @@ pages.set(
     label: "Journal Information",
     title: "Journal Information",
     lead:
-      "Find the journal's publication details, society affiliation, editorial governance, and official contact information.",
+      "Find the journal's publication details, society affiliation, and official contact information.",
     facts: [
       fact("Abbreviation", "IJICS"),
       fact("ISSN", "0218-7965"),
@@ -464,15 +464,13 @@ pages.set(
     toc: [
       ["journal-identity", "Publication Details"],
       ["society-listing", "Society Affiliation"],
-      ["publishing-model", "Publishing Information"],
-      ["editorial-governance", "Editorial Governance"],
+      ["publishing-model", "Article Publish Fee"],
       ["editorial-office", "Editorial Office"],
     ],
     content: `
             <article class="content-section" id="journal-identity"><h2>Publication Details</h2><dl class="metadata-list"><div><dt>Full title</dt><dd>The International Journal of Intelligent Control and Systems</dd></div><div><dt>Abbreviation</dt><dd>IJICS</dd></div><div><dt>ISSN</dt><dd>0218-7965</dd></div><div><dt>CN</dt><dd>10-1942/TP</dd></div><div><dt>Publication frequency</dt><dd>Quarterly</dd></div><div><dt>Established</dt><dd>1993</dd></div><div><dt>Official website</dt><dd><a href="https://www.ijics.cn/">https://www.ijics.cn/</a></dd></div></dl></article>
             <article class="content-section" id="society-listing"><h2>Society Affiliation</h2><p>IJICS is listed among the journals of the Chinese Association of Automation (CAA).</p><a class="text-action" href="https://www.caa.org.cn/Content/320.html">View the CAA journal listing</a></article>
-            <article class="content-section" id="publishing-model"><h2>Publishing Information</h2><p>The current IJICS website states that manuscript processing is free of charge at present. It requires all authors to sign a Transfer of Copyright Agreement before publication. Consult the current policy pages for terms applicable at submission and publication.</p><div class="inline-links"><a href="./open-access.html#open-access">Open Access</a><a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a><a href="./licensing-terms.html#licensing-terms">Licensing</a></div></article>
-            <article class="content-section" id="editorial-governance"><h2>Editorial Governance</h2><p>The public Editorial Board page identifies the Editor-in-Chief, Deputy Editors, Associate Editors, and their institutional affiliations. Editorial Office contact information is provided below.</p><a class="text-action" href="./editorial-board.html#editorial-board">View editorial board</a></article>
+            <article class="content-section" id="publishing-model"><h2>Article Publish Fee</h2><p>Currently, IJICS does not charge any fees for manuscript processing. If an article publishing fee is introduced in the future, IJICS will publish the change on the journal website.</p><div class="inline-links"><a href="./open-access.html#open-access">Open Access</a><a href="./article-processing-charge.html#article-processing-charge">No APC</a></div></article>
             <article class="content-section" id="editorial-office"><h2>Editorial Office</h2><dl class="metadata-list"><div><dt>Email</dt><dd><a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a></dd></div><div><dt>Telephone</dt><dd>010-61943066</dd></div><div><dt>Address</dt><dd>Room 1505, Satellite Building, No. 63 Zhichun Road, Haidian District, Beijing 100190, China</dd></div></dl></article>`,
   })
 );
@@ -604,7 +602,7 @@ const pageDescriptions = new Map([
   ["submit-manuscript.html", "Official IJICS manuscript submission requirements, file formats, author checks, and submission system."],
   ["reviewers.html", "IJICS reviewer responsibilities, assessment criteria, invitation verification, and reviewer login."],
   ["anti-fraud.html", "IJICS guidance for verifying official contacts, submission links, fee requests, and suspicious communications."],
-  ["publisher-information.html", "IJICS publication details, society affiliation, editorial governance, and official contact information."],
+  ["publisher-information.html", "IJICS publication details, society affiliation, and official contact information."],
   ["editorial-board.html", "IJICS editorial leadership, board members, institutional affiliations, and Editorial Office contact details."],
   ["instructions-for-authors.html", "IJICS submission guidelines covering article types, manuscript preparation, files, peer review, and post-acceptance procedures."],
   ["author-center.html", "IJICS author resources, manuscript templates, peer review information, and official submission route."],

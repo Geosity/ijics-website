@@ -5060,6 +5060,10 @@ body:has(.home-band) .issue-article-card .article-actions .article-metric strong
   font-size: clamp(28px, 3.2vw, 40px);
 }
 
+.content-section h2 + .metadata-list {
+  margin-top: 24px;
+}
+
 .content-section h3,
 .disclosure-body h3 {
   margin: 26px 0 8px;
@@ -5076,6 +5080,16 @@ body:has(.home-band) .issue-article-card .article-actions .article-metric strong
   color: var(--muted);
   font-size: 17px;
   line-height: 1.68;
+}
+
+.information-page:has(#publication-ethics) .ethics-percentage {
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
+.information-page:has(#open-access) .fee-emphasis {
+  color: var(--accent-dark);
+  font-weight: 900;
 }
 
 .content-section a,
@@ -5314,12 +5328,47 @@ body:has(.home-band) .issue-article-card .article-actions .article-metric strong
 .leader-card {
   min-height: 120px;
   display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 22px;
   align-items: center;
   padding: 22px;
   border: 1px solid var(--line);
   border-top: 3px solid var(--accent);
   border-radius: var(--radius);
   background: var(--surface-soft);
+}
+
+.leader-portrait {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  border: 3px solid var(--surface);
+  border-radius: 50%;
+  background: #18316e;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.leader-portrait img {
+  position: absolute;
+  width: 420px;
+  max-width: none;
+  height: auto;
+}
+
+.leader-portrait-wang img {
+  left: -20px;
+  top: -6px;
+}
+
+.leader-portrait-chen img {
+  left: -20px;
+  top: -166px;
+}
+
+.leader-portrait-wei img {
+  left: -20px;
+  top: -326px;
 }
 
 .leader-card > div {
@@ -5335,6 +5384,23 @@ body:has(.home-band) .issue-article-card .article-actions .article-metric strong
 
 .leader-card span {
   color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .leader-card {
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .leader-portrait {
+    width: 104px;
+    height: 104px;
+  }
+
+  .leader-card strong {
+    font-size: 24px;
+  }
 }
 
 .board-disclosure,
@@ -7948,19 +8014,6 @@ body:has(.home-band) .feature-slide-paper > a {
   background-size: auto 125%;
 }
 
-.feature-paper-figure figcaption {
-  position: absolute;
-  right: 14px;
-  bottom: 12px;
-  padding: 7px 10px;
-  color: #fff;
-  background: rgba(6, 39, 72, 0.88);
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.055em;
-  text-transform: uppercase;
-}
-
 @media (max-width: 860px) {
   body:has(.home-band) .feature-slide-paper {
     grid-template-columns: 1fr;
@@ -9345,6 +9398,18 @@ body:has(.home-band) .credential-recognition-list .journal-value-icon {
   line-height: 1.35;
 }
 
+.credential-recognition-list .journal-value-copy .credential-translation {
+  margin-top: 4px;
+  color: #6b7788;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.credential-recognition-list .journal-value-copy .credential-translation + small {
+  margin-top: 4px;
+}
+
 .author-resource-panel {
   padding: 17px 18px 16px;
 }
@@ -10003,6 +10068,14 @@ body:has(.home-band) .issue-article-card .article-actions button {
 
 /* Final mobile header override. Keep this after every legacy navigation breakpoint. */
 @media (max-width: 680px) {
+  body:has(.home-band) .site-header .nav-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body:has(.home-band) .site-header .section-shortcuts {
+    width: 100%;
+  }
+
   .site-header .section-shortcuts {
     position: relative;
     overflow: visible;
@@ -10199,5 +10272,138 @@ body:has(.home-band) .issue-article-card .article-actions button {
   body:has(.home-band) .issue-article-card .article-actions .article-metric {
     justify-content: center;
     gap: 7px;
+  }
+}
+
+/* Active-slide sizing and theme corrections must remain last in the cascade. */
+@media (max-width: 760px) {
+  body:has(.home-band) .feature-carousel {
+    overflow: clip;
+    overflow-anchor: none;
+    scroll-margin-top: 188px;
+  }
+
+  body:has(.home-band) .feature-track {
+    align-items: flex-start;
+    overflow: visible;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), height 220ms ease;
+  }
+
+  body:has(.home-band) .feature-slide {
+    align-self: flex-start;
+  }
+
+  body:has(.home-band) .feature-slide.feature-slide-scope p.feature-scope-intro {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  body:has(.home-band) .feature-slide-scope .feature-identity > a {
+    width: 260px;
+    max-width: 100%;
+    padding-inline: 16px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  body:has(.home-band) .feature-slide-paper {
+    min-height: 0;
+    padding-bottom: 58px;
+  }
+
+  body:has(.home-band) .feature-slide-paper .feature-paper-figure {
+    min-height: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  body:has(.home-band) .issue-article-card .article-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body:has(.home-band) {
+    --paper: #101722;
+    --surface: #182331;
+    --surface-soft: #202d3c;
+    --ink: #edf3f7;
+    --ink-strong: #f7fafc;
+    --muted: #b8c3cf;
+    --faint: #94a2b2;
+    --line: #344456;
+    --line-soft: #293849;
+    --accent: #f06b63;
+    --accent-dark: #ff8a82;
+    --accent-soft: #382326;
+    background: linear-gradient(180deg, #101722 0, #141d29 620px, #101722 100%);
+    color: var(--ink);
+  }
+
+  body:has(.home-band) .site-header,
+  body:has(.home-band) .nav-menu-panel {
+    border-color: var(--line);
+    background: rgba(16, 23, 34, 0.98);
+    color: var(--ink);
+  }
+
+  body:has(.home-band) main,
+  body:has(.home-band) main h1,
+  body:has(.home-band) main h2,
+  body:has(.home-band) main h3,
+  body:has(.home-band) main strong,
+  body:has(.home-band) main a,
+  body:has(.home-band) main button {
+    color: var(--ink);
+  }
+
+  body:has(.home-band) .feature-carousel,
+  body:has(.home-band) .feature-slide-journal,
+  body:has(.home-band) .feature-slide.feature-slide-scope,
+  body:has(.home-band) .feature-page,
+  body:has(.home-band) .feature-identity,
+  body:has(.home-band) .issue-showcase,
+  body:has(.home-band) .issue-article-card,
+  body:has(.home-band) .summary-band,
+  body:has(.home-band) .updates-panel,
+  body:has(.home-band) .news-card,
+  body:has(.home-band) .caa-related,
+  body:has(.home-band) .journal-credential-rail {
+    border-color: var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: none;
+  }
+
+  body:has(.home-band) .feature-value-grid li,
+  body:has(.home-band) .feature-scope-grid li,
+  body:has(.home-band) .feature-facts div,
+  body:has(.home-band) .article-type-switcher,
+  body:has(.home-band) .article-actions,
+  body:has(.home-band) .caa-related-link {
+    border-color: var(--line);
+    background: var(--surface-soft);
+    color: var(--ink);
+  }
+
+  body:has(.home-band) .feature-facts dt,
+  body:has(.home-band) .type-label,
+  body:has(.home-band) .eyebrow {
+    color: var(--accent);
+  }
+
+  body:has(.home-band) .feature-facts dd,
+  body:has(.home-band) .feature-summary,
+  body:has(.home-band) .feature-authors,
+  body:has(.home-band) .article-authors,
+  body:has(.home-band) .article-meta,
+  body:has(.home-band) .news-card p,
+  body:has(.home-band) .updates-panel p {
+    color: var(--muted);
+  }
+
+  body:has(.home-band) .issue-article-card .article-figure {
+    border-color: var(--line);
+    background: #eef2f5;
   }
 }
