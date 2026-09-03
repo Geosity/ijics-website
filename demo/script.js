@@ -231,7 +231,7 @@ if (quickAccessFloat && quickAccessClose) {
 
 const issueTargets = {
   current: "./index.html#current-issue",
-  forthcoming: "./forthcoming-issue.html#forthcoming-issue",
+  forthcoming: "./forthcoming-issue.html#accepted",
   archive: "./all-issues.html#all-issues",
   popular: "./index.html#articles",
   cfp: "./index.html#call-for-papers",
@@ -539,18 +539,21 @@ function upgradeRelatedRoutes() {
 
   const routes = [
     { href: "./aim-scope.html#aim-scope", image: "./assets/aim-scope-hero-network.png", title: "Aims and Scope", description: "Review the journal's subject coverage and types of contributions." },
-    { href: "./instructions-for-authors.html#instructions-for-authors", image: "./assets/instructions-for-authors-hero.png", title: "Guide for Authors", description: "Prepare a manuscript in accordance with the journal's requirements." },
-    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", title: "Peer Review Process", description: "Read the journal's editorial and peer review workflow." },
-    { href: "./submit-manuscript.html#submit-manuscript", image: "./assets/submit-manuscript-hero.png", title: "Submit a Manuscript", description: "Go to the official manuscript submission system." }
+    { href: "./instructions-for-authors.html#instructions-for-authors", image: "./assets/instructions-for-authors-hero.png", title: "Submission Guidelines", description: "Prepare a manuscript in accordance with the journal's requirements." },
+    { href: "./editorial-process.html#editorial-process", image: "./assets/editorial-process-hero.png", title: "Editorial Process", description: "Review the editorial and peer review workflow." },
+    { href: "./submit-manuscript.html#submit-manuscript", image: "./assets/submit-manuscript-hero.png", title: "Submit a Manuscript", description: "Go to the official manuscript submission system." },
+    { href: "./publication-ethics.html#publication-ethics", image: "./assets/publication-ethics-hero.png", title: "Publishing Ethics", description: "Review the journal's publication requirements." },
+    { href: "./open-access.html#open-access", image: "./assets/open-access-hero.png", title: "Open Access", description: "Review access, licensing, and reuse information." }
   ];
 
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   routeSections.forEach((section) => {
     const titleId = section.querySelector("h2")?.id || "related-routes-title";
-    const cards = routes.map((route) => {
+    const cards = routes.filter((route) => {
       const routePage = route.href.replace("./", "").split("#")[0];
-      const currentAttribute = routePage === currentPage ? ' aria-current="page"' : "";
-      return `<a href="${route.href}"${currentAttribute}><span class="related-route-visual" aria-hidden="true"><img src="${route.image}" alt="" /></span><span class="related-route-copy"><strong>${route.title}</strong><span>${route.description}</span></span><span class="related-route-arrow" aria-hidden="true">→</span></a>`;
+      return routePage !== currentPage;
+    }).slice(0, 4).map((route) => {
+      return `<a href="${route.href}"><span class="related-route-visual" aria-hidden="true"><img src="${route.image}" alt="" /></span><span class="related-route-copy"><strong>${route.title}</strong><span>${route.description}</span></span><span class="related-route-arrow" aria-hidden="true">→</span></a>`;
     }).join("");
 
     section.classList.add("illustrated-related-routes");

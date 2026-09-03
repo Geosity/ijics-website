@@ -176,6 +176,19 @@ def main():
             if obsolete_label in source:
                 errors.append(f"{path.name}: inconsistent public label '{obsolete_label}'")
 
+        header_match = re.search(r'<header class="site-header">(.*?)</header>', source, re.S)
+        if header_match:
+            header_source = header_match.group(1)
+            if "ijics-circle-mark-four.svg" not in header_source:
+                errors.append(f"{path.name}: shared header missing the IJICS four-circle mark")
+            if 'class="brand-wordmark"' not in header_source or "ijics-logo-symbol.png" not in header_source:
+                errors.append(f"{path.name}: shared header missing the IJICS wordmark")
+            if "Editorial Process" not in header_source:
+                errors.append(f"{path.name}: Author Center menu missing Editorial Process")
+            for removed_item in ("Peer Review Process", "Article Processing Charges"):
+                if removed_item in header_source:
+                    errors.append(f"{path.name}: '{removed_item}' must not appear in the primary menu")
+
         if path.name == "index.html":
             homepage_requirements = (
                 "Journal Overview",
@@ -233,6 +246,17 @@ def main():
             for marker in ('class="information-fact-band"', 'class="aim-fact-band"', 'class="author-hero-advantages"')
         ):
             errors.append(f"{path.name}: redundant summary fact band must not be rendered")
+
+        if path.name == "editorial-process.html":
+            for requirement in (
+                "Single-blind peer review",
+                "No APC",
+                "Article Processing Charges",
+                "Publishing Ethics",
+                "Open Access Policy",
+            ):
+                if requirement not in source:
+                    errors.append(f"{path.name}: missing consolidated policy content '{requirement}'")
 
         self_route = {
             "aim-scope.html": "./aim-scope.html#aim-scope",

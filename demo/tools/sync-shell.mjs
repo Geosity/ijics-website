@@ -28,7 +28,8 @@ const legacyAliases = new Map([
 const header = `    <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html#home" aria-label="IJICS home">
-          <img class="brand-logo" src="./assets/ijics-circle-mark.png" width="640" height="508" alt="IJICS" />
+          <img class="brand-logo" src="./assets/ijics-circle-mark-four.svg?v=2" width="640" height="508" alt="IJICS" />
+          <img class="brand-wordmark" src="./assets/ijics-logo-symbol.png" width="750" height="245" alt="" />
           <span class="brand-name">The International Journal of<br />Intelligent Control and Systems</span>
         </a>
         <nav class="section-shortcuts" aria-label="Primary navigation">
@@ -40,16 +41,14 @@ const header = `    <header class="site-header">
               <a href="./editorial-board.html#editorial-board">Editorial Board</a>
               <a href="./publisher-information.html#publisher-information">Journal Information</a>
               <a href="./publication-ethics.html#publication-ethics">Publishing Ethics</a>
-              <a href="./open-access.html#open-access">Open Access</a>
             </div>
           </details>
           <details class="nav-menu">
             <summary>Articles</summary>
             <div class="nav-menu-panel">
               <a href="./index.html#current-issue">Latest Issue</a>
-              <a href="./forthcoming-issue.html#forthcoming-issue">Early Access</a>
+              <a href="./forthcoming-issue.html#accepted">Early Access</a>
               <a href="./all-issues.html#all-issues">All Issues</a>
-              <a href="./index.html#call-for-papers">Calls for Papers</a>
             </div>
           </details>
           <details class="nav-menu">
@@ -57,12 +56,11 @@ const header = `    <header class="site-header">
             <div class="nav-menu-panel">
               <a href="./author-center.html#author-center">Author Center</a>
               <a href="./instructions-for-authors.html#instructions-for-authors">Submission Guidelines</a>
-              <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
-              <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
+              <a href="./editorial-process.html#editorial-process">Editorial Process</a>
             </div>
           </details>
           <a href="./search-articles.html#search-articles">Search Articles</a>
-          <a class="nav-submit" href="./submit-manuscript.html#submit-manuscript">Submit a Manuscript</a>
+          <a class="nav-submit" href="https://www.ijics.cn/user/login">Submit a Manuscript</a>
         </nav>
       </div>
       <div class="navigation-board" id="headerSearchPanel">
@@ -101,7 +99,7 @@ const footer = `    <footer class="site-footer" id="contact" aria-label="Journal
           <section class="footer-directory-group">
             <h2>Articles</h2>
             <a href="./index.html#current-issue">Latest Issue</a>
-            <a href="./forthcoming-issue.html#forthcoming-issue">Early Access</a>
+            <a href="./forthcoming-issue.html#accepted">Early Access</a>
             <a href="./all-issues.html#all-issues">All Issues</a>
             <a href="./search-articles.html#search-articles">Search Articles</a>
             <a href="./index.html#call-for-papers">Calls for Papers</a>
@@ -111,7 +109,7 @@ const footer = `    <footer class="site-footer" id="contact" aria-label="Journal
             <a href="./author-center.html#author-center">Author Center</a>
             <a href="./instructions-for-authors.html#instructions-for-authors">Submission Guidelines</a>
             <a href="./submit-manuscript.html#submit-manuscript">Submit a Manuscript</a>
-            <a href="./editorial-process.html#editorial-process">Peer Review Process</a>
+            <a href="./editorial-process.html#editorial-process">Editorial Process</a>
             <a href="./article-processing-charge.html#article-processing-charge">Article Processing Charges</a>
             <a href="./reviewers.html#reviewers">Reviewer Guidelines</a>
           </section>
@@ -150,8 +148,8 @@ for (const file of files) {
   html = html.replace(/    <footer class="site-footer"[\s\S]*?<\/footer>/, footer);
   html = html.replace(/<title>(.*?) \| IJICS Website Preview<\/title>/, "<title>$1 | IJICS</title>");
   html = html.replace("<title>IJICS Website Preview</title>", "<title>IJICS | The International Journal of Intelligent Control and Systems</title>");
-  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=152");
-  html = html.replace(/script\.js\?v=\d+/g, "script.js?v=152");
+  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=171");
+  html = html.replace(/script\.js\?v=\d+/g, "script.js?v=158");
   await writeFile(path, html);
 }
 
