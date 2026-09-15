@@ -10781,3 +10781,35 @@ body:has(.home-band) .feature-slide-paper .feature-summary {
     color: #fff !important;
   }
 }
+
+/* Hero overlays and recognition tiles share the homepage night palette. */
+@media (prefers-color-scheme: dark) {
+  body:has(.home-band) .feature-page { background: #182535; }
+  body:has(.home-band) .feature-page::before { opacity: 0.08; }
+  body:has(.home-band) .feature-page::after { background: rgba(16, 27, 41, 0.82); }
+  body:has(.home-band) .cover-paper-summary,
+  body:has(.home-band) .credential-recognition-list,
+  body:has(.home-band) .credential-recognition-list .journal-value-item {
+    background: #202f41;
+    border-color: #415469;
+  }
+  body:has(.home-band) .feature-page h2,
+  body:has(.home-band) .feature-page .cover-paper-summary h2 a,
+  body:has(.home-band) .latest-issue-facts dd,
+  body:has(.home-band) .credential-recognition-list .journal-value-copy strong {
+    color: #edf3f7 !important;
+  }
+  body:has(.home-band) .feature-journal-introduction,
+  body:has(.home-band) .feature-page-scope .feature-scope-intro,
+  body:has(.home-band) .feature-page .cover-paper-summary .cover-paper-authors,
+  body:has(.home-band) .feature-page .cover-paper-summary .cover-paper-meta,
+  body:has(.home-band) .latest-issue-facts dt,
+  body:has(.home-band) .credential-recognition-list .journal-value-copy small {
+    color: #bac9d9 !important;
+  }
+  body:has(.home-band) .latest-issue-facts,
+  body:has(.home-band) .latest-issue-facts > div { border-color: #415469; }
+  body:has(.home-band) .cover-paper-summary { border-left-color: #ff6b73; }
+  body:has(.home-band) .cover-paper-summary .cover-paper-label,
+  body:has(.home-band) .credential-recognition-list .journal-value-icon { color: #ff6b73 !important; }
+}
