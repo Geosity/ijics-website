@@ -10661,6 +10661,25 @@ body:has(.home-band) .issue-article-card .article-actions button {
   }
 }
 
+/* Shared navigation: keep panel, link and interaction colors paired in dark mode.
+   Include nth-child selectors to override the mobile positioning rules. */
+@media (prefers-color-scheme: dark) {
+  body .site-header .nav-menu .nav-menu-panel,
+  body .site-header .nav-menu:nth-child(3) .nav-menu-panel,
+  body .site-header .nav-menu:nth-child(4) .nav-menu-panel,
+  body .site-header .nav-menu-panel a {
+    background: #182535;
+    color: #edf3f7;
+    border-color: #415469;
+  }
+
+  body .site-header .nav-menu-panel a:hover,
+  body .site-header .nav-menu-panel a:focus-visible {
+    background: #2b425b;
+    color: #fff;
+  }
+}
+
 /* Consistent typography across the four homepage carousel slides. */
 body:has(.home-band) .feature-page .eyebrow,
 body:has(.home-band) .feature-slide-paper .eyebrow {
