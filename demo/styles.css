@@ -10661,6 +10661,46 @@ body:has(.home-band) .issue-article-card .article-actions button {
   }
 }
 
+/* Search controls must fit the panel after the desktop grid overrides. */
+@media (max-width: 680px) {
+  .site-header .navigation-board { box-sizing: border-box; }
+  .site-header .nav-search-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+  }
+  .site-header .nav-search-row input {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .site-header .nav-search-row input,
+  .site-header .nav-search-row select,
+  .site-header .nav-search-row button {
+    min-height: 44px;
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body .site-header .navigation-board {
+    background: #182535;
+    border-color: #415469;
+    color: #edf3f7;
+  }
+  body .site-header .nav-search-row input,
+  body .site-header .nav-search-row select {
+    color-scheme: dark;
+    background: #101b29;
+    color: #edf3f7;
+    border-color: #63758a;
+  }
+  body .site-header .nav-search-row input::placeholder { color: #b5c2d0; }
+  body .site-header .nav-search-row button {
+    background: #d9272e;
+    color: #fff;
+    border-color: #d9272e;
+  }
+}
+
 /* Shared navigation: keep panel, link and interaction colors paired in dark mode.
    Include nth-child selectors to override the mobile positioning rules. */
 @media (prefers-color-scheme: dark) {
