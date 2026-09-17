@@ -198,6 +198,7 @@ pages.set(
             <article class="content-section" id="after-acceptance">
               <h2>Proofs and Corrections</h2>
               <p>For instructions on correcting proofs and the applicable deadline, please contact the Editorial Office.</p>
+              <p>Email: <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a></p>
             </article>`,
   })
 );
@@ -364,7 +365,7 @@ pages.set(
             <article class="content-section" id="submission-received"><h2>Initial Submission</h2><p>Manuscripts are submitted through the IJICS online system. The submitting author receives an acknowledgment email and a manuscript reference number.</p></article>
             <article class="content-section" id="peer-review"><h2>Single-Blind Peer Review</h2><p>Each published article is reviewed by at least two independent reviewers. Reviewers remain anonymous to authors. All submissions are screened for similarity.</p></article>
             <article class="content-section" id="communication"><h2>Editorial Decisions and Revisions</h2><p>Editorial decisions and revision requests are communicated to the corresponding author by email. Authors may contact the Editorial Office to inquire about manuscript status.</p></article>
-            <article class="content-section" id="proof-correction"><h2>Proofs and Corrections</h2><p>For instructions on correcting proofs and the applicable deadline, please contact the Editorial Office.</p></article>
+            <article class="content-section" id="proof-correction"><h2>Proofs and Corrections</h2><p>For instructions on correcting proofs and the applicable deadline, please contact the Editorial Office.</p><p>Email: <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a></p></article>
             <article class="content-section editorial-policy-summary" id="apc-policy"><h2>Article Processing Charges</h2><p>IJICS currently charges no manuscript processing fee. Any changes to publication charges will be announced on the journal website.</p><a class="text-action" href="./article-processing-charge.html#article-processing-charge">View the current APC policy</a></article>
             <article class="content-section editorial-policy-summary" id="publishing-ethics"><h2>Publishing Ethics</h2><p>Authors must comply with the journal's policies on originality, submission to other journals, similarity, and citation practices.</p><a class="text-action" href="./publication-ethics.html#publication-ethics">View the full publishing ethics policy</a></article>
             <article class="content-section editorial-policy-summary" id="open-access-policy"><h2>Open Access Policy</h2><p>Published articles are available on the IJICS website. Access and reuse are subject to the copyright and license notice accompanying each article.</p><a class="text-action" href="./open-access.html#open-access">View the full open access policy</a></article>`,
