@@ -537,7 +537,7 @@ pages.set(
     label: "Editorial Board",
     title: "Editorial Board",
     lead:
-      "The IJICS editorial team and Editorial Office contact information.",
+      "The IJICS editorial team and their institutional affiliations.",
     facts: [
       fact("Editor-in-Chief", "Fei-Yue Wang"),
       fact("Editorial leadership", "Editor-in-Chief, Deputy Editors-in-Chief, and Associate Editors"),
@@ -548,13 +548,11 @@ pages.set(
       ["editor-in-chief", "Editor-in-Chief"],
       ["deputy-editors", "Deputy Editors"],
       ["associate-editors", "Associate Editors"],
-      ["editorial-office", "Editorial Office"],
     ],
     content: `
             <article class="content-section" id="editor-in-chief"><h2>Editor-in-Chief</h2><div class="leader-card"><span class="leader-portrait leader-portrait-wang"><img src="./assets/editor-fei-yue-wang.png" alt="Fei-Yue Wang" width="192" height="202" /></span><div><strong>Fei-Yue Wang</strong><span>Chinese Academy of Sciences, China</span></div></div></article>
             <article class="content-section" id="deputy-editors"><h2>Deputy Editors-in-Chief</h2><div class="leader-grid"><div class="leader-card"><span class="leader-portrait leader-portrait-chen"><img src="./assets/editor-philip-chen.png" alt="C. L. Philip Chen" width="160" height="156" /></span><div><strong>C. L. Philip Chen</strong><span>South China University of Technology, China</span></div></div><div class="leader-card"><span class="leader-portrait leader-portrait-wei"><img src="./assets/editor-qinglai-wei.png" alt="Qinglai Wei" width="124" height="124" /></span><div><strong>Qinglai Wei</strong><span>Chinese Academy of Sciences, China</span></div></div></div></article>
-            <article class="content-section" id="associate-editors"><h2>Associate Editors</h2><details class="board-disclosure" open><summary>Associate Editors</summary><ul class="editor-directory">${associateEditors.map(([name, affiliation]) => `<li><strong>${name}</strong><span>${affiliation}</span></li>`).join("")}</ul></details></article>
-            <article class="content-section" id="editorial-office"><h2>Editorial Office</h2><dl class="metadata-list"><div><dt>Email</dt><dd><a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a></dd></div><div><dt>Telephone</dt><dd>010-61943066</dd></div><div><dt>Address</dt><dd>Room 1505, Satellite Building, No. 63 Zhichun Road, Haidian District, Beijing 100190, China</dd></div></dl></article>`,
+            <article class="content-section" id="associate-editors"><h2>Associate Editors</h2><details class="board-disclosure" open><summary>Associate Editors</summary><ul class="editor-directory">${associateEditors.map(([name, affiliation]) => `<li><strong>${name}</strong><span>${affiliation}</span></li>`).join("")}</ul></details></article>`,
   })
 );
 
@@ -617,7 +615,7 @@ const pageDescriptions = new Map([
   ["reviewers.html", "IJICS reviewer responsibilities, assessment criteria, invitation verification, and reviewer login."],
   ["anti-fraud.html", "IJICS guidance for verifying official contacts, submission links, fee requests, and suspicious communications."],
   ["publisher-information.html", "IJICS publication details, society affiliation, and official contact information."],
-  ["editorial-board.html", "IJICS editorial leadership, board members, institutional affiliations, and Editorial Office contact details."],
+  ["editorial-board.html", "IJICS editorial leadership, board members, and institutional affiliations."],
   ["instructions-for-authors.html", "IJICS submission guidelines covering article types, manuscript preparation, files, peer review, and post-acceptance procedures."],
   ["author-center.html", "IJICS author resources, manuscript templates, peer review information, and online submission system."],
 ]);
