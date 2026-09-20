@@ -21,10 +21,7 @@ function factIcon(label) {
 
 const fact = (label, value) => `<article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${factIcon(label)}</svg></span><div><strong>${label}</strong><span>${value}</span></div></article>`;
 
-function informationPage({ id, label, title, lead, heroTags = [], toc, content, className = "" }) {
-  const heroImage = id === "aim-scope" || id === "author-center"
-    ? "aim-scope-hero-network.png"
-    : `${id}-hero.png`;
+function informationPage({ id, label, title, toc, content, className = "" }) {
   const relatedRoutes = [
     ["aim-scope", "./aim-scope.html#aim-scope", "Aims and Scope", "Review the journal's subject coverage"],
     ["instructions-for-authors", "./instructions-for-authors.html#instructions-for-authors", "Submission Guidelines", "Prepare a manuscript for submission"],
@@ -38,19 +35,10 @@ function informationPage({ id, label, title, lead, heroTags = [], toc, content, 
     .slice(0, 4)
     .map(([, href, routeTitle, description]) => `<a href="${href}"><strong>${routeTitle}</strong><small>${description}</small></a>`)
     .join("");
-  const heroTagsMarkup = heroTags.length
-    ? `<ul class="information-hero-tags" aria-label="${label} key policies">${heroTags.map((tag) => `<li>${tag}</li>`).join("")}</ul>`
-    : "";
 
   return `      <div class="content-flow information-page guided-information-page ${className}">
         <nav class="information-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#home">Home</a><span>/</span><strong>${label}</strong></nav>
-        <section class="information-hero" id="${id}">
-          <div class="information-hero-copy">
-            <h1>${title}</h1>
-            <p class="information-hero-lead">${lead}</p>${heroTagsMarkup ? `\n            ${heroTagsMarkup}` : ""}
-          </div>
-          <figure class="information-hero-visual" aria-hidden="true"><img src="./assets/${heroImage}" alt="" /></figure>
-        </section>
+        <header class="subpage-heading" id="${id}"><h1>${title}</h1></header>
         <section class="information-layout">
           <nav class="page-toc" aria-label="${label} sections">
             <strong>Table of Contents</strong>
@@ -102,9 +90,10 @@ pages.set(
             </article>
             <article class="content-section" id="contribution-types">
               <h2>Types of Contributions</h2>
-              <div class="two-column-copy">
+              <div class="article-type-grid">
                 <div><h3>Research Articles</h3><p>Original research that advances the theory, methods, architecture, modeling, or control of intelligent systems.</p></div>
                 <div><h3>Reviews and Communications</h3><p>Authoritative reviews, communications, and letters addressing significant developments in the journal's scope.</p></div>
+                <div><h3>New AI and New Society (NANS)</h3><p>Short contributions on emerging topics, research findings, methods, and models. Recommended length: no more than 3 journal pages.</p></div>
               </div>
             </article>`,
   })

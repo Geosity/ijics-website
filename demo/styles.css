@@ -7225,6 +7225,31 @@ body:has(.guided-information-page)::before {
   max-width: 82ch;
 }
 
+/* Compact subpage headings replace large illustrated banners. */
+.subpage-heading {
+  margin: 0;
+  padding: 16px 0 22px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 100px;
+}
+
+.subpage-heading h1 {
+  max-width: none;
+  margin: 0;
+  font-family: var(--sans);
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.15;
+}
+
+.guided-information-page .subpage-heading + .information-layout {
+  padding-top: 28px;
+}
+
+.guided-information-page #scope-topics > p {
+  width: 100%;
+  max-width: none;
+}
+
 .guided-information-page .scope-grid,
 .guided-information-page .two-column-copy,
 .guided-information-page .article-type-grid,

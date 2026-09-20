@@ -249,8 +249,7 @@ def main():
 
         if path.name == "editorial-process.html":
             for requirement in (
-                "Single-blind peer review",
-                "Publication Charges",
+                "Single-Blind Peer Review",
                 "Article Processing Charges",
                 "Publishing Ethics",
                 "Open Access Policy",
