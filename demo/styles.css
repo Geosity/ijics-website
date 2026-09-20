@@ -7221,8 +7221,9 @@ body:has(.guided-information-page)::before {
   background: var(--accent);
 }
 
-.guided-information-page .content-section p {
-  max-width: 82ch;
+.guided-information-page .content-section p,
+.guided-information-page .disclosure-body p {
+  max-width: none;
 }
 
 /* Compact subpage headings replace large illustrated banners. */
