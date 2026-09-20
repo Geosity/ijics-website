@@ -22,20 +22,6 @@ function factIcon(label) {
 const fact = (label, value) => `<article class="information-fact"><span class="information-fact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${factIcon(label)}</svg></span><div><strong>${label}</strong><span>${value}</span></div></article>`;
 
 function informationPage({ id, label, title, toc, content, className = "" }) {
-  const relatedRoutes = [
-    ["aim-scope", "./aim-scope.html#aim-scope", "Aims and Scope", "Review the journal's subject coverage"],
-    ["instructions-for-authors", "./instructions-for-authors.html#instructions-for-authors", "Submission Guidelines", "Prepare a manuscript for submission"],
-    ["editorial-process", "./editorial-process.html#editorial-process", "Editorial Process", "Learn about peer review and publication"],
-    ["submit-manuscript", "./submit-manuscript.html#submit-manuscript", "Submit a Manuscript", "Access the online submission system"],
-    ["publication-ethics", "./publication-ethics.html#publication-ethics", "Publishing Ethics", "Review publication requirements"],
-    ["open-access", "./open-access.html#open-access", "Open Access", "Review access and reuse information"],
-  ];
-  const relatedMarkup = relatedRoutes
-    .filter(([routeId]) => routeId !== id)
-    .slice(0, 4)
-    .map(([, href, routeTitle, description]) => `<a href="${href}"><strong>${routeTitle}</strong><small>${description}</small></a>`)
-    .join("");
-
   return `      <div class="content-flow information-page guided-information-page ${className}">
         <nav class="information-breadcrumb" aria-label="Breadcrumb"><a href="./index.html#home">Home</a><span>/</span><strong>${label}</strong></nav>
         <header class="subpage-heading" id="${id}"><h1>${title}</h1></header>
@@ -48,7 +34,6 @@ function informationPage({ id, label, title, toc, content, className = "" }) {
 ${content.trim()}
           </div>
         </section>
-        <section class="aim-related-routes" aria-labelledby="${id}-related-routes"><h2 id="${id}-related-routes">Related Information</h2><nav aria-label="Related journal information">${relatedMarkup}</nav></section>
       </div>`;
 }
 
