@@ -10063,11 +10063,19 @@ body:has(.home-band) .issue-article-card .article-actions button {
 }
 
 .guided-information-page .integrity-screening-intro {
-  grid-template-columns: minmax(360px, 1.15fr) minmax(300px, .85fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
-  padding: 30px 28px 28px;
+  padding: 30px 0 18px;
   border: 0;
   background: transparent;
+}
+
+.guided-information-page .integrity-screening > .integrity-screening-note {
+  max-width: none;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .guided-information-page .integrity-screening-intro h2 {
