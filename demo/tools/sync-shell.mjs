@@ -104,8 +104,7 @@ const footer = `    <footer class="site-footer" id="contact" aria-label="Journal
             <a href="./index.html#call-for-papers">Calls for Papers</a>
           </section>
           <section class="footer-directory-group">
-            <h2>Author Center</h2>
-            <a href="./author-center.html#author-center">Author Center</a>
+            <h2><a href="./author-center.html#author-center">Author Center</a></h2>
             <a href="./instructions-for-authors.html#instructions-for-authors">Submission Guidelines</a>
             <a href="./submit-manuscript.html#submit-manuscript">Submit a Manuscript</a>
             <a href="./editorial-process.html#editorial-process">Editorial Process</a>
@@ -147,7 +146,7 @@ for (const file of files) {
   html = html.replace(/    <footer class="site-footer"[\s\S]*?<\/footer>/, footer);
   html = html.replace(/<title>(.*?) \| IJICS Website Preview<\/title>/, "<title>$1 | IJICS</title>");
   html = html.replace("<title>IJICS Website Preview</title>", "<title>IJICS | The International Journal of Intelligent Control and Systems</title>");
-  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=179");
+  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=180");
   html = html.replace(/script\.js\?v=\d+/g, "script.js?v=158");
   await writeFile(path, html);
 }
