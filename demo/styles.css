@@ -9888,11 +9888,11 @@ body:has(.home-band) .feature-slide-pick .feature-summary + p {
 }
 
 .site-header .brand-logo {
-  width: 50px;
-  flex: 0 0 50px;
+  width: 64px;
+  flex: 0 0 64px;
   height: auto;
-  aspect-ratio: 640 / 508;
-  object-fit: cover;
+  aspect-ratio: 640 / 581;
+  object-fit: contain;
 }
 
 .site-header .brand-wordmark {
@@ -9925,8 +9925,8 @@ body:has(.home-band) .feature-slide-pick .feature-summary + p {
   }
 
   .site-header .brand-logo {
-    width: 42px;
-    flex-basis: 42px;
+    width: 52px;
+    flex-basis: 52px;
     height: auto;
   }
 

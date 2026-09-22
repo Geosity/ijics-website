@@ -179,10 +179,10 @@ def main():
         header_match = re.search(r'<header class="site-header">(.*?)</header>', source, re.S)
         if header_match:
             header_source = header_match.group(1)
-            if "ijics-circle-mark-four.svg" not in header_source:
-                errors.append(f"{path.name}: shared header missing the IJICS four-circle mark")
-            if 'class="brand-wordmark"' not in header_source or "ijics-logo-symbol.png" not in header_source:
-                errors.append(f"{path.name}: shared header missing the IJICS wordmark")
+            if 'class="brand-logo"' not in header_source or "ijics-header-psd.png" not in header_source:
+                errors.append(f"{path.name}: shared header missing the approved PSD-derived IJICS logo")
+            if 'class="brand-wordmark"' in header_source:
+                errors.append(f"{path.name}: shared header duplicates the wordmark already included in the logo")
             if "Editorial Process" not in header_source:
                 errors.append(f"{path.name}: Author Center menu missing Editorial Process")
             for removed_item in ("Peer Review Process", "Article Processing Charges"):
