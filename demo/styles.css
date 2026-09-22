@@ -7722,10 +7722,6 @@ body:has(.home-band) .issue-article-card .article-figure img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  body:has(.home-band) .journal-value-item:last-child {
-    grid-column: 1 / -1;
-  }
-
   .caa-related {
     grid-template-columns: 1fr;
   }
@@ -7744,10 +7740,6 @@ body:has(.home-band) .issue-article-card .article-figure img {
 
   body:has(.home-band) .journal-value-list {
     grid-template-columns: 1fr;
-  }
-
-  body:has(.home-band) .journal-value-item:last-child {
-    grid-column: auto;
   }
 
   body:has(.home-band) .issue-article-card .article-figure {
@@ -8054,29 +8046,52 @@ body:has(.home-band) .journal-recognition-banner .journal-value-list {
   line-height: 1.25;
 }
 
+/* Article metadata determines row height at every viewport width. */
+body:has(.home-band) .issue-article-card .article-card-body {
+  display: block;
+  min-width: 0;
+  overflow: visible;
+}
+
+body:has(.home-band) .issue-article-card h2,
+body:has(.home-band) .issue-article-card .article-authors,
+body:has(.home-band) .issue-article-card .article-meta {
+  display: block;
+  max-height: none;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 @media (min-width: 761px) {
   body:has(.home-band) .issue-article-card {
-    height: 178px;
+    height: auto;
     min-height: 178px;
-    max-height: 178px;
-    grid-template-columns: minmax(210px, 19%) minmax(0, 1fr) 172px;
+    max-height: none;
+    grid-template-columns: minmax(180px, 19%) minmax(0, 1fr) 172px;
+    grid-template-rows: auto;
   }
 
   body:has(.home-band) .issue-article-card .article-figure {
-    height: 177px;
+    display: flex;
+    align-items: center;
+    height: auto;
     min-height: 177px;
-    max-height: 177px;
+    max-height: none;
   }
 
-  body:has(.home-band) .issue-article-card .article-card-body {
-    overflow: hidden;
+  body:has(.home-band) .issue-article-card .article-figure img {
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
   }
+}
 
-  body:has(.home-band) .issue-article-card h2 {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+@media (min-width: 761px) and (max-width: 980px) {
+  body:has(.home-band) .issue-article-card {
+    grid-template-columns: minmax(150px, 28%) minmax(0, 1fr);
+    grid-template-rows: auto auto;
   }
 }
 
@@ -9836,9 +9851,11 @@ body:has(.home-band) .feature-slide-pick .feature-summary + p {
 }
 
 /* Interlocking-circle mark extracted from the supplied PSD shape layers. */
-.site-header .nav-shell {
-  grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
-  min-height: 76px;
+@media (min-width: 981px) {
+  .site-header .nav-shell {
+    grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
+    min-height: 76px;
+  }
 }
 
 .site-header .brand {

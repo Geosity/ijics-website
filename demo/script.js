@@ -124,11 +124,8 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
   let featurePaused = false;
 
   const syncFeatureHeight = () => {
-    if (window.matchMedia("(max-width: 760px)").matches) {
-      featureTrack.style.height = `${featureSlides[activeFeature].scrollHeight}px`;
-      return;
-    }
-    featureTrack.style.removeProperty("height");
+    // Size to the visible slide at every width; a hidden slide must not stretch the banner.
+    featureTrack.style.height = `${featureSlides[activeFeature].scrollHeight}px`;
   };
 
   const showFeature = (nextIndex) => {
@@ -184,7 +181,8 @@ if (featureCarousel && featureTrack && featureSlides.length > 1) {
     if (!featureCarousel.contains(event.relatedTarget)) resumeFeatureRotation();
   });
 
-  new ResizeObserver(syncFeatureHeight).observe(featureSlides[0]);
+  const featureResizeObserver = new ResizeObserver(syncFeatureHeight);
+  featureSlides.forEach((slide) => featureResizeObserver.observe(slide));
   compactFeatureViewport.addEventListener("change", () => {
     syncFeatureHeight();
     startFeatureRotation();
