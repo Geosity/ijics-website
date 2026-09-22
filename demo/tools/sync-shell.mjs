@@ -146,7 +146,7 @@ for (const file of files) {
   html = html.replace(/    <footer class="site-footer"[\s\S]*?<\/footer>/, footer);
   html = html.replace(/<title>(.*?) \| IJICS Website Preview<\/title>/, "<title>$1 | IJICS</title>");
   html = html.replace("<title>IJICS Website Preview</title>", "<title>IJICS | The International Journal of Intelligent Control and Systems</title>");
-  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=184");
+  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=185");
   html = html.replace(/script\.js\?v=\d+/g, "script.js?v=159");
   await writeFile(path, html);
 }
