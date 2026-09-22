@@ -28,7 +28,7 @@ const legacyAliases = new Map([
 const header = `    <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html#home" aria-label="IJICS home">
-          <img class="brand-logo" src="./assets/ijics-header-psd.png" width="640" height="581" alt="IJICS" />
+          <img class="brand-logo" src="./assets/ijics-header-psd.png?v=2" width="640" height="581" alt="IJICS" />
           <span class="brand-name">The International Journal of<br />Intelligent Control and Systems</span>
         </a>
         <nav class="section-shortcuts" aria-label="Primary navigation">

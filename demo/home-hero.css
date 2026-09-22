@@ -1,6 +1,6 @@
 /* Preserve the original identity rail and editorial page; adjust only their contents. */
 body:has(.home-band) .feature-carousel {
-  overflow: hidden;
+  overflow: clip;
 }
 body:has(.home-band) .feature-track { align-items: flex-start; }
 body:has(.home-band) .feature-slide { align-self: flex-start; }
@@ -143,4 +143,48 @@ body:has(.home-band) .feature-page-scope .feature-scope-intro { font-size: 14px 
   .feature-page-scope .feature-scope-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .feature-page-scope .feature-scope-grid li { padding: 10px 8px; }
   .feature-page-scope .feature-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Stack the two identity panels above their content in compact browser windows. */
+@media (max-width: 980px) {
+  body:has(.home-band) .feature-slide > .feature-frame {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body:has(.home-band) .feature-identity {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    padding: 22px 24px;
+    gap: 20px;
+  }
+  .feature-identity-brand {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 20px;
+    max-width: none;
+    text-align: left;
+  }
+  .feature-identity-circles {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 90px;
+    margin: 0;
+  }
+  .feature-identity-wordmark { grid-column: 2; font-size: 38px; line-height: 1; }
+  .feature-identity-title-cn { grid-column: 2; margin-top: 8px; font-size: 12px; }
+  .feature-identity-title-en { grid-column: 2; margin-top: 6px; font-size: 10px; }
+  body:has(.home-band) .feature-identity > a,
+  body:has(.home-band) .feature-slide-scope .feature-identity > a {
+    width: auto;
+    max-width: 180px;
+    margin: 0;
+  }
+}
+@media (max-width: 620px) {
+  body:has(.home-band) .feature-identity { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  body:has(.home-band) .feature-identity > a,
+  body:has(.home-band) .feature-slide-scope .feature-identity > a { justify-self: center; width: 210px; max-width: 100%; }
+  .feature-identity-brand { grid-template-columns: 76px minmax(0, 1fr); column-gap: 16px; }
+  .feature-identity-circles { width: 76px; }
 }
