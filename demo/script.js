@@ -219,6 +219,14 @@ document.querySelectorAll(".nav-menu").forEach((menu) => {
   menu.addEventListener("focusout", (event) => {
     if (!menu.contains(event.relatedTarget)) closeMenu();
   });
+  menu.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !menu.open) return;
+    event.preventDefault();
+    event.stopPropagation();
+    cancelClose();
+    menu.open = false;
+    menu.querySelector("summary")?.focus();
+  });
 });
 
 if (quickAccessFloat && quickAccessClose) {
