@@ -10930,3 +10930,13 @@ body:has(.home-band) .feature-slide-paper .feature-summary {
   body:has(.home-band) .cover-paper-summary .cover-paper-label,
   body:has(.home-band) .credential-recognition-list .journal-value-icon { color: #ff6b73 !important; }
 }
+
+/* Use the full header row for a single-line journal name in compact windows. */
+@media (max-width: 980px) {
+  .site-header .brand { width: 100%; max-width: none; container-type: inline-size; }
+  .site-header .brand-name {
+    white-space: nowrap;
+    font-size: clamp(6px, 2cqi, 13px);
+  }
+  .site-header .brand-name br { display: none; }
+}

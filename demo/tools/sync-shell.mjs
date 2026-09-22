@@ -29,7 +29,7 @@ const header = `    <header class="site-header">
       <div class="nav-shell">
         <a class="brand" href="./index.html#home" aria-label="IJICS home">
           <img class="brand-logo" src="./assets/ijics-header-psd.png?v=2" width="640" height="581" alt="IJICS" />
-          <span class="brand-name">The International Journal of<br />Intelligent Control and Systems</span>
+          <span class="brand-name">The International Journal of <br />Intelligent Control and Systems</span>
         </a>
         <nav class="section-shortcuts" aria-label="Primary navigation">
           <a href="./index.html#home">Home</a>
@@ -145,7 +145,7 @@ for (const file of files) {
   html = html.replace(/    <footer class="site-footer"[\s\S]*?<\/footer>/, footer);
   html = html.replace(/<title>(.*?) \| IJICS Website Preview<\/title>/, "<title>$1 | IJICS</title>");
   html = html.replace("<title>IJICS Website Preview</title>", "<title>IJICS | The International Journal of Intelligent Control and Systems</title>");
-  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=186");
+  html = html.replace(/styles\.css\?v=\d+/g, "styles.css?v=187");
   html = html.replace(/script\.js\?v=\d+/g, "script.js?v=159");
   await writeFile(path, html);
 }
