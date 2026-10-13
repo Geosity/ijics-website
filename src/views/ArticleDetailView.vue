@@ -390,16 +390,6 @@ export default {
         <div class="article-body">
           <div class="article-wrap article-layout">
             <div class="article-main">
-              <nav class="section-nav" aria-label="On this page">
-                <p class="section-nav-label">On this page</p>
-                <ul>
-                  <li v-if="article.abstract"><a href="#abstract">Abstract</a></li>
-                  <li v-if="article.keywords.length"><a href="#keywords">Keywords</a></li>
-                  <li v-if="article.figure"><a href="#figure">Figure</a></li>
-                  <li v-if="article.authorDetails.some(a=>a.affiliations?.length)"><a href="#affiliations">Affiliations</a></li>
-                  <li v-if="article.references?.length"><a href="#references">References</a></li>
-                </ul>
-              </nav>
 
               <section v-if="article.abstract" id="abstract" class="article-section" aria-labelledby="abstract-heading">
                 <h2 id="abstract-heading">Abstract</h2>
