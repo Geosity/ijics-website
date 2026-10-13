@@ -45,6 +45,8 @@ jobs:
       - name: Build and prerender Vue site
         env:
           IJICS_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          IJICS_SITE_URL: https://geosity.github.io
+          VITE_SITE_URL: https://geosity.github.io
         run: npm run build
 
       - name: Test API and rendered routes
