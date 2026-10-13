@@ -5,7 +5,6 @@ import {useRoute} from 'vue-router';
 import snapshots from '../data/articles.json' with {type:'json'};
 import {fetchArticle} from '../api/articleClient.js';
 import {assetUrl} from '../api/assetUrl.js';
-import PdfReader from '../components/PdfReader.vue';
 import {updateArticleMeta} from '../api/articleMeta.js';
 const JOURNAL = 'The International Journal of Intelligent Control and Systems';
 const MONTHS_LONG = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -200,7 +199,6 @@ function buildRis(article) {
 }
 
 export default {
-  components:{PdfReader},
   setup() {
     const route=useRoute();
     const initial=snapshots.find(a=>String(a.id)===String(route.params.id));
@@ -398,7 +396,6 @@ export default {
                   <li v-if="article.abstract"><a href="#abstract">Abstract</a></li>
                   <li v-if="article.keywords.length"><a href="#keywords">Keywords</a></li>
                   <li v-if="article.figure"><a href="#figure">Figure</a></li>
-                  <li><a href="#full-text">Full text</a></li>
                   <li v-if="article.authorDetails.some(a=>a.affiliations?.length)"><a href="#affiliations">Affiliations</a></li>
                   <li v-if="article.references?.length"><a href="#references">References</a></li>
                 </ul>
@@ -417,8 +414,6 @@ export default {
                 </ul>
                 <p v-else class="empty-record">No keywords are available.</p>
               </section>
-
-              <section v-if="!article.abstract && article.browseUrl" id="full-text" class="article-section" aria-labelledby="report-text-heading"><h2 id="report-text-heading">Full text</h2><PdfReader :url="article.browseUrl" :title="article.title"/></section>
               <section v-if="article.figure" id="figure" class="article-section" aria-labelledby="figure-heading">
                 <h2 id="figure-heading">Figure</h2>
                 <figure v-if="article.figure" class="figure-panel">
@@ -428,15 +423,6 @@ export default {
                   <figcaption v-if="article.figureCaption">{{ article.figureCaption }}</figcaption>
                 </figure>
                 <p v-else class="empty-record">No figure is available for this article.</p>
-              </section>
-
-              <section v-if="article.abstract" id="full-text" class="article-section" aria-labelledby="full-text-heading">
-                <h2 id="full-text-heading">Full text</h2>
-                <PdfReader v-if="article.browseUrl" :url="article.browseUrl" :title="article.title"/>
-                <p v-if="article.browseUrl || article.pdfUrl" class="empty-record-action">
-                  <a v-if="article.browseUrl" :href="article.browseUrl" rel="noopener noreferrer" target="_blank">View PDF</a>
-                  <a v-if="article.pdfUrl" :href="article.pdfUrl" rel="noopener noreferrer">Download PDF</a>
-                </p>
               </section>
 
               <section v-if="article.authorDetails.some(a=>a.affiliations?.length)" id="affiliations" class="article-section" aria-labelledby="affiliations-heading">
@@ -495,7 +481,6 @@ export default {
 
                 <div class="detail-actions">
                   <button type="button" class="btn-secondary" @click="openCite">Cite this article</button>
-                  <a v-if="article.browseUrl" class="btn-secondary" :href="article.browseUrl" rel="noopener noreferrer" target="_blank">View PDF</a>
                   <a v-if="article.pdfUrl" class="btn-primary" :href="article.pdfUrl" rel="noopener noreferrer">
                     Download PDF<span v-if="pdfSizeLabel"> ({{ pdfSizeLabel }})</span>
                   </a>
