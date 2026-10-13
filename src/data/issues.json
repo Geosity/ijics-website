@@ -1,0 +1,148 @@
+[
+  {
+    "id": 43,
+    "title": "Volume 31 Number 2",
+    "year": 2026,
+    "volume": 31,
+    "number": 2,
+    "date": "2026-06-25",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1782373895.068272.png",
+    "articleIds": [
+      322,
+      352,
+      364,
+      369,
+      372,
+      373,
+      376,
+      379,
+      382
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Volume 31 Number 1",
+    "year": 2026,
+    "volume": 31,
+    "number": 1,
+    "date": "2026-03-31",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1777442119.596342.png",
+    "articleIds": [
+      291,
+      336,
+      357
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Volume 30 Number 4",
+    "year": 2025,
+    "volume": 30,
+    "number": 4,
+    "date": "2025-12-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1773622577.494781.png",
+    "articleIds": [
+      232,
+      238,
+      287
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Volume 30 Number 3",
+    "year": 2025,
+    "volume": 30,
+    "number": 3,
+    "date": "2025-09-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1770254754.269274.png",
+    "articleIds": [
+      242,
+      254,
+      272
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Volume 30 Number 2",
+    "year": 2025,
+    "volume": 30,
+    "number": 2,
+    "date": "2025-06-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758609352.616588.png",
+    "articleIds": [
+      179,
+      180,
+      230
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Volume 30 Number 1",
+    "year": 2025,
+    "volume": 30,
+    "number": 1,
+    "date": "2025-03-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758608663.372144.png",
+    "articleIds": [
+      163,
+      184,
+      229
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Volume 29 Number 4",
+    "year": 2024,
+    "volume": 29,
+    "number": 4,
+    "date": "2024-12-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758676894.547271.png",
+    "articleIds": [
+      131,
+      133,
+      135
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Volume 29 Number 3",
+    "year": 2024,
+    "volume": 29,
+    "number": 3,
+    "date": "2024-09-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758675748.032268.png",
+    "articleIds": [
+      126,
+      127,
+      128
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Volume 29 Number 2",
+    "year": 2024,
+    "volume": 29,
+    "number": 2,
+    "date": "2024-06-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622357.536022.png",
+    "articleIds": [
+      110,
+      112,
+      113
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Volume 29 Number 1",
+    "year": 2024,
+    "volume": 29,
+    "number": 1,
+    "date": "2024-03-20",
+    "cover": "https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622141.18272.png",
+    "articleIds": [
+      105,
+      106,
+      107
+    ]
+  }
+]

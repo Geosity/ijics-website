@@ -1,0 +1,122 @@
+[
+  {
+    "file": "aim-scope.html",
+    "path": "/aim-scope",
+    "title": "Aims and Scope | IJICS",
+    "description": "Official IJICS aims and scope covering intelligent control, robotics, automation, system integration, modeling, simulation, hardware, and software."
+  },
+  {
+    "file": "all-issues.html",
+    "path": "/all-issues",
+    "title": "All Issues | IJICS",
+    "description": "Browse published IJICS volumes and issues with direct links to issue contents and articles."
+  },
+  {
+    "file": "anti-fraud.html",
+    "path": "/anti-fraud",
+    "title": "Anti-Fraud Notice | IJICS",
+    "description": "IJICS guidance for verifying official contacts, submission links, fee requests, and suspicious communications."
+  },
+  {
+    "file": "article-detail.html",
+    "path": "/article-detail",
+    "title": "Agricultural Intelligence Takes Root: Turning Plant Science into a Digital Frontier | IJICS",
+    "description": "Article record for Agricultural Intelligence Takes Root, including authors, DOI, volume, issue, pages, publication date, and full-text link."
+  },
+  {
+    "file": "article-processing-charge.html",
+    "path": "/article-processing-charge",
+    "title": "Article Processing Charges | IJICS",
+    "description": "Current IJICS manuscript-processing fee policy and notice of possible future changes."
+  },
+  {
+    "file": "author-center.html",
+    "path": "/author-center",
+    "title": "Author Center | IJICS",
+    "description": "IJICS author resources, manuscript templates, peer review information, and online submission system."
+  },
+  {
+    "file": "copyright-license.html",
+    "path": "/copyright-license",
+    "title": "Licensing | IJICS",
+    "description": ""
+  },
+  {
+    "file": "copyright-terms.html",
+    "path": "/copyright-terms",
+    "title": "Copyright and Permissions | IJICS",
+    "description": "IJICS copyright agreement, author rights, and third-party permission requirements."
+  },
+  {
+    "file": "editorial-board.html",
+    "path": "/editorial-board",
+    "title": "Editorial Board | IJICS",
+    "description": "IJICS editorial leadership, board members, and institutional affiliations."
+  },
+  {
+    "file": "editorial-process.html",
+    "path": "/editorial-process",
+    "title": "Editorial Process | IJICS",
+    "description": "IJICS editorial workflow, single-blind peer review, article processing charges, publishing ethics, open access information, revisions, and proofs."
+  },
+  {
+    "file": "forthcoming-issue.html",
+    "path": "/forthcoming-issue",
+    "title": "Early Access | IJICS",
+    "description": "IJICS Early Access articles published online before assignment to a volume and issue."
+  },
+  {
+    "file": "index.html",
+    "path": "/",
+    "title": "The International Journal of Intelligent Control and Systems | IJICS",
+    "description": "IJICS publishes peer-reviewed research in intelligent control and systems, with current articles, submission guidelines, editorial policies, and journal information."
+  },
+  {
+    "file": "instructions-for-authors.html",
+    "path": "/instructions-for-authors",
+    "title": "Submission Guidelines | IJICS",
+    "description": "IJICS submission guidelines covering article types, manuscript preparation, files, peer review, and post-acceptance procedures."
+  },
+  {
+    "file": "licensing-terms.html",
+    "path": "/licensing-terms",
+    "title": "Licensing and Reuse | IJICS",
+    "description": "IJICS guidance on article-specific licensing, permitted reuse, attribution, and third-party permissions."
+  },
+  {
+    "file": "open-access.html",
+    "path": "/open-access",
+    "title": "Open Access | IJICS",
+    "description": "IJICS information on article access, publication fees, licensing, copyright agreements, and third-party permissions."
+  },
+  {
+    "file": "publication-ethics.html",
+    "path": "/publication-ethics",
+    "title": "Publishing Ethics | IJICS",
+    "description": "IJICS publishing ethics requirements for originality, concurrent submission, similarity, author self-citation, and citation of individual sources."
+  },
+  {
+    "file": "publisher-information.html",
+    "path": "/publisher-information",
+    "title": "Journal Information | IJICS",
+    "description": "IJICS publication details, society affiliation, and official contact information."
+  },
+  {
+    "file": "reviewers.html",
+    "path": "/reviewers",
+    "title": "Reviewer Guidelines | IJICS",
+    "description": "IJICS reviewer responsibilities, assessment criteria, invitation verification, and reviewer login."
+  },
+  {
+    "file": "search-articles.html",
+    "path": "/search-articles",
+    "title": "Search Articles | IJICS",
+    "description": "Search IJICS articles by title, author, DOI, keyword, issue, and article type, with direct article and issue links."
+  },
+  {
+    "file": "submit-manuscript.html",
+    "path": "/submit-manuscript",
+    "title": "Submit a Manuscript | IJICS",
+    "description": "Official IJICS manuscript submission requirements, file formats, author checks, and submission system."
+  }
+]

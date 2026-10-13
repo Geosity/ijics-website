@@ -1,0 +1,2 @@
+export function groupForArticle(a){const category=String(a.category||'').toLowerCase();if(/new ai|society|editorial/.test(category))return 'editorial';if(/communication|letter/.test(category))return 'communication';return 'articles';}
+export function filterArticles(articles,{q='',type='all',issue=''}={}){const term=q.trim().toLowerCase();return articles.filter(a=>(type==='all'||groupForArticle(a)===type)&&(!issue||String(a.issueId)===String(issue))&&(!term||[a.title,a.doi,...(a.authors||[]),...(a.keywords||[])].join(' ').toLowerCase().includes(term)));}

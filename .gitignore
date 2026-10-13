@@ -1,4 +1,4 @@
-# This repository publishes only the static website and its deployment files.
+# Vue source, migration content and deployment files. Build/runtime artifacts remain ignored.
 *
 
 !.gitignore
@@ -10,3 +10,24 @@
 !demo/**
 
 **/.DS_Store
+
+!package.json
+!package-lock.json
+!index.html
+!vite.config.js
+!.env.example
+!API_CONTRACT.md
+!src/
+!src/**
+!public/
+!public/**
+!server/
+!server/**
+!scripts/
+!scripts/**
+!tests/
+!tests/**
+node_modules/
+dist/
+dist-server/
+.local/

@@ -1,0 +1,2254 @@
+[
+  {
+    "id": 105,
+    "title": "Comprehensive Learning Particle Swarm Optimization Based on Optimal Particle Recombination",
+    "doi": "10.62678/IJICS202403.10105",
+    "abstract": "Particle swarm optimization (PSO) algorithm has been widely used in large-scale complex problems such as resource allocation in recent years because of its simple implementation and easy operation. However, the slow convergence speed and low solution accuracy of the algorithm also restrict its further applications. To solve the above problems, this paper introduces the chromosome crossing characteristics of genetic algorithm (GA), and proposes a comprehensive learning particle swarm optimization based on optimal particle recombination. With the help of the ability of comprehensive learning strategy to efficiently explore the solution space, this method organically combines the excellent information explored by each particle through the optimal particle recombination, so as to obtain a better individual, speed up the convergence of the algorithm, and improve the solution accuracy of the problem. The experimental results of benchmark function show that the proposed algorithm has faster convergence speed and optimization accuracy than the original algorithm, and the results of Friedman test and Wilcoxon signed-rank test prove the feasibility of the optimal particle recombination operation in particle swarm optimization.",
+    "readCount": 10101,
+    "downloadCount": 295,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 654402,
+    "authors": [
+      "Xiaobin Chen",
+      "Kezong Tang",
+      "Lihua Yang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Xiaobin Chen",
+        "given": "Xiaobin",
+        "family": "Chen",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Kezong Tang",
+        "given": "Kezong",
+        "family": "Tang",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Lihua Yang",
+        "given": "Lihua",
+        "family": "Yang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "particle swarm optimization",
+      "genetic algorithm",
+      "comprehensive learning strategy",
+      "optimal particle recombination",
+      "Friedman test",
+      "Wilcoxon signed-rank test"
+    ],
+    "volume": 29,
+    "issue": 1,
+    "issueId": 1,
+    "earlyAccess": false,
+    "pages": "21–29",
+    "published": "2024-03-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/105",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/105",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/105"
+  },
+  {
+    "id": 106,
+    "title": "Analyzing the Stochastic Stability of Neural Networks with Semi-Markov Jump Parameters",
+    "doi": "10.62678/IJICS202403.10106",
+    "abstract": "This paper addresses the issue of stochastic stability for continuous-time semi-Markovian jump neural networks. Initially, according to the characteristics of the time-delay interval, the Lyapunov-Krasovskii functional (LKF) with the semi-Markov process is constructed to ensure the stability of the switching networks. Next, the promoted double integral inequality lemma is utilized to estimate the weak infinitesimal operator of the designed LKF, and this paper establishes a time-delay correlation criterion. Moreover, the criterion is combined with the Lyapunov stability theory to make the system reach stability in the mean-square sense. Finally, the paper provides an example to demonstrate the effectiveness of the proposed approach.",
+    "readCount": 9933,
+    "downloadCount": 324,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 4671373,
+    "authors": [
+      "Lulu Zhang",
+      "Jiayue Sun",
+      "Huaguang Zhang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Lulu Zhang",
+        "given": "Lulu",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jiayue Sun",
+        "given": "Jiayue",
+        "family": "Sun",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Huaguang Zhang",
+        "given": "Huaguang",
+        "family": "Zhang",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "neural networks (NNs)",
+      "semi-Markov jump systems (sMJSs)",
+      "sojourn-time (ST)",
+      "stochastic stability analysis"
+    ],
+    "volume": 29,
+    "issue": 1,
+    "issueId": 1,
+    "earlyAccess": false,
+    "pages": "12–20",
+    "published": "2024-03-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/106",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/106",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/106"
+  },
+  {
+    "id": 107,
+    "title": "A Study of Methods for Predicting and Controlling Blood Glucose in Diabetic Patients",
+    "doi": "10.62678/IJICS202403.10107",
+    "abstract": "With the development of society and the improvement of people's living standard, diabetes has gradually become one of the world public health problems that endangers human life safety and affects the development of global economy. Type 1 diabetes is a chronic metabolic disorder that prevents the pancreas from producing insulin and requires lifelong treatment with daily insulin injections to prevent high blood sugar. The lack of insulin leads to the continuous high level of blood sugar in patients. The most important thing for patients is to monitor blood sugar changes and control blood sugar within the normal range. In this paper, a systematic literature search is carried out to study these two aspects, and key information such as the learning model adopted in the literature, the main results, the development of relevant technologies, and the limitations are summarized. From the perspective of glucose-insulin prediction model, due to the complex structure of physiological model, many parameters are difficult to identify, most of the modeling methods are data-driven. There is a great room for improvement in the research on how to mine and utilize existing models to effectively establish accurate glucose prediction models for different objects. From the perspective of control theory, after insulin injection, there is a certain delay in the reduction of blood glucose concentration, and the onset time is different depending on the injection site. The rapid development of deep learning and the increase in available data offer the possibility of addressing these challenges in the near future. When designing closed-loop glucose algorithms, we consider using a variety of approaches to establish a personalized glucose control algorithm for each diabetic patient.",
+    "readCount": 10951,
+    "downloadCount": 419,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 671242,
+    "authors": [
+      "Shuya Liu",
+      "Ruizhuo Song",
+      "Xiang Lu"
+    ],
+    "authorDetails": [
+      {
+        "name": "Shuya Liu",
+        "given": "Shuya",
+        "family": "Liu",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Ruizhuo Song",
+        "given": "Ruizhuo",
+        "family": "Song",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Xiang Lu",
+        "given": "Xiang",
+        "family": "Lu",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "blood glucose prediction",
+      "data-driven",
+      "artificial pancreas",
+      "control algorithm"
+    ],
+    "volume": 29,
+    "issue": 1,
+    "issueId": 1,
+    "earlyAccess": false,
+    "pages": "1–11",
+    "published": "2024-03-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/107",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/107",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/107"
+  },
+  {
+    "id": 110,
+    "title": "Efficient Ensemble Broad Learning System Based on Dropout and Dropconnect",
+    "doi": "10.62678/IJICS202403.10110",
+    "abstract": "Broad learning system (BLS) is an emerging neural network characterized by its rapid processing and robust generalization capabilities. However, determining the appropriate structure for broad learning system is also a challenge. In addition, broad learning system may perform overfitting due to the dependence between nodes in processing fully connected network. To deal with these problems, an efficient ensemble broad learning system based on Dropout and Dropconnect is proposed in this paper. The proposed Dropout ensemble broad learning system randomly discards hidden nodes to improve diversity between individuals and reduce the synergy between nodes to improve prediction stability. The Dropconnect ensemble broad learning system randomly drops connection weights to generate more complementary models by adding input attribute disturbance. The experimental results on the UCI datasets confirm that the method proposed in this paper can solve the problem of model overfitting caused by the strong dependence between the nodes of ensemble broad learning system. The proposed algorithm outperforms the original BLS in terms of prediction stability and classification accuracy.",
+    "readCount": 11062,
+    "downloadCount": 530,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 847316,
+    "authors": [
+      "Yiwan Cao",
+      "Fei Chu",
+      "Shuai Li",
+      "C. L. Philip Chen",
+      "Jun Fu"
+    ],
+    "authorDetails": [
+      {
+        "name": "Yiwan Cao",
+        "given": "Yiwan",
+        "family": "Cao",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Fei Chu",
+        "given": "Fei",
+        "family": "Chu",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Shuai Li",
+        "given": "Shuai",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "C. L. Philip Chen",
+        "given": "C. L. Philip",
+        "family": "Chen",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jun Fu",
+        "given": "Jun",
+        "family": "Fu",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Broad learning system",
+      "ensemble learning",
+      "Dropout",
+      "Dropconnect"
+    ],
+    "volume": 29,
+    "issue": 2,
+    "issueId": 2,
+    "earlyAccess": false,
+    "pages": "79–87",
+    "published": "2024-06-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/110",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/110",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/110"
+  },
+  {
+    "id": 112,
+    "title": "Gated Recurrent Units Based Abnormal Detection Method for Imbalanced Electricity Consumption Data",
+    "doi": "10.62678/IJICS202403.10112",
+    "abstract": "Timely detection of abnormal electricity consumption behaviors plays a key role in saving energy. However, the detection of abnormal electricity consumption faces many problems. Imbalanced data are important challenges in this field. When the normal data are much more than the abnormal data, the network can hardly recognize the features of the minority class data, which generates low detection efficiency. Therefore, in this paper, we employ adaptive synthetic sampling (ADASYN) to achieve effective expansion of the minority class data. In addition, we adopt gated recurrent units to complete the classification of electricity consumption data. We conduct detailed experiments to verify this proposed method. Experimental results show that this method is more effective than other methods.",
+    "readCount": 10096,
+    "downloadCount": 366,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 657666,
+    "authors": [
+      "Songping Meng",
+      "Chengdong Li",
+      "Wei Peng",
+      "Chenlu Tian"
+    ],
+    "authorDetails": [
+      {
+        "name": "Songping Meng",
+        "given": "Songping",
+        "family": "Meng",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Chengdong Li",
+        "given": "Chengdong",
+        "family": "Li",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Wei Peng",
+        "given": "Wei",
+        "family": "Peng",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Chenlu Tian",
+        "given": "Chenlu",
+        "family": "Tian",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "anomaly detection",
+      "gated recurrent units",
+      "imbalanced data",
+      "abnormal electricity consumption detection"
+    ],
+    "volume": 29,
+    "issue": 2,
+    "issueId": 2,
+    "earlyAccess": false,
+    "pages": "88–94",
+    "published": "2024-06-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/112",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/112",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/112"
+  },
+  {
+    "id": 113,
+    "title": "Large-Scale Food Image Datasets and Food Recognition Systems: A Survey",
+    "doi": "10.62678/IJICS202403.10113",
+    "abstract": "With the development of the Internet, more and more people like to share their daily food, which makes the Internet rich in food image data. Many researchers collect food images on the Internet, label them, and combine machine learning and other methods to achieve food recognition systems. These food recognition systems can quickly help users record their daily diets and analyze their eating habits. The advanced food identification system can currently accurately identify hundreds of foods. At the same time, it can explore the food nutrition content and give food reference suggestions by accessing the food nutrition database. In this paper, we collect and evaluate large-scale food image datasets and food recognition systems.",
+    "readCount": 11311,
+    "downloadCount": 362,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 7825734,
+    "authors": [
+      "Ruizhuo Song",
+      "Wenze Chen"
+    ],
+    "authorDetails": [
+      {
+        "name": "Ruizhuo Song",
+        "given": "Ruizhuo",
+        "family": "Song",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Wenze Chen",
+        "given": "Wenze",
+        "family": "Chen",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Food recognition",
+      "deep learning",
+      "computer vision",
+      "object detection",
+      "mobile applications"
+    ],
+    "volume": 29,
+    "issue": 2,
+    "issueId": 2,
+    "earlyAccess": false,
+    "pages": "95–100",
+    "published": "2024-06-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/113",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/113",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/113"
+  },
+  {
+    "id": 126,
+    "title": "Energy Maximization Absorption of Wave Energy Converter Based on Fourier Pseudo-Spectral Method and Adaptive Dynamic Programming",
+    "doi": "10.62678/IJICS202409.10126",
+    "abstract": "In this paper, we propose a novel noncausal control framework to address the energy maximization problem of wave energy converters (WECs) subject to constraints. The energy maximization problem of WECs is a constrained optimal control problem. The proposed control framework converts this problem into a reference trajectory tracking problem through the Fourier pseudo-spectral method (FPSM) and utilizes the online tracking adaptive dynamic programming (OTADP) algorithm to realize real-time trajectory tracking for practical use in the ocean environment. Using the wave prediction technique, the optimal trajectory is generated online through a receding horizon (RH) implementation. A critic neural network (NN) is applied to approximate the optimal cost value function and calculate the error-tracking control by solving the associated Hamilton-Jacobi-Bellman (HJB) equation. The proposed WEC control framework improves computational efficiency and makes the online control feasible in practice. Simulation results show the effects of the receding horizon implementation of FPSM with different window lengths and window functions, while verifying the performances of tracking control and energy absorption of WECs in two different sea conditions.",
+    "readCount": 7755,
+    "downloadCount": 333,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 1388049,
+    "authors": [
+      "Xinyu Bao",
+      "Zhen Chen",
+      "Ming Li"
+    ],
+    "authorDetails": [
+      {
+        "name": "Xinyu Bao",
+        "given": "Xinyu",
+        "family": "Bao",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Zhen Chen",
+        "given": "Zhen",
+        "family": "Chen",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Ming Li",
+        "given": "Ming",
+        "family": "Li",
+        "isCorresponding": true,
+        "affiliations": [
+          "College of Engineering, Ocean University of China"
+        ]
+      }
+    ],
+    "keywords": [
+      "wave energy converter",
+      "Fourier pseudo-spectral control",
+      "adaptive dynamic programming",
+      "energy maximization",
+      "optimal trajectory tracking control"
+    ],
+    "volume": 29,
+    "issue": 3,
+    "issueId": 15,
+    "earlyAccess": false,
+    "pages": "108–118",
+    "published": "2024-09-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/126",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/126",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/126"
+  },
+  {
+    "id": 127,
+    "title": "Application of ARIS and Adaptive Filtering Algorithm in Underwater Acoustic Communication",
+    "doi": "10.62678/IJICS202409.10127",
+    "abstract": "As the core of marine communication, underwater acoustic communication technology significantly improves the performance of underwater communication by using technologies such as modulation, multiple access, and anti-interference. Among them, adaptive filtering technology plays a key role in eliminating noise and channel equalization. This paper explores the novel application of acoustic reconfigurable intelligence surface (ARIS) and adaptive filtering in underwater acoustic communication. We introduce the concept of ARIS assisted underwater acoustic communication, integrating the least mean squares (LMS) algorithm to dynamically estimate and mitigate oceanic noise. This approach further enhances signal clarity and communication quality by leveraging orthogonal frequency division multiplexing (OFDM) technology. Simulation results show that the underwater acoustic channel with ARIS is superior to the traditional channel without ARIS in terms of bit error rate and anti-interference performance. This technology significantly enhances the reception quality of underwater communication signals, making it suitable for applications in marine monitoring, military communication, and other complex environments.",
+    "readCount": 7335,
+    "downloadCount": 199,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 1092682,
+    "authors": [
+      "Tianrui Zhang",
+      "Shuangshuang Han",
+      "Ziyuan Yang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Tianrui Zhang",
+        "given": "Tianrui",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": [
+          "the School of Computer and Communication Engineering, University of Science and Technology Beijing"
+        ]
+      },
+      {
+        "name": "Shuangshuang Han",
+        "given": "Shuangshuang",
+        "family": "Han",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Ziyuan Yang",
+        "given": "Ziyuan",
+        "family": "Yang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Underwater acoustic communication",
+      "adaptive filtering technology",
+      "acoustic reconfigurable intelligence surface",
+      "orthogonal frequency division multiplexing"
+    ],
+    "volume": 29,
+    "issue": 3,
+    "issueId": 15,
+    "earlyAccess": false,
+    "pages": "101–107",
+    "published": "2024-09-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/127",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/127",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/127"
+  },
+  {
+    "id": 128,
+    "title": "Intelligent Sensor Fault Detection and Isolation in Industrial System: A Data-Model Interactive Subspace Approach",
+    "doi": "10.62678/IJICS202409.10128",
+    "abstract": "This paper proposes a novel intelligent fault detection method, i.e., combining the subspace identification technique (SIT) with the data-model interactive compensation mechanism for fault detection. More precisely, the design process is divided into two primary stages: offline learning process and real-time fault monitoring. In the offline learning phase, the fault isolation algorithm is employed, along with parameter identification using the subspace identification technique. Then the online data undergo normalization processing and are subjected to online fault detection using a trained offline model. In addition, considering the accuracy of fault detection, this paper designs the dynamic optimal threshold based on the fault detection rate (FDR) and the false alarm rate (FAR). In the end, the case studies on PT700 and Tennessee Eastman (TE) process data are provided to confirm that the proposed method achieves the fault detection objectives.",
+    "readCount": 6875,
+    "downloadCount": 323,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 1280940,
+    "authors": [
+      "Shenquan Wang",
+      "Di Meng"
+    ],
+    "authorDetails": [
+      {
+        "name": "Shenquan Wang",
+        "given": "Shenquan",
+        "family": "Wang",
+        "isCorresponding": true,
+        "affiliations": [
+          "College of Electrical and Electronic Engineering, Changchun University of Technology"
+        ]
+      },
+      {
+        "name": "Di Meng",
+        "given": "Di",
+        "family": "Meng",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "subspace identification technique",
+      "intelligent fault detection",
+      "data-model interaction",
+      "optimal threshold"
+    ],
+    "volume": 29,
+    "issue": 3,
+    "issueId": 15,
+    "earlyAccess": false,
+    "pages": "119–126",
+    "published": "2024-09-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/128",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/128",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/128"
+  },
+  {
+    "id": 131,
+    "title": "Delay-Independent Dynamic Implementation of Optimal Control for State and Input Delayed Nonlinear Systems",
+    "doi": "10.62678/IJICS202409.10131",
+    "abstract": "This study argues a dynamic optimal control approach for nonlinear systems with state and input delays. First, a feedback system identical to the delayed system is specified based on parallel control, enabling the dynamic optimal control issue to be formulated in light of the L2 gain condition. The virtual controller developed using the backstepping integral technique makes the dynamic control feasible, with its design highlighting inertial-like features, so that the response speed of controller can be altered. Then, the optimal control of the physical system is further expanded to that of the augmented system composed of it, accomplishing the control goal through virtual and actual interaction. In the implementation, the critic-actor structure facilitates the control challenge to be settled online. Additionally, the stability of the system and the convergence of neural network weights are discussed, and the research conclusions are supported by simulation examples.",
+    "readCount": 6005,
+    "downloadCount": 263,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 252797,
+    "authors": [
+      "Shanshan Jiao",
+      "Qinglai Wei"
+    ],
+    "authorDetails": [
+      {
+        "name": "Shanshan Jiao",
+        "given": "Shanshan",
+        "family": "Jiao",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Qinglai Wei",
+        "given": "Qinglai",
+        "family": "Wei",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "dynamic optimal control",
+      "parallel control",
+      "robust control",
+      "delayed systems",
+      "critic-actor structure"
+    ],
+    "volume": 29,
+    "issue": 4,
+    "issueId": 16,
+    "earlyAccess": false,
+    "pages": "147–153",
+    "published": "2024-12-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/131",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/131",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/131"
+  },
+  {
+    "id": 133,
+    "title": "Data-Driven Switching Optimal Control Strategy for Aircraft Engine Acceleration Dynamics",
+    "doi": "10.62678/IJICS202412.10133",
+    "abstract": "The transient-state acceleration control of aircraft engines has consistently been a focal point in the field of aircraft engine control research. To address the controller design problem of transient-state acceleration in aircraft engines based on switched linear systems, a data-driven optimization control algorithm is proposed. First, the optimization control problem for the transient-state acceleration process of aircraft engines is mathematically described. Subsequently, the Bellman optimal criterion in optimal control is utilized to derive the invariance of a value function at switching instants, providing an initial value for the optimization of the next subsystem. The optimization problem is then transformed into solving a Lyapunov equation using the principles of dynamic programming, and an iterative adaptive dynamic programming (ADP) algorithm is introduced to obtain optimal feedback control gains, which makes the solution of Lyapunov equation approach the optimal solution infinitely. Finally, simulation validation is conducted on a switched linear system for the transient-state acceleration of a specific aircraft engine. The effectiveness and superiority of the proposed algorithm are verified by comparing to traditional proportion integral differential (PID) control algorithms and active disturbance rejection control (ADRC).",
+    "readCount": 7094,
+    "downloadCount": 395,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 1530233,
+    "authors": [
+      "Zelin Li",
+      "Yan Shi",
+      "Shuoshuo Liu",
+      "Tao Sun",
+      "Xudong Zhao",
+      "Lijuan Liu"
+    ],
+    "authorDetails": [
+      {
+        "name": "Zelin Li",
+        "given": "Zelin",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Yan Shi",
+        "given": "Yan",
+        "family": "Shi",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Shuoshuo Liu",
+        "given": "Shuoshuo",
+        "family": "Liu",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Tao Sun",
+        "given": "Tao",
+        "family": "Sun",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Xudong Zhao",
+        "given": "Xudong",
+        "family": "Zhao",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Lijuan Liu",
+        "given": "Lijuan",
+        "family": "Liu",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "aircraft engine",
+      "transient-state",
+      "switched linear system",
+      "data-driven approach",
+      "adaptive dynamic programming",
+      "optimal control"
+    ],
+    "volume": 29,
+    "issue": 4,
+    "issueId": 16,
+    "earlyAccess": false,
+    "pages": "154–163",
+    "published": "2024-12-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/133",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/133",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/133"
+  },
+  {
+    "id": 135,
+    "title": "A Brief Overview Study of Open Quantum System for Application in Human-Machine Interaction",
+    "doi": "10.62678/IJICS202412.10135",
+    "abstract": "Human-machine interaction can incorporate several components which when suitably designed, synthesized, and integrated can benefit the human decision maker in performing various tasks and activities. These interactions can be designed through multiple modalities such as textural, graphic, audio, or any tangible interfaces depending on the specific nature of the decision-making task which needs to be performed by human. The control and decision-making architecture of such human-machine interaction can be defined in variety of ways. In this paper, we present an overview of an architecture which has been recently proposed in the literature based on the notion of open quantum systems. We present a brief interpretation of some of the main modelling and solution components of this framework. The main implication of this framework is that it presents the state of the decision maker and the interacting environment in a probabilistic framework, where the time evolution of this ensemble is estimated within the interpretation and solutions of the open quantum system.",
+    "readCount": 6443,
+    "downloadCount": 248,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 82795,
+    "authors": [
+      "Shahram Payandeh"
+    ],
+    "authorDetails": [
+      {
+        "name": "Shahram Payandeh",
+        "given": "Shahram",
+        "family": "Payandeh",
+        "isCorresponding": true,
+        "affiliations": [
+          "School of Engineering Science, Simon Fraser University"
+        ]
+      }
+    ],
+    "keywords": [
+      "quantum model",
+      "open system",
+      "human-machine interaction",
+      "master equation"
+    ],
+    "volume": 29,
+    "issue": 4,
+    "issueId": 16,
+    "earlyAccess": false,
+    "pages": "164–170",
+    "published": "2024-12-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/135",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/135",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/135"
+  },
+  {
+    "id": 163,
+    "title": "Artificial Intelligence Generative Model in Power System Security and Stability Analysis: An Overview",
+    "doi": "10.62678/IJICS202503.10163",
+    "abstract": "The field of artificial intelligence generated content (AIGC) is currently experiencing rapid development, attracting the attention of both academic and industrial communities. This article summarizes the development of several mainstream models in the AIGC field, as well as their research and application status in areas such as image generation and text generation. Additionally, as an emerging form of internet technology, this article analyzes the research status and application prospects of AIGC in traditional industrial fields using the power system as an example. Finally, this article summarizes in detail the shortcomings of generative models and identifies research directions for future study, to promote the development of AIGC technology and its deep integration with traditional industrial applications, to facilitate industrial technological transformation and upgrading.",
+    "readCount": 6180,
+    "downloadCount": 150,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 14053495,
+    "authors": [
+      "Yuxin Dai",
+      "Jun Zhang",
+      "Peidong Xu",
+      "Tianlu Gao",
+      "Haoran Zhang",
+      "Hao Liu",
+      "Ke Zhang",
+      "Hang Zhao",
+      "Zeyu Mu",
+      "Chenglong Xu"
+    ],
+    "authorDetails": [
+      {
+        "name": "Yuxin Dai",
+        "given": "Yuxin",
+        "family": "Dai",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jun Zhang",
+        "given": "Jun",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Peidong Xu",
+        "given": "Peidong",
+        "family": "Xu",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Tianlu Gao",
+        "given": "Tianlu",
+        "family": "Gao",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Haoran Zhang",
+        "given": "Haoran",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Hao Liu",
+        "given": "Hao",
+        "family": "Liu",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Ke Zhang",
+        "given": "Ke",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Hang Zhao",
+        "given": "Hang",
+        "family": "Zhao",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Zeyu Mu",
+        "given": "Zeyu",
+        "family": "Mu",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Chenglong Xu",
+        "given": "Chenglong",
+        "family": "Xu",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Artificial intelligence generated content (AIGC)",
+      "diffusion model",
+      "generative adversarial network",
+      "variational auto-encoder",
+      "power system",
+      "steady-state security analysis",
+      "transient stability assessment"
+    ],
+    "volume": 30,
+    "issue": 1,
+    "issueId": 17,
+    "earlyAccess": false,
+    "pages": "63–75",
+    "published": "2025-03-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/163",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/163",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/163"
+  },
+  {
+    "id": 179,
+    "title": "Event-Based Optimal Control for Cooperative Adaptive Cruise Control",
+    "doi": "10.62678/IJICS202506.10179",
+    "abstract": "This paper develops a new event-based optimal control (EBOC) method for cooperative adaptive cruise control (CACC) systems using parallel control and adaptive dynamic programming (ADP). First, based on the framework of optimal control and event-based control, CACC of connected vehicles is modeled as optimal control, and a triggering condition is designed to achieve the event-based CACC. Furthermore, the control stability of the closed-loop system under the developed triggering condition is shown theoretically. Then, iterative ADP and parallel control are utilized to implement the EBOC method. Finally, the correctness of the proposed EBOC method is verified by the application to a CACC system.",
+    "readCount": 4941,
+    "downloadCount": 172,
+    "citationCount": 0,
+    "category": "Communications and Letters",
+    "pdfSize": 287773,
+    "authors": [
+      "Jingwei Lu",
+      "Qinglai Wei",
+      "Xiang Cheng"
+    ],
+    "authorDetails": [
+      {
+        "name": "Jingwei Lu",
+        "given": "Jingwei",
+        "family": "Lu",
+        "isCorresponding": true,
+        "affiliations": [
+          "Tsinghua University"
+        ]
+      },
+      {
+        "name": "Qinglai Wei",
+        "given": "Qinglai",
+        "family": "Wei",
+        "isCorresponding": false,
+        "affiliations": [
+          "Institute of Automation, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Xiang Cheng",
+        "given": "Xiang",
+        "family": "Cheng",
+        "isCorresponding": false,
+        "affiliations": [
+          "associate editor:, associate editor:"
+        ]
+      }
+    ],
+    "keywords": [],
+    "volume": 30,
+    "issue": 2,
+    "issueId": 38,
+    "earlyAccess": false,
+    "pages": "176–181",
+    "published": "2025-06-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/179",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/179",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/179"
+  },
+  {
+    "id": 180,
+    "title": "Parallel Control for Continuous-Time Inverse System",
+    "doi": "10.62678/IJICS202506.10180",
+    "abstract": "Disturbance compensation methods are widely used to design the robust controller. In order to achieve the robust parallel control, how to implement the disturbance compensation in parallel control laws is studied in this paper. First, the key points are the estimations of the total inputs via inverse systems and the application of system state derivatives. Then, the inverse system based parallel control (ISPC) method is proposed for the optimal control of nonlinear systems. The basic structure of the inverse system based parallel control method is explained and compared with the traditional parallel control methods. The adaptive dynamic programming (ADP) method based on an approximate value function is used to solve the parallel control law. Finally, numerical simulations demonstrate the feasibility of the inverse system based parallel control method.",
+    "readCount": 5380,
+    "downloadCount": 172,
+    "citationCount": 0,
+    "category": "Papers",
+    "pdfSize": 450121,
+    "authors": [
+      "Xiang Cheng",
+      "Qinglai Wei"
+    ],
+    "authorDetails": [
+      {
+        "name": "Xiang Cheng",
+        "given": "Xiang",
+        "family": "Cheng",
+        "isCorresponding": true,
+        "affiliations": [
+          "associate editor:, associate editor:"
+        ]
+      },
+      {
+        "name": "Qinglai Wei",
+        "given": "Qinglai",
+        "family": "Wei",
+        "isCorresponding": false,
+        "affiliations": [
+          "Institute of Automation, Chinese Academy of Sciences"
+        ]
+      }
+    ],
+    "keywords": [
+      "Parallel control",
+      "inverse system",
+      "adaptive dynamic programming",
+      "robust control"
+    ],
+    "volume": 30,
+    "issue": 2,
+    "issueId": 38,
+    "earlyAccess": false,
+    "pages": "164–168",
+    "published": "2025-06-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/180",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/180",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/180"
+  },
+  {
+    "id": 184,
+    "title": "Parallel Deep Foundation Model: A Co-Evolution Framework for Analogical Imagination and Embodied Cognition of Parallel Intelligence",
+    "doi": "10.62678/IJICS202503.10184",
+    "abstract": "The rise of foundation models has brought significant advances to artificial intelligence, especially in reasoning, commonsense understanding, and tool use. These capabilities, when integrated into agent systems, hold great promise for real-world applications such as vision-language navigation (VLN) and vision-language action (VLA). However, deploying such models in practice presents ongoing challenges, particularly in adapting and optimizing them across diverse and changing environments. This letter proposes a parallel deep foundation model (PDFM) framework to support continuous model evolution in cloud-edge-device systems. The framework establishes a co-evolution process between two complementary capabilities: embodied cognition, which reflects the model's grounded understanding and task adaptation in physical systems, and analogical imagination, which enables creative exploration and capacity expansion in virtual environments. Through three core processes, learning and training, experiment and evaluation, and management and control, the system supports iterative refinement and dynamic interaction between virtual and real spaces. This enables general-purpose models to gradually converge toward domain-specific intelligence, supporting long-term, adaptive deployment.",
+    "readCount": 6221,
+    "downloadCount": 240,
+    "citationCount": 0,
+    "category": "Communications and Letters",
+    "pdfSize": 1640195,
+    "authors": [
+      "Yonglin Tian",
+      "Fei Lin",
+      "Cong Wang",
+      "Jingwei Ge",
+      "Zhiyao Luo",
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Yonglin Tian",
+        "given": "Yonglin",
+        "family": "Tian",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Fei Lin",
+        "given": "Fei",
+        "family": "Lin",
+        "isCorresponding": false,
+        "affiliations": [
+          "Department of Engineering Science, Faculty of Innovation Engineering, Macau University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Cong Wang",
+        "given": "Cong",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jingwei Ge",
+        "given": "Jingwei",
+        "family": "Ge",
+        "isCorresponding": false,
+        "affiliations": [
+          "University Research and Innovation Center, Obuda University"
+        ]
+      },
+      {
+        "name": "Zhiyao Luo",
+        "given": "Zhiyao",
+        "family": "Luo",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [],
+    "volume": 30,
+    "issue": 1,
+    "issueId": 17,
+    "earlyAccess": false,
+    "pages": "83–90",
+    "published": "2025-03-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/184",
+    "references": "References [1] J. Yang, X. Wang, Y. Tian, X. Wang, and F.-Y. Wang, Parallel intelligence in CPSSs: Being, becoming, and believing, IEEE Intell. Syst., 2023, 38(6), 75–80. [2] J. Chen, S. Dai, F. Chen, Z. Lv, J. Tang, and L. Han, Edge-cloud collaborative motion planning for autonomous driving with large language models, in Proc. 24th International Conference on Communication Technology (ICCT), Chengdu, China, 2024, 185–190. [3] Y. Pan, Z. Su, Y. Wang, S. Guo, H. Liu, R. Li, and Y. Wu, Cloud-edge collaborative large model services: Challenges and solutions, IEEE Netw., 2025, 39(4), 182–191. [4] Y. Wang, C. Yang, S. Lan, L. Zhu, and Y. Zhang, End-edge-cloud collaborative computing for deep learning: A comprehensive survey, IEEE Commun. Surv. Tutorials, 2024, 26(4), 2647–2683. [5] G. Wang, J. Liu, C. Li, Y. Zhang, J. Ma, X. Wei, K. Zhang, M. Chong, R. Zhang, Y. Liu et al., Cloud-device collaborative learning for multimodal large language models, in Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition, Seattle, WA, USA, 2024, 12646–12655. [6] Y. Chen, J. Zhao, and H. Han, A survey on collaborative mechanisms between large and small language models, arXiv preprint arXiv: 2505.07460, 2025. [7] P. Zhu and T. Yang, CE-LSLM: Efficient large-small language model inference and communication via cloud-edge collaboration, arXiv preprint arXiv: 2505.14085, 2025. [8] X. Chen, Z. Guo, X. Wang, H. Yang, C. Feng, J. Su, S. Zheng, and T. Q. S. Quek, Foundation model based native AI framework in 6G with cloud-edge-end collaboration, arXiv preprint arXiv: 2310.17471, 2023. [9] L. He, L. Fan, X. Lei, P. Fan, A. Nallanathan, and G. K. Karagiannidis, The road toward general edge intelligence: Standing on the shoulders of foundation models, IEEE Commun. Mag., to be published. [10] N. Mecklenburg, Y. Lin, X. Li, D. Holstein, L. Nunes, S. Malvar, B. Silva, R. Chandra, V. Aski, P. K. R. Yannam et al., Injecting new knowledge into large language models via supervised fine-tuning, arXiv preprint arXiv: 2404.00213, 2024. [11] J. Luo, X. Luo, K. Ding, J. Yuan, Z. Xiao, and M. Zhang, RobustFT: Robust supervised fine-tuning for large language models under noisy response, arXiv preprint arXiv: 2412.14922, 2024. [12] D. Biderman, J. Portes, J. J. G. Ortiz, M. Paul, P. Greengard, C. Jennings, D. King, S. Havens, V. Chiley, J. Frankle et al., LoRA learns less and forgets less, arXiv preprint arXiv: 2405.09673, 2024. [13] M. Méloux and C. Cerisara, Novel-WD: Exploring acquisition of novel world knowledge in LLMs using prefix-tuning, arXiv preprint arXiv: 2408.17070, 2024. [14] J. Hu, X. Wu, W. Shen, J. Liu, Z. Zhu, W. Wang, S. Jiang, H. Wang, H. Chen, B. Chen et al., OpenRLHF: An easy-to-use, scalable and high-performance RLHF framework, arXiv preprint arXiv: 2405.11143, 2024. [15] T. Xie, D. J. Foster, A. Krishnamurthy, C. Rosset, A. H. Awadallah, and A. Rakhlin, Exploratory preference optimization: Harnessing implicit Q*-approximation for sample-efficient RLHF, in Proc. 13th International Conference on Learning Representations, Singapore, Singapore, 2025. [16] C. Park, M. Liu, D. Kong, K. Zhang, and A. Ozdaglar, RLHF from heterogeneous feedback via personalization and preference aggregation, arXiv preprint arXiv: 2405.00254, 2024. [17] H. Fernando, H. Shen, P. Ram, Y. Zhou, H. Samulowitz, N. Baracaldo, and T. Chen, Mitigating forgetting in LLM supervised fine-tuning and preference learning, arXiv preprint arXiv: 2410.15483, 2024. [18] Z. Zhang, P. Karkus, M. Igl, W. Ding, Y. Chen, B. Ivanovic, and M. Pavone, Closed-loop supervised fine-tuning of tokenized traffic models, in Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition, Nashville, TN, USA, 2025, 5422–5432. [19] S. Wang, G. Wang, Y. Wang, J. Li, E. H. Hovy, and C. Guo, Packing analysis: Packing is more appropriate for large models or datasets in supervised fine-tuning, in Proc. Findings of the Association for Computational Linguistics, Vienna, Austria, 2025, 4953–4967. [20] P. Anderson, Q. Wu, D. Teney, J. Bruce, M. Johnson, N. Sünderhauf, I. Reid, S. Gould, and A. van den Hengel, Vision-and-language navigation: Interpreting visually-grounded navigation instructions in real environments, in Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition, Salt Lake City, UT, USA, 2018, 3674–3683. [21] M. M. Chun and Y. Jiang, Contextual cueing: Implicit learning and memory of visual context guides spatial attention, Cogn. Psychol., 1998, 36(1), 28–71. [22] R. A. Epstein, E. Z. Patai, J. B. Julian, and H. J. Spiers, The cognitive map in humans: Spatial navigation and beyond, Nat. Neurosci., 2017, 20(11), 1504–1513. [23] C. Huang, O. Mees, A. Zeng, and W. Burgard, Visual language maps for robot navigation, in Proc. 2023 IEEE International Conference on Robotics and Automation (ICRA), London, UK, 2023, 10608–10615. [24] D. Shah, B. Osinski, B. Ichter, and S. Levine, LM-Nav: Robotic navigation with large pre-trained models of language, vision, and action, in Proc. Conference on Robot Learning, Auckland, New Zealand, 2023, 492–504. [25] C. Zhou, Q. Li, C. Li, J. Yu, Y. Liu, G. Wang, K. Zhang, C. Ji, Q. Yan, L. He et al., A comprehensive survey on pretrained foundation models: A history from BERT to ChatGPT, Int. J. Mach. Learn. Cybern., to be published. [26] M. Ahn, A. Brohan, N. Brown, Y. Chebotar, O. Cortes, B. David, C. Finn, C. Fu, K. Gopalakrishnan, K. Hausman et al., Do as I can, not as I say: Grounding language in robotic affordances, in Proc. 6th Conference on Robot Learning, Auckland, New Zealand, 2023, 287–318. [27] G. Zhou, Y. Hong, and Q. Wu, NavGPT: Explicit reasoning in vision-and-language navigation with large language models, in Proc. 38th AAAI Conference on Artificial Intelligence, Vancouver, Canada, 2024, 7641–7649. [28] Y. Long, X. Li, W. Cai, and H. Dong, Discuss before moving: Visual language navigation via multi-expert discussions, in Proc. 2024 IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, 2024, 17380–17387. [29] W. Dai, J. Li, D. Li, A. M. H. Tiong, J. Zhao, W. Wang, B. Li, P. Fung, and S. Hoi, InstructBLIP: Towards general-purpose vision-language models with instruction tuning, in Proc. 37th International Conference on Neural Information Processing Systems, New Orleans, LA, USA, 2023, 2142. [30] Y. Tian, F. Lin, Y. Li, T. Zhang, Q. Zhang, X. Fu, J. Huang, X. Dai, Y. Wang, C. Tian et al., UAVs meet LLMs: Overviews and perspectives towards agentic low-altitude mobility, Inf. Fusion, 2025, 122, 103158.",
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/184",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/184"
+  },
+  {
+    "id": 229,
+    "title": "Cybernetic and Autonomous Science and Engineering for Intelligent Control: SEE2H3O + AIR2IST + LaSEE2CiSEE",
+    "doi": "10.62678/IJICS202503.10229",
+    "abstract": "CASE, control and automatic science engineering, cybernetics and automation science engineering, or convergence and autonomous science engineering, has been proposed to integrate and evolve traditional basic courses in mathematics, physics, chemistry, biology, literature, and social sciences into new fundamental courses at all levels of education from kindergarten to post-graduate programs, i.e., the new K21 educational system. Our goal is to build a future intelligent ecosystem through three major sociotechnical transformations: from AIR (automation, intelligence, and robotics) to IST (intelligent science and technology), LaSEE (low-altitude space economy and ecology) to CiSEE (circular in situ economy and ecology), and finally, SEE (sleeping well, eating well, and exercising well) to H3O (happy, health, and help organized, operated, and optimized) for a new humanity with advanced AI. IJICS will play a major role in this important process.",
+    "readCount": 5011,
+    "downloadCount": 207,
+    "citationCount": 0,
+    "category": "Editorial",
+    "pdfSize": 290489,
+    "authors": [
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [],
+    "volume": 30,
+    "issue": 1,
+    "issueId": 17,
+    "earlyAccess": false,
+    "pages": "1–2",
+    "published": "2025-03-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/229",
+    "references": "References [1] F.-Y. Wang, Editorial, Int. J. Intell. Control Syst., 1996, 1(1), 1–2. [2] F.-Y. Wang, K21 education and intelligent sciences: Future schools and teachers/students in future society, Chin. J. Intell. Sci. Technol., 2024, 6(3), 281–283, (in Chinese). [3] S. Bennett, A History of Control Engineering 1930–1955, London, UK: IET, 1993. [4] S. Bennett, A brief history of automatic control, IEEE Control Syst. Mag., 1996, 16(3), 17–25. [5] N. Wiener, Cybernetics, Sci. Am., 1948, 179(5), 14–19. [6] A. Rosenblueth, N. Wiener, and J. Bigelow, Behavior, purpose and teleology, Philos. Sci., 1943, 10(1), 18–24. [7] F.-Y. Wang, New AI for new frontier of intelligent science and technology: From PAPAI++ to new enterprise ecology, Chin. J. Intell. Sci. Technol., 2024, 6(4), 413–415, (in Chinese).",
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/229",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/229"
+  },
+  {
+    "id": 230,
+    "title": "New AI for New Human in New Society",
+    "doi": "10.62678/IJICS202506.10230",
+    "abstract": "Artificial intelligence (AI) has entered a new stage, shifting from \"artificial\" to \"agentic\" and then to \"autonomous\" systems that are transforming knowledge, professions, and societal structures. Generative models, autonomous robotics, and intelligent ecosystems are no longer confined to laboratories but are shaping economies, governance, and cultural life worldwide. IJICS will serve as a platform to examine these shifts, focusing on the redefinition of professional expertise, the emergence of new roles of academic publications for bridging humans and machines, and the urgent demand for transparent and accountable governance. From AI for science and digital intelligence to autonomous organizations and decentralized governance, IJICS will highlight the trajectories most critical to the evolution of intelligent systems. Through long-term vision, pragmatic innovation, and international cooperation, our journal is aiming to enhance discourse and practice, ensuring that AI development remains aligned with human values and the common good.",
+    "readCount": 4965,
+    "downloadCount": 236,
+    "citationCount": 0,
+    "category": "Editorial",
+    "pdfSize": 75339,
+    "authors": [
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [],
+    "volume": 30,
+    "issue": 2,
+    "issueId": 38,
+    "earlyAccess": false,
+    "pages": "91–92",
+    "published": "2025-06-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/230",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/230",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/230"
+  },
+  {
+    "id": 232,
+    "title": "ESO-Based Model-Free Adaptive Heading Control for Unmanned Surface Vessels",
+    "doi": "10.62678/IJICS202512.10232",
+    "abstract": "A model-free adaptive heading control strategy for unmanned surface vessels (USVs) is proposed by integrating extended state observer (ESO) with model-free adaptive control. To handle internal model perturbations and external disturbances, a discrete linear ESO is employed to estimate the aggregate uncertainties. Then, the model-free adaptive heading controller is constructed by utilizing system input and output data, and the estimation information deriving from the ESO. Furthermore, a dynamic event-triggered mechanism (ETM) is designed and embedded in the controller to save communication data. Compared with the periodic sampling, the introduction of the dynamic ETM enables the controller to achieve a comparable control performance with only 5.35% of the communication frequency. Simulation comparison and analysis exhibit that the proposed heading controller can achieve superior heading control effect for USVs and show broader application prospect.",
+    "readCount": 338,
+    "downloadCount": 155,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 963395,
+    "authors": [
+      "Shuaixi Li",
+      "Yongchao Liu",
+      "Ge Song"
+    ],
+    "authorDetails": [
+      {
+        "name": "Shuaixi Li",
+        "given": "Shuaixi",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Yongchao Liu",
+        "given": "Yongchao",
+        "family": "Liu",
+        "isCorresponding": true,
+        "affiliations": [
+          "School of Automation, Qingdao University"
+        ]
+      },
+      {
+        "name": "Ge Song",
+        "given": "Ge",
+        "family": "Song",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Heading control",
+      "extended state observer (ESO)",
+      "dynamic event-triggered control",
+      "unmanned surface vessels (USVs)"
+    ],
+    "volume": 30,
+    "issue": 4,
+    "issueId": 41,
+    "earlyAccess": false,
+    "pages": "307–313",
+    "published": "2025-12-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/232",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/232",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/232"
+  },
+  {
+    "id": 238,
+    "title": "Analysis of Electromagnetic Field of Radial Magnetic Levitation Bearings Based on Finite Element Simulation",
+    "doi": "10.62678/IJICS202512.10238",
+    "abstract": "A systematic analysis and investigation of the electromagnetic field characteristics in radial magnetic levitation bearings is conducted using the finite element simulation methodology. A mathematical model of electromagnetic force for a single magnetic pole is established to derive the relationship between electromagnetic force and parameters such as current and air gap. Finite element simulations conducted via COMSOL multiphysics yield results that are consistent with theoretical calculations, while further analyzing magnetic field distribution, air gap flux density, and electromagnetic force characteristics under saturation conditions, thereby effectively compensating for errors in theoretical computations. This study demonstrates the effectiveness of the finite element method in the design and optimization of magnetic levitation bearings, providing a more precise and reliable analytical approach for practical engineering applications.",
+    "readCount": 191,
+    "downloadCount": 190,
+    "citationCount": 0,
+    "category": "Communications and Letters",
+    "pdfSize": 821504,
+    "authors": [
+      "Qinglai Wei",
+      "Moxuan Ren",
+      "Long Wang",
+      "Liang Li",
+      "Yanbin Du"
+    ],
+    "authorDetails": [
+      {
+        "name": "Qinglai Wei",
+        "given": "Qinglai",
+        "family": "Wei",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Moxuan Ren",
+        "given": "Moxuan",
+        "family": "Ren",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Long Wang",
+        "given": "Long",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Liang Li",
+        "given": "Liang",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Yanbin Du",
+        "given": "Yanbin",
+        "family": "Du",
+        "isCorresponding": false,
+        "affiliations": [
+          "optimal control, optimal control"
+        ]
+      }
+    ],
+    "keywords": [
+      "modeling and control",
+      "uncertainty modeling"
+    ],
+    "volume": 30,
+    "issue": 4,
+    "issueId": 41,
+    "earlyAccess": false,
+    "pages": "343–348",
+    "published": "2025-12-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/238",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/238",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/238"
+  },
+  {
+    "id": 242,
+    "title": "PiVLA: Vision-Language-Action Based on Parallel Intelligence",
+    "doi": "10.62678/IJICS202509.10242",
+    "abstract": "The vision-language-action (VLA) paradigm is gradually becoming the core path of embodied intelligence. However, its training and validation, which rely on simulation environments, face serious sim2real challenges, such as navigation deviations in drones caused by wind speed differences between simulation and real-world environments. Existing iterative methods based on digital twins can alleviate the problem of virtual-real alignment to some extent. However, their high dependence on twin consistency limits their adaptability and scalability in complex environments. To break through this bottleneck, the PiVLA framework is proposed in this letter to reconstruct the VLA paradigm with parallel intelligence. Furthermore, we introduce the parallel deep foundation model (PDFM) and, based on it, propose model parallel control (MPC) and the parallel interaction protocol (PIP), establishing a unified interaction mechanism for disembodied agents and embodied agents. This provides a scalable and robust solution for complex tasks involving embodied intelligence.",
+    "readCount": 290,
+    "downloadCount": 175,
+    "citationCount": 0,
+    "category": "Communications and Letters",
+    "pdfSize": 13127813,
+    "authors": [
+      "Fei Lin",
+      "Tengchao Zhang",
+      "Jun Huang",
+      "Qinghua Ni",
+      "Jingwei Ge",
+      "Yonglin Tian"
+    ],
+    "authorDetails": [
+      {
+        "name": "Fei Lin",
+        "given": "Fei",
+        "family": "Lin",
+        "isCorresponding": false,
+        "affiliations": [
+          "Department of Engineering Science, Faculty of Innovation Engineering, Macau University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Tengchao Zhang",
+        "given": "Tengchao",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jun Huang",
+        "given": "Jun",
+        "family": "Huang",
+        "isCorresponding": false,
+        "affiliations": [
+          "FIE, Macau University of Science and Technology"
+        ]
+      },
+      {
+        "name": "Qinghua Ni",
+        "given": "Qinghua",
+        "family": "Ni",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jingwei Ge",
+        "given": "Jingwei",
+        "family": "Ge",
+        "isCorresponding": false,
+        "affiliations": [
+          "University Research and Innovation Center, Obuda University"
+        ]
+      },
+      {
+        "name": "Yonglin Tian",
+        "given": "Yonglin",
+        "family": "Tian",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "large language model and small model collaboration"
+    ],
+    "volume": 30,
+    "issue": 3,
+    "issueId": 40,
+    "earlyAccess": false,
+    "pages": "253–259",
+    "published": "2025-09-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/242",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/242",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/242"
+  },
+  {
+    "id": 254,
+    "title": "New AI for Diabetes Control and Management, Part I: A Survey and Perspective on LLM-Based Interpretation of Stress, Exercise, and Glucose Dynamics",
+    "doi": "10.62678/IJICS202509.10254",
+    "abstract": "Large language models (LLMs) offer new opportunities in diabetes research by integrating contextual behavioral data with physiological biosignals, supporting more personalized care. This review surveys recent studies on the application of LLMs to interpret interactions among stress, physical activity, and glucose dynamics across type 1, type 2, gestational, and monogenic diabetes (MODY). We examine methods for capturing contextual data beyond traditional patient diaries, including wearable sensors, lifestyle logs, and digital health tools, and discuss how these data are combined with continuous glucose monitoring. After retrieving 39 relevant studies and finally retaining 25 after screening, we summarize the current capabilities, limitations, and clinical implications of LLM-assisted multimodal approaches in diabetes management. The findings highlight both the promise and challenges of applying LLMs to synthesize heterogeneous data, providing insights for future research on enhancing individualized and evidence-based diabetes care.",
+    "readCount": 426,
+    "downloadCount": 287,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 7003264,
+    "authors": [
+      "Adina Chotbaeva",
+      "Mengmeng Zhang",
+      "Máté Siket",
+      "Jing Wang",
+      "Levente Kovács",
+      "György Eigner",
+      "Xuanting Ding",
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Adina Chotbaeva",
+        "given": "Adina",
+        "family": "Chotbaeva",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Mengmeng Zhang",
+        "given": "Mengmeng",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Máté Siket",
+        "given": "Máté",
+        "family": "Siket",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jing Wang",
+        "given": "Jing",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": [
+          "Institute of Automation, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Levente Kovács",
+        "given": "Levente",
+        "family": "Kovács",
+        "isCorresponding": false,
+        "affiliations": [
+          "Biomatics and Applied Artificial Intelligence, Obuda University"
+        ]
+      },
+      {
+        "name": "György Eigner",
+        "given": "György",
+        "family": "Eigner",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Xuanting Ding",
+        "given": "Xuanting",
+        "family": "Ding",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Large language models (LLMs)",
+      "diabetes mellitus",
+      "multimodal data integration",
+      "digital health"
+    ],
+    "volume": 30,
+    "issue": 3,
+    "issueId": 40,
+    "earlyAccess": false,
+    "pages": "207–217",
+    "published": "2025-09-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/254",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/254",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/254"
+  },
+  {
+    "id": 272,
+    "title": "Humanoid vs. Robotoid: The Past of the Future",
+    "doi": "10.62678/IJICS202509.10272",
+    "abstract": "Artificial intelligence and robotics (AIR) have entered a pivotal stage, highlighted by the 2025 World Artificial Intelligence Conference and the World Humanoid Robot Games in China. These events showcased advances in humanoid robotics, parallel intelligence, and digital-twin experimentation, while also exposing hardware limits and governance challenges. Beyond competition, they underscored scenario-driven deployment in manufacturing, healthcare, and services, redirecting capital toward real-world applications. At the same time, AIR reframed public perception, positioning robots as partners rather than replacements, and raised urgent questions on ethics, policy, and social inclusion. The AIR era thus represents not just technological convergence but the emergence of a knowledge-driven industrial ecosystem that must remain human-centered and globally collaborative.",
+    "readCount": 212,
+    "downloadCount": 461,
+    "citationCount": 0,
+    "category": "Editorial",
+    "pdfSize": 2986935,
+    "authors": [
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Artificial intelligence",
+      "humanoid robotics",
+      "scenario-driven deployment",
+      "parallel intelligence",
+      "robotoid"
+    ],
+    "volume": 30,
+    "issue": 3,
+    "issueId": 40,
+    "earlyAccess": false,
+    "pages": "189–190",
+    "published": "2025-09-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/272",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/272",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/272"
+  },
+  {
+    "id": 287,
+    "title": "Toward Third-Generation Academic Journals: Parallel Publishing for Parallel Humans with New AI",
+    "doi": "10.62678/IJICS202512.10287",
+    "abstract": "The rapid rise of large-scale foundation models and autonomous AI agents is reshaping the knowledge ecosystem. Academic journals, long designed for human-to-human communication, now face a growing mismatch: an increasing share of knowledge is consumed by machines, not only by people. This editorial argues that this shift calls for a move toward a third generation of academic journals enabled by parallel publishing. Using the historical transition from hunting and gathering to agriculture as an analogy, we suggest that knowledge production must evolve from passive harvesting to systematic cultivation of content that is reliable, structured, and usable by models and agents. We then examine the risks of low-quality, fabricated, and citation-manipulated publications, and discuss how the role of researchers is changing from authors to stewards of reusable knowledge assets. Finally, we draw attention to recent community efforts promoting parallel embodied and digital publishing systems and propose knowledge asset tokenization as a practical mechanism to improve traceability, incentivize quality, and support sustainable human-AI co-evolution.",
+    "readCount": 292,
+    "downloadCount": 134,
+    "citationCount": 0,
+    "category": "Editorial",
+    "pdfSize": 1205623,
+    "authors": [
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Parallel publishing",
+      "third-generation academic journals",
+      "foundation models",
+      "autonomous agents"
+    ],
+    "volume": 30,
+    "issue": 4,
+    "issueId": 41,
+    "earlyAccess": false,
+    "pages": "267–268",
+    "published": "2025-12-20",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/287",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/287",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/287"
+  },
+  {
+    "id": 291,
+    "title": "Evapotranspiration Prediction and Irrigation Scenario Analysis Based on Physics-XGBoost",
+    "doi": "10.62678/IJICS202603.10291",
+    "abstract": "Accurate prediction of transpiration rate is crucial for precision irrigation and improved water use efficiency in greenhouses. This paper proposes a \"Physics + XGBoost + Shapley additive explanation (SHAP)\" framework. A physical indicator, Ephys= Cond × VpdL, is constructed using stomatal conductance (Cond) and leaf-air vapor pressure deficit based on leaf temperature (VpdL) to establish a linear physical baseline. Subsequently, an XGBoost residual correction model is built using the residual between observed transpiration rate and the predicted physical value as the learning objective, thus forming the Physics + XGBoost transpiration rate prediction framework. Results show that the coefficient of determination on the test set is approximately 0.9975, and the root mean square error is approximately 0.0583. SHAP analysis indicates that Ephys, Cond, and VpdL are the dominant factors driving residual correction. Furthermore, this paper predicts the canopy daily evapotranspiration at the leaf scale to construct an irrigation scenario, providing a generalizable technical path for water management and physical-data fusion modeling of greenhouse crops.",
+    "readCount": 209,
+    "downloadCount": 228,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 1255621,
+    "authors": [
+      "Guoqing Zhang",
+      "Miao Huang",
+      "Lili Tao",
+      "Shuping Zhang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Guoqing Zhang",
+        "given": "Guoqing",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": [
+          "School of Intelligent Manufacturing and Control Engineering, Shanghai Polytechnic University"
+        ]
+      },
+      {
+        "name": "Miao Huang",
+        "given": "Miao",
+        "family": "Huang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Lili Tao",
+        "given": "Lili",
+        "family": "Tao",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Shuping Zhang",
+        "given": "Shuping",
+        "family": "Zhang",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Evapotranspiration prediction",
+      "physics-informed machine learning",
+      "XGBoost",
+      "irrigation scheduling optimization",
+      "scenario analysis"
+    ],
+    "volume": 31,
+    "issue": 1,
+    "issueId": 42,
+    "earlyAccess": false,
+    "pages": "16–28",
+    "published": "2026-03-31",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/291",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/291",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/291"
+  },
+  {
+    "id": 322,
+    "title": "Research on a Fine Segmentation Algorithm for 3D Point Clouds of High-Density Overlapping Cucumber Canopies in Solar Greenhouses",
+    "doi": "10.62678/IJICS202606.10322",
+    "abstract": "To address the challenges in solar greenhouses where cucumber canopy point clouds are highly dense, leaves exhibit severe overlap, and inter-plant adhesion is pronounced, resulting in insufficient accuracy and poor robustness of traditional point cloud segmentation algorithms, this study proposes a comprehensive cucumber hierarchical segmentation framework (Cuc-HiSeg) for terrestrial laser scanning (TLS) point clouds, enabling high-precision segmentation from population level to individual plants and further to leaves. High-resolution three-dimensional (3D) point cloud data of cucumber canopies at the seedling, early flowering, and fruiting stages were collected using TLS. For segmentation from population to individual plants, an improved hierarchical density-based spatial clustering of applications with noise (HDBSCAN) algorithm integrating k-dimensional tree (KD-tree) optimization and secondary clustering with mean shift was developed, improving the F1-score by 0.7%, 5.0%, and 8.0% across the three growth stages compared with the original algorithm. For leaf segmentation, a leaf point cloud data augmentation algorithm named CuLeafExpander was proposed to enhance the generalization capability of deep learning models. Experimental results demonstrate that the improved HDBSCAN and region-growing (RG) algorithms attained F1-scores above 91.9% and 93.9%, respectively. The proposed Cuc-HiSeg provides technical support for efficient processing of crop point clouds and advances digital crop phenotyping and intelligent greenhouse management.",
+    "readCount": 215,
+    "downloadCount": 124,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 4686878,
+    "authors": [
+      "Huayang Wang",
+      "Jiayuan Li",
+      "Maolin Hou",
+      "Yuntao Ma"
+    ],
+    "authorDetails": [
+      {
+        "name": "Huayang Wang",
+        "given": "Huayang",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jiayuan Li",
+        "given": "Jiayuan",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Maolin Hou",
+        "given": "Maolin",
+        "family": "Hou",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Yuntao Ma",
+        "given": "Yuntao",
+        "family": "Ma",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Solar greenhouse",
+      "cucumber canopy",
+      "point cloud segmentation",
+      "hierarchical density-based spatial clustering of applications with noise (HDBSCAN) algorithm",
+      "region-growing algorithm"
+    ],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "137–148",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/322-cucumber-point-clouds.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/322",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/322",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/322"
+  },
+  {
+    "id": 336,
+    "title": "Overview of Low-Cost Plant Phenotyping Methods for Individual Plants",
+    "doi": "10.62678/IJICS202603.10336",
+    "abstract": "Low-cost plant phenotyping for individual plants is increasingly important for plant digital twins, breeding, and continuous crop monitoring. This review surveys representative studies on image-based plant phenotyping from 2015 to 2025 and organizes them into two major categories: deep-learning-based trait estimation from RGB/RGB-D images and low-cost 3D phenotyping based on multi-view reconstruction. The literatures indicate that deep learning methods are advantageous for rapid, automated, and high-throughput estimation of specific traits, but they often depend on annotated data and may show limited crossscenario generalization. In contrast, 3D reconstruction methods usually provide richer structural information and broader trait coverage, but they require more complex acquisition workflows and higher computational burden. Therefore, low-cost plant phenotyping should be understood not only in terms of sensor price, but also in terms of the overall trade-off among sensing, computation, labor, and deployability. Finally, this review summarizes current challenges and identifies future directions, including cost-aware benchmarking, lightweight image-based models, robust field 3D reconstruction, and tighter integration with plant digital twin systems.",
+    "readCount": 224,
+    "downloadCount": 139,
+    "citationCount": 0,
+    "category": "Communications and Letters",
+    "pdfSize": 1115836,
+    "authors": [
+      "Zhiqing Liu",
+      "Jing Hua",
+      "Haoyu Wang",
+      "Qirun Huo"
+    ],
+    "authorDetails": [
+      {
+        "name": "Zhiqing Liu",
+        "given": "Zhiqing",
+        "family": "Liu",
+        "isCorresponding": false,
+        "affiliations": [
+          "1, 1"
+        ]
+      },
+      {
+        "name": "Jing Hua",
+        "given": "Jing",
+        "family": "Hua",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Haoyu Wang",
+        "given": "Haoyu",
+        "family": "Wang",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Qirun Huo",
+        "given": "Qirun",
+        "family": "Huo",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Plant Phenotype",
+      "inexpensive",
+      "deep learning",
+      "3D reconstruction"
+    ],
+    "volume": 31,
+    "issue": 1,
+    "issueId": 42,
+    "earlyAccess": false,
+    "pages": "106–112",
+    "published": "2026-03-31",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/336",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/336",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/336"
+  },
+  {
+    "id": 352,
+    "title": "Superlinearly Convergent PMP-Based Algorithms for Nash-Coupled Nonlinear Discrete-Time Control",
+    "doi": "10.62678/IJICS202606.10352",
+    "abstract": "This paper investigates the optimal control of discrete-time nonlinear systems with two strategically coupled control inputs arising from a Nash-type interaction. By augmenting the coupled inputs into a unified control vector and embedding the equilibrium conditions into a single performance index, the original game-based problem is reformulated as an augmented optimal control problem. Under standard regularity assumptions, we establish that the Nash stationarity conditions are locally equivalent to the first-order optimality conditions characterized by the Pontryagin maximum principle (PMP). Based on this reformulation, two PMP-based iterative algorithms are developed to solve the resulting forward-backward difference equations (FBDEs). The first algorithm exploits exact second-order information through the inversion of a regularized Hessian matrix, while the second constructs a Hessian-free recursive update that avoids explicit Hessian inversion. For both methods, a rigorous local convergence analysis is provided, showing that the effective linear contraction factor vanishes as the iteration horizon increases, leading to a superlinear-type local convergence behavior. Numerical experiments on representative nonlinear systems validate the theoretical findings and demonstrate improved convergence efficiency compared with classical gradient-based and Newton-type methods. The proposed theoretical framework and algorithms are particularly relevant to cooperative control problems in unmanned aerial vehicle (UAV) swarms, where multiple decision-makers interact through coupled dynamics and performance objectives.",
+    "readCount": 139,
+    "downloadCount": 117,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 1485386,
+    "authors": [
+      "Xiaoqian Li",
+      "Zonglei Jing",
+      "Zhongjin Guo",
+      "Peijun Ju",
+      "Shen Zhang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Xiaoqian Li",
+        "given": "Xiaoqian",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": [
+          "School of Mathematics and Statistics, Taishan University"
+        ]
+      },
+      {
+        "name": "Zonglei Jing",
+        "given": "Zonglei",
+        "family": "Jing",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Zhongjin Guo",
+        "given": "Zhongjin",
+        "family": "Guo",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Peijun Ju",
+        "given": "Peijun",
+        "family": "Ju",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Shen Zhang",
+        "given": "Shen",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Nonlinear discrete-time optimal control",
+      "Nash equilibrium and game-theoretic control",
+      "Pontryagin maximum principle",
+      "multi-agent cooperative control"
+    ],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "149–159",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/352-pmp-nash-control.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/352",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/352",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/352"
+  },
+  {
+    "id": 357,
+    "title": "Systems Intelligence for Sustainability Industry: Reflection and Perspective",
+    "doi": "10.62678/IJICS202603.10357",
+    "abstract": "This editorial reflects on the evolution and future direction of systems intelligence for sustainability industry (SI4SI), an initiative that has grown from a workshop at the 2017 UNDP conference into a continuing international dialogue connecting systems science, artificial intelligence (AI), and sustainable development. As AI technologies rapidly democratize knowledge and capability, they simultaneously introduce systemic risks, where termination-triggering knowledge, intelligence, and actions may amplify unintended consequences at unprecedented scales. Such risks call for governance that aligns intelligence with long-term societal well-being. Inspired by a modern interpretation of Pascal’s wager, we argue that precaution and responsibility must precede large-scale deployment of advanced AI. An embedded governance paradigm integrating blockchain intelligence and decentralized autonomous organizations is proposed to enhance transparency, accountability, and collective coordination. Essentially, SI4SI advocates a shift from artificial intelligence for efficiency to prescriptive intelligence for sustainability, emphasizing that technological progress must be prescribed and controlled by human values and welfare.",
+    "readCount": 163,
+    "downloadCount": 111,
+    "citationCount": 0,
+    "category": "Editorial",
+    "pdfSize": 5379971,
+    "authors": [
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Systems intelligence",
+      "sustainability industry",
+      "artificial intelligence governance",
+      "blockchain intelligence"
+    ],
+    "volume": 31,
+    "issue": 1,
+    "issueId": 42,
+    "earlyAccess": false,
+    "pages": "1–3",
+    "published": "2026-03-31",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/357",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/357",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/357"
+  },
+  {
+    "id": 364,
+    "title": "Embedding Large Language Models into Flow Controls: An Agentic Framework for Adaptive and Trustworthy Automated Cooking",
+    "doi": "10.62678/IJICS202606.10364",
+    "abstract": "Automated cooking robots have traditionally relied on predefined procedures and rule-based control, ensuring stable execution but offering limited personalization, whereas recent large-model approaches support natural language interaction but often suffer from opaque decision making and unreliable execution in real kitchens. To address this challenge, this paper proposes an agentic framework that systematically decomposes personalized cooking requirements into structured and verifiable control programs rather than directly mapping language to actions. Multiple artificial intelligence (AI) agents collaboratively transform user intents into canonical recipes, workflow programs with explicit flow control, and executable Python code grounded in an atomic action library. The system consists of three tightly coupled stages: offline recipe-to-code generation through multiple agents, online closed-loop execution with supervisory intervention enabled by multimodal perception, and post-run adaptation that updates user preference models for long-term personalization. Real-world experiments on a physical cooking platform demonstrate that the proposed framework achieves reliable task completion, transparent execution logic, and effective anomaly handling across diverse personalized scenarios, validating its practicality for trustworthy automated cooking in real environments.",
+    "readCount": 123,
+    "downloadCount": 175,
+    "citationCount": 0,
+    "category": "Cover Article",
+    "pdfSize": 1345214,
+    "authors": [
+      "Zihan Song",
+      "Hongwei Huang",
+      "Yueshuo Sun",
+      "Yonglin Tian",
+      "Fei-Yue Wang",
+      "Bai Li"
+    ],
+    "authorDetails": [
+      {
+        "name": "Zihan Song",
+        "given": "Zihan",
+        "family": "Song",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Hongwei Huang",
+        "given": "Hongwei",
+        "family": "Huang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Yueshuo Sun",
+        "given": "Yueshuo",
+        "family": "Sun",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Yonglin Tian",
+        "given": "Yonglin",
+        "family": "Tian",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Bai Li",
+        "given": "Bai",
+        "family": "Li",
+        "isCorresponding": false,
+        "affiliations": [
+          "ECNU"
+        ]
+      }
+    ],
+    "keywords": [
+      "Automated cooking",
+      "large language models",
+      "artificial intelligence (AI) agent",
+      "flow control",
+      "human-machine interaction"
+    ],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "124–136",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": null,
+    "figureCaption": null,
+    "source": "https://www.ijics.cn/api/ijics/article/detail/364",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/364",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/364"
+  },
+  {
+    "id": 369,
+    "title": "Integrated Perception-Decision-Control Car Following Control under Communication Uncertainty",
+    "doi": "10.62678/IJICS202606.10369",
+    "abstract": "The vehicle to everything (V2X) communication of intelligent and connected vehicles faces uncertainties such as random latency and packet loss. These issues pose safety challenges. This paper proposes a closed-loop integrated strategy that combines perception, decision-making, and control. A communication uncertainty metric is established based on recent packet loss rate and average delay. A three-state machine (cooperative cruise mode, perception uncertainty mode, and local safety mode) is designed to adjust the control strategy based on a preset uncertainty threshold. A proportion integration differentiation (PID) controller ensures safe car following. MATLAB simulations under high uncertainty show that the proposed method guarantees that the following distance always satisfies the dynamic safety criterion (a time headway of 1.5 s plus a standstill gap), whereas the fixed-strategy baseline fails under high uncertainty, significantly outperforming a fixed-strategy baseline. This method is computationally efficient and can be deployed on embedded devices. Simulation results validate the effectiveness of this approach in handling V2X communication uncertainties.",
+    "readCount": 110,
+    "downloadCount": 107,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 777227,
+    "authors": [
+      "Ran Tao",
+      "Shifeng Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Ran Tao",
+        "given": "Ran",
+        "family": "Tao",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Shifeng Wang",
+        "given": "Shifeng",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Intelligent and connected vehicle",
+      "vehicle to everything (V2X) communication uncertainty",
+      "perception-decision-control integration",
+      "state machine",
+      "safe car following"
+    ],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "185–192",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/369-car-following-control.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/369",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/369",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/369"
+  },
+  {
+    "id": 372,
+    "title": "PPI: A Co-Evolution Framework for Parallel Physical Intelligence",
+    "doi": "10.62678/IJICS202606.10372",
+    "abstract": "Physical artificial intelligence (AI) is becoming an important paradigm for embodied intelligence, where agents must reason, imagine, and act under real-world physical constraints. However, current physical reasoning model (PRM) and physical generation model (PGM) may still produce physically inconsistent judgments, scenes, and motions, exposing the lack of a verifiable truth anchor for reliable physical intelligence. Existing simulation-based methods can provide local physical supervision, but their limited coverage makes them insufficient for open and evolving physical environments. To address this bottleneck, this letter proposes parallel physical intelligence (PPI), a truth-anchored co-evolution framework based on parallel intelligence and the artificial systems, computational experiments, and parallel execution (ACP) methodology. PPI introduces the physical fidelity anchor (PFA) to calibrate both PRM and PGM, while enabling PRM and PGM to co-evolve through mutual data augmentation and physical plausibility feedback. During parallel execution, embodied agents and disembodied agents interact through a virtual-real closed loop, where real-world failures and novel physical phenomena update the PFA and trigger subsequent co-evolution. This provides a scalable and adaptive pathway for physically grounded embodied intelligence in complex environments.",
+    "readCount": 162,
+    "downloadCount": 110,
+    "citationCount": 0,
+    "category": "Communications and Letters",
+    "pdfSize": 5487223,
+    "authors": [
+      "Xinyuan Zhang",
+      "Jiaxi Liu",
+      "Siheng Yi",
+      "Hui Zhang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Xinyuan Zhang",
+        "given": "Xinyuan",
+        "family": "Zhang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Jiaxi Liu",
+        "given": "Jiaxi",
+        "family": "Liu",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Siheng Yi",
+        "given": "Siheng",
+        "family": "Yi",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Hui Zhang",
+        "given": "Hui",
+        "family": "Zhang",
+        "isCorresponding": true,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Parallel intelligence",
+      "Physical Intelligence",
+      "Embodied AI",
+      "ACP"
+    ],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "225–232",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/372-parallel-physical-intelligence.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/372",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/372",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/372"
+  },
+  {
+    "id": 373,
+    "title": "Computational Social Vision for Human-Agent Interaction",
+    "doi": "10.62678/IJICS202606.10373",
+    "abstract": "Human-agent interaction (HAI) is an increasingly important research area that investigates how humans interact with intelligent agents. Effective HAI relies heavily on social signal understanding, particularly visual social signals that convey human attention, intention, and affect, enabling agents to perceive, interpret, and respond appropriately to human behaviour. Recent advances in artificial intelligence (AI) have substantially improved visual perception and representation learning, allowing machines to detect and model visual social behavioural cues with increasing accuracy. However, translating these cues into socially meaningful interpretations remains a significant challenge, often resulting in unnatural interactions and limited empathic responsiveness in HAI systems. In this paper, we coined the concept of computational social vision (CSV) spanning the domain of both psychology and computing science to understand social signals. We summarize visual-cognitive computing techniques for this purpose with an emphasis on how social vision and artificial intelligence technologies support the inference of latent social states from dynamic behavioural evidence. To structure the field, we organise representative methods according to the semantic roles of visual behaviours, including both head-centric and body-centric social vision approaches. Finally, we discuss socially interactive embodied systems, analyzing how agents, such as social robots and virtual humans, adaptively perceive their environments and interact with humans as well as the future trend.",
+    "readCount": 112,
+    "downloadCount": 112,
+    "citationCount": 0,
+    "category": "Research Articles",
+    "pdfSize": 120890,
+    "authors": [
+      "Hui Yu",
+      "Yiming Wang",
+      "Haodong Jin",
+      "Schahram Dustdar"
+    ],
+    "authorDetails": [
+      {
+        "name": "Hui Yu",
+        "given": "Hui",
+        "family": "Yu",
+        "isCorresponding": true,
+        "affiliations": []
+      },
+      {
+        "name": "Yiming Wang",
+        "given": "Yiming",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Haodong Jin",
+        "given": "Haodong",
+        "family": "Jin",
+        "isCorresponding": false,
+        "affiliations": [
+          "University of Shanghai for Science and Technology"
+        ]
+      },
+      {
+        "name": "Schahram Dustdar",
+        "given": "Schahram",
+        "family": "Dustdar",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [
+      "Computational social vision",
+      "human-agent interaction",
+      "social signal understanding",
+      "social vision",
+      "visual-cognitive computing",
+      "social robots",
+      "virtual humans"
+    ],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "193–204",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/373-computational-social-vision.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/373",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/373",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/373"
+  },
+  {
+    "id": 376,
+    "title": "Agricultural Intelligence Takes Root: Turning Plant Science into a Digital Frontier",
+    "doi": "10.62678/IJICS202606.10376",
+    "abstract": null,
+    "readCount": 192,
+    "downloadCount": 196,
+    "citationCount": 0,
+    "category": "New AI and new Society",
+    "pdfSize": 2381763,
+    "authors": [
+      "Mengzhen Kang",
+      "Xiujuan Wang",
+      "Marc Jaeger",
+      "Véronique Letort",
+      "Fei-Yue Wang"
+    ],
+    "authorDetails": [
+      {
+        "name": "Mengzhen Kang",
+        "given": "Mengzhen",
+        "family": "Kang",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Xiujuan Wang",
+        "given": "Xiujuan",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": [
+          "Institute of Automation, Chinese Academy of Sciences"
+        ]
+      },
+      {
+        "name": "Marc Jaeger",
+        "given": "Marc",
+        "family": "Jaeger",
+        "isCorresponding": false,
+        "affiliations": [
+          "Bios UMR AMAP, CIRAD"
+        ]
+      },
+      {
+        "name": "Véronique Letort",
+        "given": "Véronique",
+        "family": "Letort",
+        "isCorresponding": false,
+        "affiliations": []
+      },
+      {
+        "name": "Fei-Yue Wang",
+        "given": "Fei-Yue",
+        "family": "Wang",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "117–118",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/376-agricultural-intelligence-delegates.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/376",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/376",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/376"
+  },
+  {
+    "id": 379,
+    "title": "Humanoid Robotics on the Move: Insights from the 2026 Beijing E-Town Half Marathon",
+    "doi": "10.62678/IJICS202606.10379",
+    "abstract": null,
+    "readCount": 386,
+    "downloadCount": 261,
+    "citationCount": 0,
+    "category": "New AI and new Society",
+    "pdfSize": 1699282,
+    "authors": [
+      "Editorial Office of IJICS"
+    ],
+    "authorDetails": [
+      {
+        "name": "Editorial Office of IJICS",
+        "given": "Editorial Office of",
+        "family": "IJICS",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "119–120",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/379-humanoid-robotics.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/379",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/379",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/379"
+  },
+  {
+    "id": 382,
+    "title": "Embodied AI in the Laboratory: Autonomous Robotics as a Physical Scientist",
+    "doi": "10.62678/IJICS202606.10382",
+    "abstract": null,
+    "readCount": 238,
+    "downloadCount": 229,
+    "citationCount": 0,
+    "category": "New AI and new Society",
+    "pdfSize": 393362,
+    "authors": [
+      "Editorial Office of IJICS"
+    ],
+    "authorDetails": [
+      {
+        "name": "Editorial Office of IJICS",
+        "given": "Editorial Office of",
+        "family": "IJICS",
+        "isCorresponding": false,
+        "affiliations": []
+      }
+    ],
+    "keywords": [],
+    "volume": 31,
+    "issue": 2,
+    "issueId": 43,
+    "earlyAccess": false,
+    "pages": "121–122",
+    "published": "2026-06-25",
+    "metricsAsOf": "2026-10-13T06:17:34.223Z",
+    "figure": "/assets/official-article-graphics/382-embodied-ai-laboratory.webp",
+    "figureCaption": "Figure from the published article.",
+    "source": "https://www.ijics.cn/api/ijics/article/detail/382",
+    "references": null,
+    "pdfUrl": "https://www.ijics.cn/api/ijics/article/download/382",
+    "browseUrl": "https://www.ijics.cn/api/ijics/article/browse/382"
+  }
+]

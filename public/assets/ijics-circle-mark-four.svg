@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 508" role="img" aria-labelledby="title">
+  <title id="title">IJICS four interlocking circles</title>
+  <defs>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#42656a"/>
+      <stop offset="1" stop-color="#12a37c"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b28c3e"/>
+      <stop offset="1" stop-color="#087b58"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9902f"/>
+      <stop offset="1" stop-color="#96323f"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#31566d"/>
+      <stop offset="1" stop-color="#172e5c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="320" cy="360" r="145" fill="url(#blue)" fill-opacity=".96"/>
+  <circle cx="320" cy="145" r="140" fill="url(#teal)" fill-opacity=".94"/>
+  <circle cx="190" cy="270" r="155" fill="url(#green)" fill-opacity=".92"/>
+  <circle cx="450" cy="270" r="155" fill="url(#orange)" fill-opacity=".92"/>
+</svg>

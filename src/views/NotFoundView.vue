@@ -1,0 +1,1 @@
+<template><main id="main" class="page-shell"><section class="page-section"><p class="type-label">404</p><h1>Page not found</h1><p>The requested page or article is unavailable.</p><RouterLink to="/search-articles" class="quiet-link">Search articles</RouterLink></section></main></template>

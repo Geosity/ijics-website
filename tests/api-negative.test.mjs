@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createApiServer} from '../server/api-server.mjs';
+import {createPreviewServer} from '../server/serve.mjs';
+async function start(server){await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));return `http://127.0.0.1:${server.address().port}`;}
+test('live gateway rejects mismatched paper identity instead of labelling it current',async()=>{const server=createApiServer({mode:'live',fetchImpl:async()=>new Response(JSON.stringify({data:{id:999,title:'Wrong record'}}),{status:200})});const base=await start(server);try{assert.equal((await fetch(base+'/api/articles/322')).status,502);}finally{await new Promise(resolve=>server.close(resolve));}});
+test('preview API proxy preserves read-only method restriction and real payload',async()=>{const api=createApiServer(),base=await start(api),preview=createPreviewServer({apiTarget:base,base:'/'}),origin=await start(preview);try{const res=await fetch(origin+'/api/articles/322');assert.equal(res.status,200);assert.equal((await res.json()).data.id,322);assert.equal((await fetch(origin+'/api/articles/322',{method:'POST'})).status,405);}finally{await new Promise(resolve=>preview.close(resolve));await new Promise(resolve=>api.close(resolve));}});
