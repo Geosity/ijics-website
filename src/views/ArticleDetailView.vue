@@ -214,7 +214,6 @@ export default {
     const authorsText = computed(() => (article.value?.authors || []).join(', '));
     const doiHref = computed(() => (article.value?.doi ? `https://doi.org/${article.value.doi}` : ''));
     const publishedLabel = computed(() => formatLongDate(article.value?.published));
-    const metricsAsOfLabel = computed(() => formatLongDate(article.value?.metricsAsOf));
     const pdfSizeLabel = computed(() => formatBytes(article.value?.pdfDownloadSize));
     const volumeIssueLabel = computed(() => {
       if (!article.value) return '';
@@ -344,7 +343,6 @@ export default {
       authorsText,
       doiHref,
       publishedLabel,
-      metricsAsOfLabel,
       pdfSizeLabel,
       volumeIssueLabel,
       issueLine,
@@ -453,7 +451,6 @@ export default {
                 </dl>
 
                 <h2 class="card-heading">Metrics</h2>
-                <p v-if="metricsAsOfLabel" class="metrics-as-of">Counts as of <time class="metrics-time" :datetime="article.metricsAsOf">{{ metricsAsOfLabel }}</time></p>
                 <dl class="metrics-list">
                   <div>
                     <dt>Reads</dt>
